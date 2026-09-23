@@ -1,0 +1,16 @@
+{
+  "mode": "V3 + historical station bias calibration",
+  "calibration_period": "2026-06-01 to 2026-06-23",
+  "validation_period": "2026-06-24 to 2026-06-30",
+  "full_reference_rows": 145,
+  "aqi_mae": 32.21732465649511,
+  "median_absolute_error": 21.322610515076434,
+  "aqi_rmse": 51.71838409021855,
+  "errors_gt_25": 64,
+  "errors_gt_50": 21,
+  "errors_gt_75": 11,
+  "errors_gt_100": 9,
+  "maximum_error": 225.61150456851564,
+  "category_agreement_percent": 75.86206896551724,
+  "scientific_note": "Station calibration uses only historical June 1-23 station residuals. No June 24-30 CPCB measurement is used to calculate its corresponding prediction."
+}

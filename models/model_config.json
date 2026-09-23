@@ -1,0 +1,22 @@
+{
+  "features": [
+    "AOD",
+    "HCHO",
+    "SAT_NO2",
+    "ERA5_TEMP",
+    "ERA5_DEWPOINT",
+    "ERA5_RH",
+    "WIND_U",
+    "WIND_V",
+    "WIND_SPEED",
+    "FIRE_COUNT_25KM",
+    "FIRE_CONF_MAX_25KM",
+    "FIRE_T21_MAX_25KM",
+    "day_of_month",
+    "day_of_year"
+  ],
+  "train_period": "2026-06-01 to 2026-06-23",
+  "test_period": "2026-06-24 to 2026-06-30",
+  "data_type": "real CPCB + satellite + ERA5 + FIRMS",
+  "missing_satellite_handling": "XGBoost native NaN handling"
+}

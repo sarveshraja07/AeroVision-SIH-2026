@@ -1,0 +1,16 @@
+[
+  "AOD",
+  "ERA5_DEWPOINT",
+  "ERA5_RH",
+  "ERA5_TEMP",
+  "HCHO",
+  "SAT_NO2",
+  "WIND_SPEED",
+  "WIND_U",
+  "WIND_V",
+  "FIRE_COUNT_25KM",
+  "FIRE_CONF_MAX_25KM",
+  "FIRE_T21_MAX_25KM",
+  "latitude",
+  "longitude"
+]

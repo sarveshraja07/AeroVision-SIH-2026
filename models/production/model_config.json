@@ -1,0 +1,65 @@
+{
+  "version": "AeroVision-XGBoost-V3",
+  "period": "2026-06-01 to 2026-06-30",
+  "features": [
+    "latitude",
+    "longitude",
+    "AOD",
+    "HCHO",
+    "SAT_NO2",
+    "ERA5_TEMP",
+    "ERA5_DEWPOINT",
+    "ERA5_RH",
+    "WIND_U",
+    "WIND_V",
+    "WIND_SPEED",
+    "FIRE_COUNT_25KM",
+    "FIRE_CONF_MAX_25KM",
+    "FIRE_T21_MAX_25KM"
+  ],
+  "targets": [
+    "PM25",
+    "PM10",
+    "NO2",
+    "O3"
+  ],
+  "validation": {
+    "method": "temporal_holdout",
+    "train": "2026-06-01 to 2026-06-23",
+    "test": "2026-06-24 to 2026-06-30",
+    "R2": {
+      "PM25": 0.334,
+      "PM10": 0.304,
+      "NO2": 0.755,
+      "O3": 0.686
+    }
+  },
+  "sources": {
+    "ground": "CPCB",
+    "AOD": "MODIS MAIAC",
+    "HCHO": "Sentinel-5P TROPOMI",
+    "NO2": "Sentinel-5P TROPOMI",
+    "weather": "ERA5-Land",
+    "fire": "NASA FIRMS"
+  },
+  "o3_target": {
+    "name": "O3_8H",
+    "description": "Daily maximum rolling 8-hour O3 concentration",
+    "unit": "ug/m3",
+    "valid_training_observations": 689,
+    "validation": {
+      "train_period": "2026-06-01 to 2026-06-23",
+      "test_period": "2026-06-24 to 2026-06-30",
+      "MAE": 11.57,
+      "RMSE": 15.199,
+      "R2": 0.565,
+      "correlation": 0.772
+    }
+  },
+  "production_models": {
+    "PM25": "aerovision_PM25.joblib",
+    "PM10": "aerovision_PM10.joblib",
+    "NO2": "aerovision_NO2.joblib",
+    "O3": "aerovision_O3_8H.joblib"
+  }
+}

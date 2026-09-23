@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AeroVision India</title>
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- AeroVision -->
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+<!-- <link
+    rel="stylesheet"
+    href="/aerovision-ui.css"
+> -->
+</head>
+
+
+<body>
+
+<!-- =========================================================
+     BACK TO DASHBOARD
+     Navigation only — does not affect core map
+========================================================= -->
+
+<a href="/" class="dashboard-home-btn" title="Back to Dashboard">
+
+    <span class="dashboard-home-icon">⌂</span>
+
+    <span class="dashboard-home-text">
+        Dashboard
+    </span>
+
+</a>
+<!-- ====================================================== -->
+<!-- TOP HEADER -->
+<!-- ====================================================== -->
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <h1>
+            🌍 AeroVision India
+        </h1>
+
+        <p>
+            AI-Powered Satellite Air Quality Intelligence
+        </p>
+
+    </div>
+
+
+    <div class="pipeline-status">
+
+        <span class="status-dot"></span>
+
+        REAL DATA PIPELINE
+
+    </div>
+
+</header>
+
+
+
+<!-- ====================================================== -->
+<!-- DATA SOURCE STRIP -->
+<!-- ====================================================== -->
+
+<div class="data-status-strip">
+
+    <span class="status-item">
+        <span class="status-dot"></span>
+        CPCB
+    </span>
+
+    <span class="status-item">
+        <span class="status-dot"></span>
+        MODIS AOD
+    </span>
+
+    <span class="status-item">
+        <span class="status-dot"></span>
+        Sentinel-5P
+    </span>
+
+    <span class="status-item">
+        <span class="status-dot"></span>
+        ERA5-Land
+    </span>
+
+    <span class="status-item">
+        <span class="status-dot"></span>
+        NASA FIRMS
+    </span>
+
+    <span class="status-item model-status">
+        🧠 XGBoost V3
+    </span>
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- TOP STAT CARDS -->
+<!-- ====================================================== -->
+
+<div class="top-stats">
+
+
+    <div class="stat-card station-card">
+
+        <span>
+            SELECTED LOCATION
+        </span>
+
+        <strong id="selectedStation">
+            Select a location
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            CPCB AQI
+        </span>
+
+        <strong id="selectedCpcbAqi">
+            --
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            AEROVISION AQI
+        </span>
+
+        <strong id="selectedAeroAqi">
+            --
+        </strong>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <span>
+            AQI ERROR
+        </span>
+
+        <strong id="selectedAqiError">
+            --
+        </strong>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- LEFT SIDEBAR -->
+<!-- ====================================================== -->
+
+<div class="sidebar">
+
+
+    <h3>
+        MAP LAYERS
+    </h3>
+
+
+    <button
+        id="btn-cpcb"
+        class="layer-button active"
+        onclick="toggleLayer('cpcb', this)"
+    >
+        🏭 CPCB vs AeroVision
+    </button>
+
+
+    <button
+        id="btn-hcho"
+        class="layer-button"
+        onclick="toggleLayer('hcho', this)"
+    >
+        🛰 HCHO Hotspots
+    </button>
+
+
+    <button
+        id="btn-fire"
+        class="layer-button"
+        onclick="toggleLayer('fire', this)"
+    >
+        🔥 FIRMS Fires
+    </button>
+
+
+    <button
+        id="btn-wind"
+        class="layer-button"
+        onclick="toggleLayer('wind', this)"
+    >
+        💨 ERA5 Wind
+    </button>
+
+
+    <button
+        id="btn-aqi-surface"
+        class="layer-button"
+        onclick="toggleLayer('aqiSurface', this)"
+    >
+        🌫 AQI Surface
+    </button>
+
+
+    <button
+        id="btn-demo-reset"
+        class="layer-button demo-reset-button"
+        onclick="resetAeroVisionDemo()"
+    >
+        🏠 Reset Demo
+    </button>
+
+
+    <div class="divider"></div>
+
+
+    <!-- ================================================== -->
+    <!-- MODEL COVERAGE -->
+    <!-- ================================================== -->
+
+    <h3>
+        PROTOTYPE COVERAGE
+    </h3>
+
+
+    <p class="sidebar-text">
+
+        Current ML training and validation region:
+
+        <br><br>
+
+        <strong>
+            Delhi + Haryana + Punjab
+        </strong>
+
+    </p>
+
+
+    <p class="sidebar-warning">
+
+        Future expansion can extend coverage using
+        additional regional training and validation data.
+
+    </p>
+
+
+    <div class="divider"></div>
+
+
+    <!-- ================================================== -->
+    <!-- AQI SURFACE -->
+    <!-- ================================================== -->
+
+    <h3>
+        AQI SURFACE INTELLIGENCE
+    </h3>
+
+
+    <div class="surface-info">
+
+        <p>
+            <strong>Date:</strong>
+            08 Jun 2026
+        </p>
+
+        <p>
+            <strong>Resolution:</strong>
+            0.25°
+        </p>
+
+        <p>
+            <strong>Prediction cells:</strong>
+            576
+        </p>
+
+        <p>
+            <strong>Model:</strong>
+            AeroVision V3 XGBoost
+        </p>
+
+        <p>
+            <strong>Inputs:</strong>
+
+            MODIS AOD,
+            Sentinel-5P HCHO,
+            Sentinel-5P NO₂,
+            ERA5-Land,
+            NASA FIRMS
+        </p>
+
+
+        <p class="surface-note">
+
+            Smooth visualization from the existing AeroVision
+            prediction grid.
+
+            <br><br>
+
+            Interpolation is used only between model grid cells
+            for visualization.
+
+        </p>
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <!-- ================================================== -->
+    <!-- SOURCES -->
+    <!-- ================================================== -->
+
+    <h3>
+        REAL DATA SOURCES
+    </h3>
+
+
+    <div class="source-list">
+
+        <div>
+            ✓ CPCB
+        </div>
+
+        <div>
+            ✓ MODIS MAIAC AOD
+        </div>
+
+        <div>
+            ✓ Sentinel-5P HCHO
+        </div>
+
+        <div>
+            ✓ Sentinel-5P NO₂
+        </div>
+
+        <div>
+            ✓ ERA5-Land
+        </div>
+
+        <div>
+            ✓ NASA FIRMS
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- RIGHT MODEL PANEL -->
+<!-- ====================================================== -->
+
+<div class="model-panel">
+
+
+    <h3>
+        SELECTED LOCATION
+    </h3>
+
+
+    <div id="selectedLocationPanel">
+
+
+        <div id="selectedLocationName">
+            Click a CPCB station or map location
+        </div>
+
+
+        <div id="selectedLocationDate">
+            --
+        </div>
+
+
+
+        <!-- ============================================== -->
+        <!-- LIVE ANALYSIS PIPELINE -->
+        <!-- ============================================== -->
+
+        <div
+            id="predictionPipeline"
+            class="prediction-pipeline"
+            style="display:none;"
+        >
+
+            <div class="pipeline-title">
+                ⚡ LIVE AEROVISION ANALYSIS
+            </div>
+
+
+            <div
+                id="pipelineStage"
+                class="pipeline-stage"
+            >
+                Preparing analysis...
+            </div>
+
+
+            <div class="pipeline-progress">
+
+                <div
+                    id="pipelineProgressBar"
+                    class="pipeline-progress-bar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="selected-category">
+
+            <span>
+                CPCB Category
+            </span>
+
+            <strong id="selectedCpcbCategory">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="selected-category">
+
+            <span>
+                AeroVision Category
+            </span>
+
+            <strong id="selectedAeroCategory">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="selected-category">
+
+            <span>
+                Dominant Pollutant
+            </span>
+
+            <strong id="selectedDominant">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="divider"></div>
+
+
+        <table class="selected-pollutants">
+
+            <tr>
+
+                <th>
+                    Pollutant
+                </th>
+
+                <th>
+                    CPCB
+                </th>
+
+                <th>
+                    AI
+                </th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    PM2.5
+                </td>
+
+                <td id="selectedPM25">
+                    --
+                </td>
+
+                <td id="selectedPredPM25">
+                    --
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    PM10
+                </td>
+
+                <td id="selectedPM10">
+                    --
+                </td>
+
+                <td id="selectedPredPM10">
+                    --
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    NO₂
+                </td>
+
+                <td id="selectedNO2">
+                    --
+                </td>
+
+                <td id="selectedPredNO2">
+                    --
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>
+                    O₃ 8H
+                </td>
+
+                <td id="selectedO3">
+                    --
+                </td>
+
+                <td id="selectedPredO3">
+                    --
+                </td>
+
+            </tr>
+
+        </table>
+
+
+    </div>
+
+
+
+    <!-- ================================================== -->
+    <!-- VALIDATION -->
+    <!-- ================================================== -->
+
+    <div class="divider"></div>
+
+
+    <h3>
+        GLOBAL MODEL VALIDATION
+    </h3>
+
+
+    <div class="model-row">
+
+        <span>
+            PM2.5
+        </span>
+
+        <strong>
+            R² 0.348
+        </strong>
+
+    </div>
+
+
+    <div class="model-row">
+
+        <span>
+            PM10
+        </span>
+
+        <strong>
+            R² 0.326
+        </strong>
+
+    </div>
+
+
+    <div class="model-row model-good">
+
+        <span>
+            NO₂
+        </span>
+
+        <strong>
+            R² 0.742
+        </strong>
+
+    </div>
+
+
+    <div class="model-row model-good">
+
+        <span>
+            O₃ 8H
+        </span>
+
+        <strong>
+            R² 0.573
+        </strong>
+
+    </div>
+
+
+    <div class="divider"></div>
+
+
+    <div class="validation-details">
+
+        <p>
+            <strong>
+                AQI MAE:
+            </strong>
+            31.86
+        </p>
+
+        <p>
+            <strong>
+                Median Error:
+            </strong>
+            22.74
+        </p>
+
+        <p>
+            <strong>
+                Full CPCB Days:
+            </strong>
+            145
+        </p>
+
+        <p>
+            <strong>
+                Category Match:
+            </strong>
+            74.48%
+        </p>
+
+    </div>
+
+
+    <small>
+
+        Held-out validation:
+        24–30 June 2026
+
+    </small>
+
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- EVENT PANEL -->
+<!-- ====================================================== -->
+
+<div class="event-panel">
+
+
+    <h3>
+        🧠 Explain This Event
+    </h3>
+
+
+    <div class="event-date">
+        08 June 2026
+    </div>
+
+
+    <p>
+
+        🔥
+
+        <strong>
+            359
+        </strong>
+
+        high-confidence FIRMS detections
+
+    </p>
+
+
+    <p>
+
+        🛰
+
+        <strong>
+            1,711
+        </strong>
+
+        TROPOMI HCHO hotspot cells
+
+    </p>
+
+
+    <p>
+
+        🔗
+
+        <strong>
+            462
+        </strong>
+
+        hotspots within 25 km of fire activity
+
+    </p>
+
+
+    <div class="association-box">
+        27% HCHO–Fire Spatial Association
+    </div>
+
+
+    <p class="scientific-note">
+
+        ERA5 wind vectors are used to investigate
+        potential atmospheric transport.
+
+        <br><br>
+
+        Spatial proximity indicates association,
+        not proof of causation.
+
+    </p>
+
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- AQI LEGEND -->
+<!-- ====================================================== -->
+
+<div class="aqi-legend">
+
+
+    <h4>
+        AQI
+    </h4>
+
+
+    <div>
+
+        <span class="legend-dot legend-good"></span>
+
+        Good
+
+    </div>
+
+
+    <div>
+
+        <span class="legend-dot legend-satisfactory"></span>
+
+        Satisfactory
+
+    </div>
+
+
+    <div>
+
+        <span class="legend-dot legend-moderate"></span>
+
+        Moderate
+
+    </div>
+
+
+    <div>
+
+        <span class="legend-dot legend-poor"></span>
+
+        Poor
+
+    </div>
+
+
+    <div>
+
+        <span class="legend-dot legend-very-poor"></span>
+
+        Very Poor
+
+    </div>
+
+
+    <div>
+
+        <span class="legend-dot legend-severe"></span>
+
+        Severe
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ====================================================== -->
+<!-- MAP -->
+<!-- ====================================================== -->
+
+<div id="map"></div>
+
+
+
+<!-- ====================================================== -->
+<!-- LIBRARIES -->
+<!-- ====================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"
+></script>
+
+
+
+<!-- ====================================================== -->
+<!-- MAP INITIALIZATION -->
+<!-- ====================================================== -->
+
+<script>
+
+
+console.log(
+    "Starting AeroVision India..."
+);
+
+
+if (
+    typeof L === "undefined"
+) {
+
+    alert(
+        "Leaflet failed to load."
+    );
+
+
+    throw new Error(
+        "Leaflet library not loaded."
+    );
+
+}
+
+
+// ============================================================
+// MAP
+// ============================================================
+
+var map =
+    L.map(
+
+        "map",
+
+        {
+
+            minZoom:
+                2,
+
+            maxZoom:
+                18,
+
+            worldCopyJump:
+                true,
+
+            zoomControl:
+                true
+
+        }
+
+    );
+
+
+// ============================================================
+// BASE MAP
+// ============================================================
+
+var baseMap =
+    L.tileLayer(
+
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+
+        {
+
+            minZoom:
+                2,
+
+            maxZoom:
+                19,
+
+            attribution:
+                "&copy; OpenStreetMap contributors"
+
+        }
+
+    );
+
+
+baseMap.addTo(
+    map
+);
+
+
+// ============================================================
+// INDIA START VIEW
+// ============================================================
+
+map.setView(
+
+    [
+        22.5,
+        79.0
+    ],
+
+    5
+
+);
+
+
+// ============================================================
+// INDIA HOME BUTTON
+// ============================================================
+
+var IndiaHomeControl =
+    L.Control.extend(
+
+        {
+
+            options:
+            {
+
+                position:
+                    "topleft"
+
+            },
+
+
+            onAdd:
+            function(map) {
+
+
+                var container =
+                    L.DomUtil.create(
+                        "div",
+                        "leaflet-bar"
+                    );
+
+
+                var button =
+                    L.DomUtil.create(
+                        "a",
+                        "",
+                        container
+                    );
+
+
+                button.innerHTML =
+                    "🇮🇳";
+
+
+                button.href =
+                    "#";
+
+
+                button.title =
+                    "Return to India";
+
+
+                button.setAttribute(
+                    "aria-label",
+                    "Return to India"
+                );
+
+
+                button.style.fontSize =
+                    "18px";
+
+
+                button.style.textAlign =
+                    "center";
+
+
+                button.style.cursor =
+                    "pointer";
+
+
+                L.DomEvent.disableClickPropagation(
+                    container
+                );
+
+
+                L.DomEvent.on(
+
+                    button,
+
+                    "click",
+
+                    function(event) {
+
+
+                        L.DomEvent.stop(
+                            event
+                        );
+
+
+                        map.setView(
+
+                            [
+                                22.5,
+                                79.0
+                            ],
+
+                            5
+
+                        );
+
+                    }
+
+                );
+
+
+                return container;
+
+            }
+
+        }
+
+    );
+
+
+map.addControl(
+    new IndiaHomeControl()
+);
+
+
+// ============================================================
+// SHARED LAYER REGISTRY
+// ============================================================
+
+var layerDict =
+    {};
+
+
+// ============================================================
+// LAYER TOGGLE
+// ============================================================
+
+function toggleLayer(
+    layerName,
+    button
+) {
+
+    var layer =
+        layerDict[
+            layerName
+        ];
+
+
+    if (
+        !layer
+    ) {
+
+        console.warn(
+            "Layer not ready:",
+            layerName
+        );
+
+        return;
+
+    }
+
+
+    if (
+        map.hasLayer(
+            layer
+        )
+    ) {
+
+        map.removeLayer(
+            layer
+        );
+
+
+        if (
+            button
+        ) {
+
+            button.classList.remove(
+                "active"
+            );
+
+        }
+
+    }
+
+    else {
+
+        layer.addTo(
+            map
+        );
+
+
+        if (
+            button
+        ) {
+
+            button.classList.add(
+                "active"
+            );
+
+        }
+
+    }
+
+}
+
+
+// ============================================================
+// REFRESH MAP SIZE
+// ============================================================
+
+setTimeout(
+
+    function() {
+
+        map.invalidateSize();
+
+    },
+
+    500
+
+);
+
+
+console.log(
+    "✅ AeroVision world map initialized"
+);
+
+
+</script>
+
+
+
+<!-- ====================================================== -->
+<!-- DASHBOARD -->
+<!-- ====================================================== -->
+
+<script
+    src="/dashboard.js"
+></script>
+
+
+
+<!-- ====================================================== -->
+<!-- SAFE JUNE 2026 STATION TIMELINE ADD-ON               -->
+<!-- Does not modify dashboard.js or the existing June 8   -->
+<!-- AQI surface / HCHO / FIRMS / wind implementation.     -->
+<!-- ====================================================== -->
+<style>
+    .av-date-control {
+        background: rgba(4, 18, 28, 0.96);
+        color: #eefcff;
+        border: 1px solid rgba(0, 220, 170, 0.55);
+        border-radius: 10px;
+        padding: 9px 10px;
+        min-width: 220px;
+        box-shadow: 0 7px 22px rgba(0,0,0,.25);
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .av-date-control-title {
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .7px;
+        color: #29efba;
+        margin-bottom: 6px;
+    }
+    .av-date-row {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    .av-date-row button,
+    .av-date-row select {
+        height: 31px;
+        border-radius: 6px;
+        border: 1px solid #36515c;
+        background: #10252f;
+        color: #fff;
+        font-weight: 700;
+    }
+    .av-date-row button {
+        width: 31px;
+        cursor: pointer;
+    }
+    .av-date-row select {
+        flex: 1;
+        padding: 0 7px;
+    }
+    .av-date-note {
+        font-size: 9px;
+        line-height: 1.35;
+        color: #a9bdc4;
+        margin-top: 6px;
+    }
+    .av-date-note.surface-available {
+        color: #ffd35a;
+    }
+    .av-date-marker {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 3px solid #0c1720;
+        box-shadow: 0 2px 7px rgba(0,0,0,.35);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 8px;
+        font-weight: 900;
+        text-shadow: 0 1px 2px rgba(0,0,0,.8);
+    }
+    .av-date-popup {
+        min-width: 250px;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
+    .av-date-popup h3 {
+        margin: 0 0 2px;
+        font-size: 15px;
+    }
+    .av-date-popup .meta {
+        font-size: 10px;
+        color: #61717a;
+        margin-bottom: 8px;
+    }
+    .av-date-popup .compare {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 8px 0;
+    }
+    .av-date-popup .box {
+        background: #f3f7f8;
+        border-radius: 7px;
+        padding: 7px;
+    }
+    .av-date-popup .box span {
+        display: block;
+        font-size: 9px;
+        color: #65757c;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .av-date-popup .box strong {
+        display: block;
+        font-size: 22px;
+        margin-top: 2px;
+    }
+    .av-date-popup table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        font-size: 11px;
+    }
+    .av-date-popup th,
+    .av-date-popup td {
+        border-bottom: 1px solid #e5ecef;
+        padding: 4px 3px;
+        text-align: right;
+    }
+    .av-date-popup th:first-child,
+    .av-date-popup td:first-child {
+        text-align: left;
+    }
+    #btn-aqi-surface.av-surface-disabled {
+        opacity: .48;
+        cursor: not-allowed;
+    }
+</style>
+
+<script>
+(function () {
+    "use strict";
+
+    const EVENT_DATE = "2026-06-08";
+    const DATA_URL = "/data/exports/dashboard_june_2026.json";
+
+    let selectedDate = EVENT_DATE;
+    let records = [];
+    let originalCpcbLayer = null;
+    let originalSurfaceLayer = null;
+    let timelineLayer = null;
+    let surfaceWasVisible = false;
+
+    window.AEROVISION_SELECTED_MAP_DATE = selectedDate;
+
+    function num(v) {
+        if (v === null || v === undefined || v === "") return null;
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+    }
+
+    function val(row, keys) {
+        for (const key of keys) {
+            if (row && row[key] !== undefined && row[key] !== null && String(row[key]).trim() !== "") {
+                return row[key];
+            }
+        }
+        return null;
+    }
+
+    function rowDate(row) {
+        const raw = val(row, ["date", "date_text", "sample_date", "DATE"]);
+        if (!raw) return "";
+        const s = String(raw).trim();
+        return /^\\d{4}-\\d{2}-\\d{2}/.test(s) ? s.slice(0, 10) : s;
+    }
+
+    function fmt(v, d = 1) {
+        const n = num(v);
+        return n === null ? "N/A" : n.toFixed(d);
+    }
+
+    function humanDate(iso) {
+        const d = Number(iso.slice(-2));
+        return String(d).padStart(2, "0") + " June 2026";
+    }
+
+    function aqColor(aqi) {
+        const n = num(aqi);
+        if (n === null) return "#7f8c8d";
+        if (n <= 50) return "#43a047";
+        if (n <= 100) return "#a8c637";
+        if (n <= 200) return "#f2c230";
+        if (n <= 300) return "#f18b2b";
+        if (n <= 400) return "#df4747";
+        return "#9d2d63";
+    }
+
+    function referenceStatus(row) {
+        const explicit = val(row, ["CPCB_REFERENCE_STATUS", "cpcb_reference_status"]);
+        if (explicit) return String(explicit).toUpperCase();
+        const keys = ["PM25", "PM10", "NO2", "O3_8H"];
+        return keys.every(k => num(row[k]) !== null) ? "FULL" : "PARTIAL";
+    }
+
+    function aqiDifference(row) {
+        if (referenceStatus(row) !== "FULL") return null;
+        const direct = num(val(row, ["AQI_ERROR", "AQI_ABS_ERROR", "AQI_DIFFERENCE"]));
+        if (direct !== null) return Math.abs(direct);
+        const c = num(row.CPCB_AQI);
+        const a = num(row.AEROVISION_AQI);
+        return c !== null && a !== null ? Math.abs(a - c) : null;
+    }
+
+    function periodLabel(row) {
+        const p = String(val(row, ["model_period", "MODEL_PERIOD"]) || "").toUpperCase();
+        if (p.includes("HELD") || p.includes("VALID")) return "Held-out validation";
+        if (p.includes("TRAIN")) return "Training-period estimate";
+        return selectedDate >= "2026-06-24" ? "Held-out validation" : "Training-period estimate";
+    }
+
+    function popupHtml(row) {
+        const station = val(row, ["station", "station_name", "name"]) || "CPCB station";
+        const cpcb = fmt(row.CPCB_AQI, 0);
+        const aero = fmt(row.AEROVISION_AQI, 0);
+        const diff = aqiDifference(row);
+        const diffText = diff === null
+            ? "Partial CPCB reference — AQI error not used for full-reference validation"
+            : "AQI difference: <strong>" + diff.toFixed(1) + "</strong>";
+
+        return `
+            <div class="av-date-popup">
+                <h3>${station}</h3>
+                <div class="meta">${humanDate(selectedDate)} · ${periodLabel(row)}</div>
+                <div class="compare">
+                    <div class="box"><span>CPCB AQI</span><strong>${cpcb}</strong></div>
+                    <div class="box"><span>AeroVision AQI</span><strong>${aero}</strong></div>
+                </div>
+                <div style="font-size:10px; margin:6px 0;">${diffText}</div>
+                <table>
+                    <tr><th>Pollutant</th><th>CPCB</th><th>AeroVision</th></tr>
+                    <tr><td>PM2.5</td><td>${fmt(row.PM25)}</td><td>${fmt(row.PRED_PM25)}</td></tr>
+                    <tr><td>PM10</td><td>${fmt(row.PM10)}</td><td>${fmt(row.PRED_PM10)}</td></tr>
+                    <tr><td>NO₂</td><td>${fmt(row.NO2)}</td><td>${fmt(row.PRED_NO2)}</td></tr>
+                    <tr><td>O₃ 8H</td><td>${fmt(row.O3_8H)}</td><td>${fmt(row.PRED_O3_8H)}</td></tr>
+                </table>
+                <div style="font-size:9px;color:#65757c;margin-top:7px;">
+                    June station-day values only. Missing observations remain N/A.
+                </div>
+            </div>`;
+    }
+
+    function updateTopPanel(row) {
+        const station = val(row, ["station", "station_name", "name"]) || "CPCB station";
+        const cpcb = num(row.CPCB_AQI);
+        const aero = num(row.AEROVISION_AQI);
+        const diff = aqiDifference(row);
+
+        const put = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        put("selectedStation", station);
+        put("selectedCpcbAqi", cpcb === null ? "N/A" : Math.round(cpcb));
+        put("selectedAeroAqi", aero === null ? "N/A" : Math.round(aero));
+        put("selectedAqiError", diff === null ? "N/A" : diff.toFixed(1));
+        put("selectedLocationName", station);
+        put("selectedLocationDate", humanDate(selectedDate) + " · " + periodLabel(row));
+        put("selectedCpcbCategory", val(row, ["CPCB_CATEGORY", "cpcb_category"]) || "N/A");
+        put("selectedAeroCategory", val(row, ["AEROVISION_CATEGORY", "aerovision_category"]) || "N/A");
+        put("selectedDominant", val(row, ["DOMINANT_POLLUTANT", "dominant_pollutant"]) || "N/A");
+        put("selectedPM25", fmt(row.PM25));
+        put("selectedPredPM25", fmt(row.PRED_PM25));
+        put("selectedPM10", fmt(row.PM10));
+        put("selectedPredPM10", fmt(row.PRED_PM10));
+        put("selectedNO2", fmt(row.NO2));
+        put("selectedPredNO2", fmt(row.PRED_NO2));
+        put("selectedO3", fmt(row.O3_8H));
+        put("selectedPredO3", fmt(row.PRED_O3_8H));
+    }
+
+    function clearSelectedPanel() {
+        const put = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+        put("selectedStation", "Select a location");
+        put("selectedCpcbAqi", "--");
+        put("selectedAeroAqi", "--");
+        put("selectedAqiError", "--");
+        put("selectedLocationName", "Click a CPCB station or map location");
+        put("selectedLocationDate", humanDate(selectedDate));
+        ["selectedCpcbCategory","selectedAeroCategory","selectedDominant","selectedPM25","selectedPredPM25","selectedPM10","selectedPredPM10","selectedNO2","selectedPredNO2","selectedO3","selectedPredO3"].forEach(id => put(id, "--"));
+    }
+
+    function renderTimelineStations() {
+        if (!timelineLayer) timelineLayer = L.layerGroup();
+        timelineLayer.clearLayers();
+
+        const rows = records.filter(r => rowDate(r) === selectedDate);
+
+        rows.forEach(row => {
+            const lat = num(val(row, ["latitude", "lat", "LATITUDE"]));
+            const lon = num(val(row, ["longitude", "lon", "lng", "LONGITUDE"]));
+            if (lat === null || lon === null) return;
+
+            const aq = num(row.AEROVISION_AQI);
+            const icon = L.divIcon({
+                className: "",
+                html: `<div class="av-date-marker" style="background:${aqColor(aq)}">${aq === null ? "N/A" : Math.round(aq)}</div>`,
+                iconSize: [28, 28],
+                iconAnchor: [14, 14],
+                popupAnchor: [0, -13]
+            });
+
+            const marker = L.marker([lat, lon], {
+                icon: icon,
+                bubblingMouseEvents: false
+            });
+
+            marker.bindPopup(popupHtml(row), { maxWidth: 360 });
+            marker.on("click", function (e) {
+                if (e && e.originalEvent) L.DomEvent.stopPropagation(e.originalEvent);
+                updateTopPanel(row);
+            });
+            marker.addTo(timelineLayer);
+        });
+
+        return rows.length;
+    }
+
+    function syncCpcbLayer() {
+        const btn = document.getElementById("btn-cpcb");
+        const wantedVisible = btn ? btn.classList.contains("active") : true;
+
+        if (selectedDate === EVENT_DATE) {
+            if (timelineLayer && map.hasLayer(timelineLayer)) map.removeLayer(timelineLayer);
+            if (originalCpcbLayer) {
+                layerDict.cpcb = originalCpcbLayer;
+                if (wantedVisible && !map.hasLayer(originalCpcbLayer)) originalCpcbLayer.addTo(map);
+            }
+            return;
+        }
+
+        if (originalCpcbLayer && map.hasLayer(originalCpcbLayer)) map.removeLayer(originalCpcbLayer);
+        renderTimelineStations();
+        layerDict.cpcb = timelineLayer;
+        if (wantedVisible && !map.hasLayer(timelineLayer)) timelineLayer.addTo(map);
+    }
+
+    function syncSurfaceLayer() {
+        const btn = document.getElementById("btn-aqi-surface");
+        if (!originalSurfaceLayer || !btn) return;
+
+        if (selectedDate !== EVENT_DATE) {
+            if (map.hasLayer(originalSurfaceLayer)) {
+                surfaceWasVisible = true;
+                map.removeLayer(originalSurfaceLayer);
+            }
+            btn.classList.remove("active");
+            btn.classList.add("av-surface-disabled");
+            btn.disabled = true;
+            btn.title = "Regional AQI surface is currently available only for 08 June 2026";
+        } else {
+            btn.disabled = false;
+            btn.classList.remove("av-surface-disabled");
+            btn.title = "08 June 2026 AeroVision regional AQI surface";
+            if (surfaceWasVisible && !map.hasLayer(originalSurfaceLayer)) {
+                originalSurfaceLayer.addTo(map);
+                btn.classList.add("active");
+            }
+        }
+    }
+
+    function updateNote() {
+        const note = document.getElementById("avDateNote");
+        if (!note) return;
+        if (selectedDate === EVENT_DATE) {
+            note.className = "av-date-note surface-available";
+            note.textContent = "08 Jun: station values + regional AQI surface. Event intelligence also uses 08 Jun.";
+        } else {
+            note.className = "av-date-note";
+            note.textContent = humanDate(selectedDate) + ": station values available; regional surface/event intelligence remains 08 Jun.";
+        }
+    }
+
+    function setDate(iso) {
+        if (!/^2026-06-(0[1-9]|[12]\\d|30)$/.test(iso)) return;
+        selectedDate = iso;
+        window.AEROVISION_SELECTED_MAP_DATE = iso;
+
+        const select = document.getElementById("avMapDate");
+        if (select && select.value !== iso) select.value = iso;
+
+        clearSelectedPanel();
+        syncCpcbLayer();
+        syncSurfaceLayer();
+        updateNote();
+
+        console.log("🗓 AeroVision selected map date:", selectedDate);
+    }
+
+    function shiftDay(delta) {
+        let day = Number(selectedDate.slice(-2));
+        day = Math.max(1, Math.min(30, day + delta));
+        setDate("2026-06-" + String(day).padStart(2, "0"));
+    }
+
+    function addDateControl() {
+        const Control = L.Control.extend({
+            options: { position: "topright" },
+            onAdd: function () {
+                const c = L.DomUtil.create("div", "av-date-control");
+                c.innerHTML = `
+                    <div class="av-date-control-title">JUNE 2026 STATION TIMELINE</div>
+                    <div class="av-date-row">
+                        <button id="avPrevDate" type="button" title="Previous day">◀</button>
+                        <select id="avMapDate" aria-label="Select June date"></select>
+                        <button id="avNextDate" type="button" title="Next day">▶</button>
+                    </div>
+                    <div id="avDateNote" class="av-date-note"></div>`;
+                L.DomEvent.disableClickPropagation(c);
+                L.DomEvent.disableScrollPropagation(c);
+                return c;
+            }
+        });
+
+        map.addControl(new Control());
+
+        const select = document.getElementById("avMapDate");
+        for (let day = 1; day <= 30; day++) {
+            const iso = "2026-06-" + String(day).padStart(2, "0");
+            const option = document.createElement("option");
+            option.value = iso;
+            option.textContent = String(day).padStart(2, "0") + " Jun";
+            option.selected = iso === EVENT_DATE;
+            select.appendChild(option);
+        }
+
+        select.addEventListener("change", e => setDate(e.target.value));
+        document.getElementById("avPrevDate").addEventListener("click", () => shiftDay(-1));
+        document.getElementById("avNextDate").addEventListener("click", () => shiftDay(1));
+        updateNote();
+    }
+
+    async function init() {
+        try {
+            // dashboard.js has already been loaded immediately before this add-on.
+            originalCpcbLayer = layerDict.cpcb || null;
+            originalSurfaceLayer = layerDict.aqiSurface || null;
+            surfaceWasVisible = originalSurfaceLayer ? map.hasLayer(originalSurfaceLayer) : false;
+
+            const response = await fetch(DATA_URL, { cache: "no-store" });
+            if (!response.ok) throw new Error("HTTP " + response.status);
+            const data = await response.json();
+            records = Array.isArray(data) ? data : data.records;
+            if (!Array.isArray(records)) throw new Error("records array missing in dashboard_june_2026.json");
+
+            addDateControl();
+            setDate(EVENT_DATE);
+
+            console.log("✅ June timeline ready:", records.length, "station-day records");
+        } catch (err) {
+            console.error("❌ June timeline add-on failed safely. Existing map is unchanged.", err);
+        }
+    }
+
+    // Run after dashboard.js finishes its synchronous setup.
+    setTimeout(init, 250);
+})();
+</script>
+<!-- <script src="/aerovision-ui.js"></script> -->
+</body>
+
+</html>

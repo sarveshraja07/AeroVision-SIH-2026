@@ -1,0 +1,665 @@
+station_day_id,date_text,station,city,state,pollutant,actual,predicted,absolute_error
+alipur_delhi_dpcc_2026-06-24,2026-06-24,"alipur, delhi - dpcc",Delhi,Delhi,PM25,39.30434782608695,46.669136,7.364788221276328
+anand_vihar_delhi_dpcc_2026-06-24,2026-06-24,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,43.08708333333333,42.296688,0.7903952534993479
+ashok_vihar_delhi_dpcc_2026-06-24,2026-06-24,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,27.791666666666668,45.46674,17.675072987874348
+bawana_delhi_dpcc_2026-06-24,2026-06-24,"bawana, delhi - dpcc",Delhi,Delhi,PM25,45.25,46.847218,1.5972175598144531
+civil_line_jalandhar_ppcb_2026-06-24,2026-06-24,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,21.92124938964844,56.82073,34.899478912353516
+golden_temple_amritsar_ppcb_2026-06-24,2026-06-24,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,47.742916666666666,43.802567,3.9403501383463535
+hardev_nagar_bathinda_ppcb_2026-06-24,2026-06-24,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM25,19.41454545454545,40.379997,20.965451798872518
+model_town_patiala_ppcb_2026-06-24,2026-06-24,"model town, patiala - ppcb",Patiala,Punjab,PM25,27.630416666666665,41.75132,14.120903218587241
+mundka_delhi_dpcc_2026-06-24,2026-06-24,"mundka, delhi - dpcc",Delhi,Delhi,PM25,32.0,46.275185,14.275184631347656
+najafgarh_delhi_dpcc_2026-06-24,2026-06-24,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,24.625,51.28056,26.655559539794922
+narela_delhi_dpcc_2026-06-24,2026-06-24,"narela, delhi - dpcc",Delhi,Delhi,PM25,50.72249984741211,52.4133,1.6907997131347656
+new_industrial_town_faridabad_hspcb_2026-06-24,2026-06-24,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,85.00125122070312,50.338623,34.662628173828125
+nise_gwal_pahari_gurugram_iitm_2026-06-24,2026-06-24,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,28.29304347826087,61.000847,32.7078033845321
+patti_mehar_ambala_hspcb_2026-06-24,2026-06-24,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,24.793750762939453,47.68733,22.893577575683594
+punjab_agricultural_university_ludhiana_ppcb_2026-06-24,2026-06-24,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,41.82624816894531,48.31228,6.486030578613281
+punjabi_bagh_delhi_dpcc_2026-06-24,2026-06-24,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,50.72249984741211,45.531082,5.191417694091797
+r_k_puram_delhi_dpcc_2026-06-24,2026-06-24,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,30.0,39.472298,9.472297668457031
+rimt_university_mandi_gobindgarh_ppcb_2026-06-24,2026-06-24,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM25,32.68260869565218,43.50854,10.825932411525557
+rohini_delhi_dpcc_2026-06-24,2026-06-24,"rohini, delhi - dpcc",Delhi,Delhi,PM25,50.72249984741211,43.57205,7.15045166015625
+sector_11_faridabad_hspcb_2026-06-24,2026-06-24,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,100.5818181818182,62.489727,38.092091161554535
+sector_30_faridabad_hspcb_2026-06-24,2026-06-24,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,47.72368421052632,40.921047,6.802636999832963
+teri_gram_gurugram_hspcb_2026-06-24,2026-06-24,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,58.93000030517578,61.000847,2.0708465576171875
+vikas_sadan_gurugram_hspcb_2026-06-24,2026-06-24,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM25,178.38250000000002,55.09142,123.29108078002932
+alipur_delhi_dpcc_2026-06-25,2026-06-25,"alipur, delhi - dpcc",Delhi,Delhi,PM25,53.5,32.88998,20.61001968383789
+anand_vihar_delhi_dpcc_2026-06-25,2026-06-25,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,55.65909090909091,37.05073,18.60835925015536
+ashok_vihar_delhi_dpcc_2026-06-25,2026-06-25,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,41.333333333333336,36.13567,5.197663625081383
+bawana_delhi_dpcc_2026-06-25,2026-06-25,"bawana, delhi - dpcc",Delhi,Delhi,PM25,62.458333333333336,19.957026,42.501307805379234
+civil_line_jalandhar_ppcb_2026-06-25,2026-06-25,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,16.578750610351562,19.104586,2.5258350372314453
+golden_temple_amritsar_ppcb_2026-06-25,2026-06-25,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,48.12708333333333,28.960363,19.166719945271808
+hardev_nagar_bathinda_ppcb_2026-06-25,2026-06-25,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM25,18.91909090909091,38.184177,19.26508648959073
+ito_delhi_cpcb_2026-06-25,2026-06-25,"ito, delhi - cpcb",Delhi,Delhi,PM25,41.00708333333333,40.063892,0.9431909688313738
+mandir_marg_delhi_dpcc_2026-06-25,2026-06-25,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,30.39999961853028,37.966267,7.566267013549798
+model_town_patiala_ppcb_2026-06-25,2026-06-25,"model town, patiala - ppcb",Patiala,Punjab,PM25,31.21583333333333,47.64865,16.432817789713546
+mundka_delhi_dpcc_2026-06-25,2026-06-25,"mundka, delhi - dpcc",Delhi,Delhi,PM25,42.75,36.521122,6.228878021240234
+murthal_sonipat_hspcb_2026-06-25,2026-06-25,"murthal, sonipat - hspcb",Sonipat,Haryana,PM25,138.3504761904762,31.88225,106.46822635832288
+najafgarh_delhi_dpcc_2026-06-25,2026-06-25,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,22.291666666666668,28.647306,6.355639775594074
+narela_delhi_dpcc_2026-06-25,2026-06-25,"narela, delhi - dpcc",Delhi,Delhi,PM25,68.83333333333333,35.02414,33.809193929036454
+new_industrial_town_faridabad_hspcb_2026-06-25,2026-06-25,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,67.47541666666667,35.34024,32.13517618815105
+nise_gwal_pahari_gurugram_iitm_2026-06-25,2026-06-25,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,32.18333333333333,59.130493,26.94715983072917
+patti_mehar_ambala_hspcb_2026-06-25,2026-06-25,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,33.96125030517578,57.978348,24.01709747314453
+punjab_agricultural_university_ludhiana_ppcb_2026-06-25,2026-06-25,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,42.39791666666667,36.58438,5.813535563151042
+punjabi_bagh_delhi_dpcc_2026-06-25,2026-06-25,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,68.83333333333333,34.38146,34.451875050862625
+r_k_puram_delhi_dpcc_2026-06-25,2026-06-25,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,42.63636363636363,39.056026,3.5803371776233988
+rohini_delhi_dpcc_2026-06-25,2026-06-25,"rohini, delhi - dpcc",Delhi,Delhi,PM25,68.83333333333333,36.064365,32.76896794637044
+sector_11_faridabad_hspcb_2026-06-25,2026-06-25,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,125.86541666666666,38.87782,86.98759760538736
+sector_30_faridabad_hspcb_2026-06-25,2026-06-25,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,49.62916666666666,40.752117,8.877049509684241
+teri_gram_gurugram_hspcb_2026-06-25,2026-06-25,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,57.66666666666666,59.130493,1.4638264973958428
+alipur_delhi_dpcc_2026-06-26,2026-06-26,"alipur, delhi - dpcc",Delhi,Delhi,PM25,32.0,42.93366,10.933658599853516
+anand_vihar_delhi_dpcc_2026-06-26,2026-06-26,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,40.59782608695652,39.41313,1.1846943730893358
+ashok_vihar_delhi_dpcc_2026-06-26,2026-06-26,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,26.89583333333333,40.65416,13.758326212565109
+bawana_delhi_dpcc_2026-06-26,2026-06-26,"bawana, delhi - dpcc",Delhi,Delhi,PM25,37.59090909090909,40.388893,2.7979840365323128
+civil_line_jalandhar_ppcb_2026-06-26,2026-06-26,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,22.94083333333333,46.41041,23.469578501383467
+golden_temple_amritsar_ppcb_2026-06-26,2026-06-26,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,45.08833333333333,44.399593,0.6887399800618468
+hardev_nagar_bathinda_ppcb_2026-06-26,2026-06-26,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM25,18.964166666666667,42.226334,23.262166951497395
+ito_delhi_cpcb_2026-06-26,2026-06-26,"ito, delhi - cpcb",Delhi,Delhi,PM25,27.22208333333333,40.939686,13.717602488199873
+mandir_marg_delhi_dpcc_2026-06-26,2026-06-26,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,16.36842105263158,43.87953,27.511110807719984
+model_town_patiala_ppcb_2026-06-26,2026-06-26,"model town, patiala - ppcb",Patiala,Punjab,PM25,37.67772727272728,40.993988,3.3162607643820934
+mundka_delhi_dpcc_2026-06-26,2026-06-26,"mundka, delhi - dpcc",Delhi,Delhi,PM25,25.58333333333333,45.3248,19.741465250651046
+murthal_sonipat_hspcb_2026-06-26,2026-06-26,"murthal, sonipat - hspcb",Sonipat,Haryana,PM25,56.30125045776367,38.749393,17.551856994628906
+najafgarh_delhi_dpcc_2026-06-26,2026-06-26,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,23.33333333333333,48.156487,24.82315317789714
+narela_delhi_dpcc_2026-06-26,2026-06-26,"narela, delhi - dpcc",Delhi,Delhi,PM25,39.0,36.389366,2.6106338500976562
+new_industrial_town_faridabad_hspcb_2026-06-26,2026-06-26,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,79.14375305175781,58.79195,20.351802825927734
+nise_gwal_pahari_gurugram_iitm_2026-06-26,2026-06-26,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,29.48958333333333,47.237305,17.74772135416667
+patti_mehar_ambala_hspcb_2026-06-26,2026-06-26,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,41.001666666666665,38.984604,2.0170627848307277
+punjab_agricultural_university_ludhiana_ppcb_2026-06-26,2026-06-26,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,54.2087516784668,38.5935,15.615253448486328
+punjabi_bagh_delhi_dpcc_2026-06-26,2026-06-26,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,39.0,46.706768,7.706768035888672
+r_k_puram_delhi_dpcc_2026-06-26,2026-06-26,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,30.166666666666668,45.242702,15.076035817464192
+rohini_delhi_dpcc_2026-06-26,2026-06-26,"rohini, delhi - dpcc",Delhi,Delhi,PM25,39.0,40.15213,1.152130126953125
+sector_11_faridabad_hspcb_2026-06-26,2026-06-26,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,137.86458333333334,60.35155,77.51303227742514
+sector_30_faridabad_hspcb_2026-06-26,2026-06-26,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,43.54666666666666,43.545662,0.0010047403971285007
+alipur_delhi_dpcc_2026-06-27,2026-06-27,"alipur, delhi - dpcc",Delhi,Delhi,PM25,53.04166666666666,44.683704,8.357962290445954
+anand_vihar_delhi_dpcc_2026-06-27,2026-06-27,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,56.770833333333336,39.28203,17.488805135091148
+ashok_vihar_delhi_dpcc_2026-06-27,2026-06-27,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,42.895833333333336,46.67106,3.7752253214518205
+bawana_delhi_dpcc_2026-06-27,2026-06-27,"bawana, delhi - dpcc",Delhi,Delhi,PM25,74.13636363636364,43.725708,30.41065562855114
+civil_line_jalandhar_ppcb_2026-06-27,2026-06-27,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,29.067083333333333,36.806538,7.739454294840495
+golden_temple_amritsar_ppcb_2026-06-27,2026-06-27,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,50.54916666666667,35.73927,14.809897410074875
+hardev_nagar_bathinda_ppcb_2026-06-27,2026-06-27,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM25,10.482500076293944,44.587482,34.10498237609863
+ito_delhi_cpcb_2026-06-27,2026-06-27,"ito, delhi - cpcb",Delhi,Delhi,PM25,46.34749984741211,39.018494,7.329006195068359
+mandir_marg_delhi_dpcc_2026-06-27,2026-06-27,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,36.04545454545455,39.547447,3.501992659135297
+model_town_patiala_ppcb_2026-06-27,2026-06-27,"model town, patiala - ppcb",Patiala,Punjab,PM25,35.946666666666665,34.526966,1.4197005716959623
+mundka_delhi_dpcc_2026-06-27,2026-06-27,"mundka, delhi - dpcc",Delhi,Delhi,PM25,49.125,51.94732,2.8223190307617188
+murthal_sonipat_hspcb_2026-06-27,2026-06-27,"murthal, sonipat - hspcb",Sonipat,Haryana,PM25,60.21500015258789,43.986446,16.228553771972656
+najafgarh_delhi_dpcc_2026-06-27,2026-06-27,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,36.91304347826087,43.740204,6.827160379161008
+narela_delhi_dpcc_2026-06-27,2026-06-27,"narela, delhi - dpcc",Delhi,Delhi,PM25,58.07291666666666,44.99742,13.07549540201822
+new_industrial_town_faridabad_hspcb_2026-06-27,2026-06-27,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,61.563751220703125,50.227226,11.336524963378906
+nise_gwal_pahari_gurugram_iitm_2026-06-27,2026-06-27,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,45.41791666666666,39.718998,5.6989187113443975
+patti_mehar_ambala_hspcb_2026-06-27,2026-06-27,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,38.69874954223633,38.444374,0.2543754577636719
+punjab_agricultural_university_ludhiana_ppcb_2026-06-27,2026-06-27,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,47.602500915527344,36.057823,11.544677734375
+punjabi_bagh_delhi_dpcc_2026-06-27,2026-06-27,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,58.07291666666666,43.885334,14.187582651774079
+r_k_puram_delhi_dpcc_2026-06-27,2026-06-27,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,46.79166666666666,44.405777,2.3858896891275947
+rimt_university_mandi_gobindgarh_ppcb_2026-06-27,2026-06-27,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM25,16.310416666666665,42.927795,26.617378743489585
+rohini_delhi_dpcc_2026-06-27,2026-06-27,"rohini, delhi - dpcc",Delhi,Delhi,PM25,58.07291666666666,45.963467,12.109450022379548
+sector_11_faridabad_hspcb_2026-06-27,2026-06-27,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,142.24375,50.227226,92.01652374267579
+sector_30_faridabad_hspcb_2026-06-27,2026-06-27,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,56.37749862670898,37.887974,18.489524841308587
+teri_gram_gurugram_hspcb_2026-06-27,2026-06-27,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,62.65999984741211,39.718998,22.941001892089844
+alipur_delhi_dpcc_2026-06-28,2026-06-28,"alipur, delhi - dpcc",Delhi,Delhi,PM25,50.25,33.23387,17.016128540039062
+anand_vihar_delhi_dpcc_2026-06-28,2026-06-28,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,67.52083333333333,48.12797,19.392861684163407
+ashok_vihar_delhi_dpcc_2026-06-28,2026-06-28,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,40.28125,40.923195,0.6419448852539062
+bawana_delhi_dpcc_2026-06-28,2026-06-28,"bawana, delhi - dpcc",Delhi,Delhi,PM25,59.45454545454545,35.72319,23.731355146928266
+civil_line_jalandhar_ppcb_2026-06-28,2026-06-28,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,28.835416666666664,26.907516,1.927900187174476
+golden_temple_amritsar_ppcb_2026-06-28,2026-06-28,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,42.82791666666666,34.913593,7.914323374430332
+ito_delhi_cpcb_2026-06-28,2026-06-28,"ito, delhi - cpcb",Delhi,Delhi,PM25,54.78833333333333,45.18853,9.599803365071608
+mandir_marg_delhi_dpcc_2026-06-28,2026-06-28,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,40.73913043478261,47.630978,6.891847195832625
+model_town_patiala_ppcb_2026-06-28,2026-06-28,"model town, patiala - ppcb",Patiala,Punjab,PM25,39.54916666666667,38.23065,1.3185148111979217
+mundka_delhi_dpcc_2026-06-28,2026-06-28,"mundka, delhi - dpcc",Delhi,Delhi,PM25,40.95652173913044,34.524437,6.4320847884468435
+murthal_sonipat_hspcb_2026-06-28,2026-06-28,"murthal, sonipat - hspcb",Sonipat,Haryana,PM25,148.94625,35.061848,113.88440231323241
+najafgarh_delhi_dpcc_2026-06-28,2026-06-28,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,30.08333333333333,32.5729,2.489565531412765
+narela_delhi_dpcc_2026-06-28,2026-06-28,"narela, delhi - dpcc",Delhi,Delhi,PM25,57.833333333333336,37.6067,20.22663243611654
+new_industrial_town_faridabad_hspcb_2026-06-28,2026-06-28,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,53.10124969482422,41.170086,11.931163787841797
+nise_gwal_pahari_gurugram_iitm_2026-06-28,2026-06-28,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,46.501251220703125,32.87906,13.6221923828125
+patti_mehar_ambala_hspcb_2026-06-28,2026-06-28,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,42.63583333333333,37.974163,4.661670277913409
+punjab_agricultural_university_ludhiana_ppcb_2026-06-28,2026-06-28,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,52.567501068115234,32.00499,20.562511444091797
+punjabi_bagh_delhi_dpcc_2026-06-28,2026-06-28,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,57.833333333333336,34.524437,23.308896382649742
+r_k_puram_delhi_dpcc_2026-06-28,2026-06-28,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,57.75,41.79695,15.953048706054688
+rimt_university_mandi_gobindgarh_ppcb_2026-06-28,2026-06-28,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM25,16.42833333333333,36.081852,19.653518625895185
+rohini_delhi_dpcc_2026-06-28,2026-06-28,"rohini, delhi - dpcc",Delhi,Delhi,PM25,57.833333333333336,26.491013,31.342320760091148
+sector_11_faridabad_hspcb_2026-06-28,2026-06-28,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,176.19875000000002,40.379906,135.81884429931642
+sector_30_faridabad_hspcb_2026-06-28,2026-06-28,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,55.806251525878906,41.76666,14.039592742919922
+teri_gram_gurugram_hspcb_2026-06-28,2026-06-28,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,57.9375,32.87906,25.058441162109375
+vikas_sadan_gurugram_hspcb_2026-06-28,2026-06-28,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM25,215.79208333333327,44.578133,171.21395070393874
+alipur_delhi_dpcc_2026-06-29,2026-06-29,"alipur, delhi - dpcc",Delhi,Delhi,PM25,53.458333333333336,59.33592,5.877585093180336
+anand_vihar_delhi_dpcc_2026-06-29,2026-06-29,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,45.41666666666666,55.602486,10.185818990071624
+ashok_vihar_delhi_dpcc_2026-06-29,2026-06-29,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,41.552083333333336,58.72922,17.177138010660805
+bawana_delhi_dpcc_2026-06-29,2026-06-29,"bawana, delhi - dpcc",Delhi,Delhi,PM25,61.708333333333336,43.58188,18.12645467122396
+civil_line_jalandhar_ppcb_2026-06-29,2026-06-29,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,24.59708333333333,35.01378,10.416695353190107
+golden_temple_amritsar_ppcb_2026-06-29,2026-06-29,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,47.34916666666667,47.56671,0.21754475911458115
+ito_delhi_cpcb_2026-06-29,2026-06-29,"ito, delhi - cpcb",Delhi,Delhi,PM25,37.26708333333333,55.67046,18.40337641398112
+mandir_marg_delhi_dpcc_2026-06-29,2026-06-29,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,26.043478260869566,50.603138,24.559659709101137
+model_town_patiala_ppcb_2026-06-29,2026-06-29,"model town, patiala - ppcb",Patiala,Punjab,PM25,36.96041666666667,34.866882,2.093534342447917
+mundka_delhi_dpcc_2026-06-29,2026-06-29,"mundka, delhi - dpcc",Delhi,Delhi,PM25,43.625,71.547615,27.92261505126953
+najafgarh_delhi_dpcc_2026-06-29,2026-06-29,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,32.0,45.07104,13.071041107177734
+narela_delhi_dpcc_2026-06-29,2026-06-29,"narela, delhi - dpcc",Delhi,Delhi,PM25,58.802083333333336,47.00123,11.800855000813804
+new_industrial_town_faridabad_hspcb_2026-06-29,2026-06-29,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,57.7287483215332,37.735577,19.99317169189453
+nise_gwal_pahari_gurugram_iitm_2026-06-29,2026-06-29,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,32.98041666666666,38.682777,5.702360738118493
+patti_mehar_ambala_hspcb_2026-06-29,2026-06-29,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,40.797916666666666,37.09253,3.7053873697916657
+punjab_agricultural_university_ludhiana_ppcb_2026-06-29,2026-06-29,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,52.61291666666667,50.968567,1.6443497721354206
+punjabi_bagh_delhi_dpcc_2026-06-29,2026-06-29,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,58.802083333333336,52.20583,6.596253712972008
+r_k_puram_delhi_dpcc_2026-06-29,2026-06-29,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,41.79166666666666,45.142456,3.350789388020843
+rimt_university_mandi_gobindgarh_ppcb_2026-06-29,2026-06-29,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM25,24.71249961853028,52.690674,27.97817420959472
+rohini_delhi_dpcc_2026-06-29,2026-06-29,"rohini, delhi - dpcc",Delhi,Delhi,PM25,58.802083333333336,45.334034,13.468049367268883
+sector_11_faridabad_hspcb_2026-06-29,2026-06-29,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,152.70791666666665,39.009438,113.69847910563149
+sector_30_faridabad_hspcb_2026-06-29,2026-06-29,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,53.74791666666667,45.89508,7.852836100260419
+teri_gram_gurugram_hspcb_2026-06-29,2026-06-29,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,73.16684210526316,38.682777,34.484064700478
+vikas_sadan_gurugram_hspcb_2026-06-29,2026-06-29,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM25,206.1021052631579,37.405148,168.69695771066768
+alipur_delhi_dpcc_2026-06-30,2026-06-30,"alipur, delhi - dpcc",Delhi,Delhi,PM25,45.04166666666666,31.114841,13.926825205485017
+anand_vihar_delhi_dpcc_2026-06-30,2026-06-30,"anand vihar, delhi - dpcc",Delhi,Delhi,PM25,63.399166666666666,51.37449,12.02467783610026
+ashok_vihar_delhi_dpcc_2026-06-30,2026-06-30,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM25,39.875,38.937286,0.937713623046875
+bawana_delhi_dpcc_2026-06-30,2026-06-30,"bawana, delhi - dpcc",Delhi,Delhi,PM25,59.43478260869565,34.67296,24.76182423467221
+civil_line_jalandhar_ppcb_2026-06-30,2026-06-30,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM25,47.28041666666667,53.052647,5.772229970296223
+golden_temple_amritsar_ppcb_2026-06-30,2026-06-30,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM25,51.65166666666667,49.24147,2.4101963297526083
+ito_delhi_cpcb_2026-06-30,2026-06-30,"ito, delhi - cpcb",Delhi,Delhi,PM25,44.375416666666666,34.29042,10.084996134440104
+mandir_marg_delhi_dpcc_2026-06-30,2026-06-30,"mandir marg, delhi - dpcc",Delhi,Delhi,PM25,34.82608695652174,34.29042,0.5356664242951794
+model_town_patiala_ppcb_2026-06-30,2026-06-30,"model town, patiala - ppcb",Patiala,Punjab,PM25,42.57099914550781,50.898727,8.327728271484375
+mundka_delhi_dpcc_2026-06-30,2026-06-30,"mundka, delhi - dpcc",Delhi,Delhi,PM25,46.958333333333336,57.774677,10.816343943277992
+murthal_sonipat_hspcb_2026-06-30,2026-06-30,"murthal, sonipat - hspcb",Sonipat,Haryana,PM25,175.30375,39.811325,135.49242492675782
+najafgarh_delhi_dpcc_2026-06-30,2026-06-30,"najafgarh, delhi - dpcc",Delhi,Delhi,PM25,37.375,40.761253,3.3862533569335938
+narela_delhi_dpcc_2026-06-30,2026-06-30,"narela, delhi - dpcc",Delhi,Delhi,PM25,66.23958333333333,33.155228,33.084355672200516
+new_industrial_town_faridabad_hspcb_2026-06-30,2026-06-30,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM25,71.12041666666667,59.059746,12.060670878092452
+nise_gwal_pahari_gurugram_iitm_2026-06-30,2026-06-30,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM25,42.84249877929688,68.867744,26.0252456665039
+patti_mehar_ambala_hspcb_2026-06-30,2026-06-30,"patti mehar, ambala - hspcb",Ambala,Haryana,PM25,56.42499923706055,43.244553,13.18044662475586
+punjab_agricultural_university_ludhiana_ppcb_2026-06-30,2026-06-30,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM25,53.32041666666667,41.971283,11.349133707682292
+punjabi_bagh_delhi_dpcc_2026-06-30,2026-06-30,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM25,66.23958333333333,34.689064,31.550519307454422
+r_k_puram_delhi_dpcc_2026-06-30,2026-06-30,"r k puram, delhi - dpcc",Delhi,Delhi,PM25,49.333333333333336,58.65539,9.322058359781899
+rimt_university_mandi_gobindgarh_ppcb_2026-06-30,2026-06-30,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM25,32.279998779296875,40.108864,7.828865051269531
+rohini_delhi_dpcc_2026-06-30,2026-06-30,"rohini, delhi - dpcc",Delhi,Delhi,PM25,66.23958333333333,34.106327,32.13325627644856
+sector_11_faridabad_hspcb_2026-06-30,2026-06-30,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM25,189.60499572753903,59.059746,130.54524993896482
+sector_30_faridabad_hspcb_2026-06-30,2026-06-30,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM25,72.87208333333334,62.07985,10.792234090169273
+teri_gram_gurugram_hspcb_2026-06-30,2026-06-30,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM25,121.66899871826172,68.867744,52.80125427246094
+vikas_sadan_gurugram_hspcb_2026-06-30,2026-06-30,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM25,207.01777777777767,66.837776,140.18000159369564
+alipur_delhi_dpcc_2026-06-24,2026-06-24,"alipur, delhi - dpcc",Delhi,Delhi,PM10,162.2173913043478,126.02784,36.18955164370328
+anand_vihar_delhi_dpcc_2026-06-24,2026-06-24,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,225.6145833333333,155.99895,69.6156361897786
+ashok_vihar_delhi_dpcc_2026-06-24,2026-06-24,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,123.125,119.810455,3.314544677734375
+bawana_delhi_dpcc_2026-06-24,2026-06-24,"bawana, delhi - dpcc",Delhi,Delhi,PM10,121.125,110.57855,10.54644775390625
+civil_line_jalandhar_ppcb_2026-06-24,2026-06-24,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,68.5,110.10242,41.6024169921875
+golden_temple_amritsar_ppcb_2026-06-24,2026-06-24,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,93.53624725341795,83.20562,10.330627441406236
+hardev_nagar_bathinda_ppcb_2026-06-24,2026-06-24,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM10,55.58090909090909,99.203476,43.62256686123935
+mandir_marg_delhi_dpcc_2026-06-24,2026-06-24,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,107.45833333333331,120.50291,13.044573465983092
+model_town_patiala_ppcb_2026-06-24,2026-06-24,"model town, patiala - ppcb",Patiala,Punjab,PM10,93.34541666666668,99.070724,5.725307820638008
+mundka_delhi_dpcc_2026-06-24,2026-06-24,"mundka, delhi - dpcc",Delhi,Delhi,PM10,162.91666666666666,123.79522,39.12144724527994
+najafgarh_delhi_dpcc_2026-06-24,2026-06-24,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,79.5,146.70758,67.20758056640625
+narela_delhi_dpcc_2026-06-24,2026-06-24,"narela, delhi - dpcc",Delhi,Delhi,PM10,153.24958333333333,131.42963,21.819956868489584
+new_industrial_town_faridabad_hspcb_2026-06-24,2026-06-24,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,174.98874999999998,121.84129,53.147456665039044
+nise_gwal_pahari_gurugram_iitm_2026-06-24,2026-06-24,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,139.72181818181818,132.98492,6.736893865411929
+patti_mehar_ambala_hspcb_2026-06-24,2026-06-24,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,122.77249908447266,69.78491,52.987586975097656
+punjab_agricultural_university_ludhiana_ppcb_2026-06-24,2026-06-24,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,83.65666666666667,119.73517,36.078501790364584
+punjabi_bagh_delhi_dpcc_2026-06-24,2026-06-24,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,153.24958333333333,127.270096,25.97948750813802
+r_k_puram_delhi_dpcc_2026-06-24,2026-06-24,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,112.70833333333331,123.065025,10.35669199625653
+rimt_university_mandi_gobindgarh_ppcb_2026-06-24,2026-06-24,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM10,90.96333333333332,95.19537,4.232040201822926
+rohini_delhi_dpcc_2026-06-24,2026-06-24,"rohini, delhi - dpcc",Delhi,Delhi,PM10,153.24958333333333,108.90831,44.341273396809896
+sector_11_faridabad_hspcb_2026-06-24,2026-06-24,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM10,221.6291304347826,134.05667,87.57245929220448
+sector_30_faridabad_hspcb_2026-06-24,2026-06-24,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,99.20157894736842,115.35001,16.14843478554174
+teri_gram_gurugram_hspcb_2026-06-24,2026-06-24,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,141.35625000000002,132.98492,8.371325683593767
+vikas_sadan_gurugram_hspcb_2026-06-24,2026-06-24,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM10,237.9349975585937,158.24373,79.69126892089838
+alipur_delhi_dpcc_2026-06-25,2026-06-25,"alipur, delhi - dpcc",Delhi,Delhi,PM10,211.25,83.38105,127.86894989013672
+anand_vihar_delhi_dpcc_2026-06-25,2026-06-25,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,272.7613636363636,120.10154,152.65982402454722
+ashok_vihar_delhi_dpcc_2026-06-25,2026-06-25,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,166.66666666666666,124.74391,41.922754923502595
+bawana_delhi_dpcc_2026-06-25,2026-06-25,"bawana, delhi - dpcc",Delhi,Delhi,PM10,165.0,61.731544,103.2684555053711
+civil_line_jalandhar_ppcb_2026-06-25,2026-06-25,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,51.696666666666665,92.89174,41.1950722249349
+golden_temple_amritsar_ppcb_2026-06-25,2026-06-25,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,93.62625122070312,89.64842,3.9778289794921875
+hardev_nagar_bathinda_ppcb_2026-06-25,2026-06-25,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM10,55.52181818181818,91.07439,35.552568414861504
+ito_delhi_cpcb_2026-06-25,2026-06-25,"ito, delhi - cpcb",Delhi,Delhi,PM10,123.47250366210938,174.85822,51.385711669921875
+mandir_marg_delhi_dpcc_2026-06-25,2026-06-25,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,157.54166666666666,170.2845,12.742833455403655
+model_town_patiala_ppcb_2026-06-25,2026-06-25,"model town, patiala - ppcb",Patiala,Punjab,PM10,92.1624984741211,83.923035,8.239463806152344
+mundka_delhi_dpcc_2026-06-25,2026-06-25,"mundka, delhi - dpcc",Delhi,Delhi,PM10,185.0833333333333,111.52496,73.55836995442704
+murthal_sonipat_hspcb_2026-06-25,2026-06-25,"murthal, sonipat - hspcb",Sonipat,Haryana,PM10,278.28789473684213,77.276924,201.01097060354135
+najafgarh_delhi_dpcc_2026-06-25,2026-06-25,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,93.69565217391305,61.62594,32.0697137583857
+narela_delhi_dpcc_2026-06-25,2026-06-25,"narela, delhi - dpcc",Delhi,Delhi,PM10,206.0833333333333,93.72764,112.35569508870438
+new_industrial_town_faridabad_hspcb_2026-06-25,2026-06-25,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,136.46333333333334,90.7473,45.7160341389974
+nise_gwal_pahari_gurugram_iitm_2026-06-25,2026-06-25,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,125.2691304347826,148.6349,23.365772519318966
+patti_mehar_ambala_hspcb_2026-06-25,2026-06-25,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,126.8312530517578,159.51057,32.679321289062514
+punjab_agricultural_university_ludhiana_ppcb_2026-06-25,2026-06-25,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,84.79416666666667,72.23306,12.561103922526044
+punjabi_bagh_delhi_dpcc_2026-06-25,2026-06-25,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,206.0833333333333,98.220604,107.86272939046219
+r_k_puram_delhi_dpcc_2026-06-25,2026-06-25,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,156.52173913043478,178.25067,21.72893225628397
+rohini_delhi_dpcc_2026-06-25,2026-06-25,"rohini, delhi - dpcc",Delhi,Delhi,PM10,206.0833333333333,88.90449,117.17884572347
+sector_11_faridabad_hspcb_2026-06-25,2026-06-25,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM10,241.8840909090909,105.243614,136.64047671231356
+sector_30_faridabad_hspcb_2026-06-25,2026-06-25,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,105.8062515258789,121.34449,15.538238525390625
+teri_gram_gurugram_hspcb_2026-06-25,2026-06-25,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,142.35125,148.6349,6.283652954101569
+alipur_delhi_dpcc_2026-06-26,2026-06-26,"alipur, delhi - dpcc",Delhi,Delhi,PM10,121.33333333333331,127.68512,6.351786295572936
+anand_vihar_delhi_dpcc_2026-06-26,2026-06-26,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,199.90625,169.5849,30.32135009765625
+ashok_vihar_delhi_dpcc_2026-06-26,2026-06-26,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,120.04166666666669,132.06169,12.020024617513002
+bawana_delhi_dpcc_2026-06-26,2026-06-26,"bawana, delhi - dpcc",Delhi,Delhi,PM10,97.9090909090909,159.89209,61.98299893465909
+civil_line_jalandhar_ppcb_2026-06-26,2026-06-26,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,71.82333333333334,100.92101,29.09767954508463
+golden_temple_amritsar_ppcb_2026-06-26,2026-06-26,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,87.92041666666667,114.76214,26.84172170003255
+hardev_nagar_bathinda_ppcb_2026-06-26,2026-06-26,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM10,83.46958333333333,156.29143,72.82184427897135
+ito_delhi_cpcb_2026-06-26,2026-06-26,"ito, delhi - cpcb",Delhi,Delhi,PM10,86.22208333333333,134.09912,47.87703776041667
+mandir_marg_delhi_dpcc_2026-06-26,2026-06-26,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,115.0,134.09912,19.09912109375
+model_town_patiala_ppcb_2026-06-26,2026-06-26,"model town, patiala - ppcb",Patiala,Punjab,PM10,119.93499755859376,104.47692,15.458076477050795
+mundka_delhi_dpcc_2026-06-26,2026-06-26,"mundka, delhi - dpcc",Delhi,Delhi,PM10,133.0,127.806526,5.193473815917969
+murthal_sonipat_hspcb_2026-06-26,2026-06-26,"murthal, sonipat - hspcb",Sonipat,Haryana,PM10,102.36833333333334,111.2588,8.890463358561192
+najafgarh_delhi_dpcc_2026-06-26,2026-06-26,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,79.08333333333333,159.11678,80.03344217936198
+narela_delhi_dpcc_2026-06-26,2026-06-26,"narela, delhi - dpcc",Delhi,Delhi,PM10,122.625,113.08653,9.538467407226562
+new_industrial_town_faridabad_hspcb_2026-06-26,2026-06-26,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,142.51625061035156,172.18732,29.671066284179688
+nise_gwal_pahari_gurugram_iitm_2026-06-26,2026-06-26,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,143.5850067138672,178.14078,34.55577087402344
+patti_mehar_ambala_hspcb_2026-06-26,2026-06-26,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,141.08791666666667,100.93562,40.15229349772136
+punjab_agricultural_university_ludhiana_ppcb_2026-06-26,2026-06-26,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,108.41500091552734,81.84809,26.566909790039062
+punjabi_bagh_delhi_dpcc_2026-06-26,2026-06-26,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,122.625,136.97264,14.347640991210938
+r_k_puram_delhi_dpcc_2026-06-26,2026-06-26,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,119.91666666666669,172.61107,52.69440205891925
+rohini_delhi_dpcc_2026-06-26,2026-06-26,"rohini, delhi - dpcc",Delhi,Delhi,PM10,122.625,112.27771,10.3472900390625
+sector_11_faridabad_hspcb_2026-06-26,2026-06-26,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM10,294.43041666666664,158.79019,135.64022501627602
+sector_30_faridabad_hspcb_2026-06-26,2026-06-26,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,92.84166666666664,152.25937,59.417702229817735
+alipur_delhi_dpcc_2026-06-27,2026-06-27,"alipur, delhi - dpcc",Delhi,Delhi,PM10,166.58333333333334,128.73611,37.84721883138022
+anand_vihar_delhi_dpcc_2026-06-27,2026-06-27,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,250.2083333333333,212.31435,37.89398701985672
+ashok_vihar_delhi_dpcc_2026-06-27,2026-06-27,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,167.45833333333334,164.87216,2.586171468098968
+bawana_delhi_dpcc_2026-06-27,2026-06-27,"bawana, delhi - dpcc",Delhi,Delhi,PM10,137.3181818181818,124.42003,12.898153131658376
+civil_line_jalandhar_ppcb_2026-06-27,2026-06-27,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,90.89708333333334,118.41752,27.520435282389315
+golden_temple_amritsar_ppcb_2026-06-27,2026-06-27,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,98.66041666666666,85.28547,13.374947611490882
+hardev_nagar_bathinda_ppcb_2026-06-27,2026-06-27,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,PM10,47.28041666666667,103.48105,56.20063191731771
+ito_delhi_cpcb_2026-06-27,2026-06-27,"ito, delhi - cpcb",Delhi,Delhi,PM10,132.77791666666667,159.55261,26.77469563802083
+mandir_marg_delhi_dpcc_2026-06-27,2026-06-27,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,161.70833333333334,148.13692,13.57141621907553
+model_town_patiala_ppcb_2026-06-27,2026-06-27,"model town, patiala - ppcb",Patiala,Punjab,PM10,115.02333333333333,80.70729,34.316042683919264
+mundka_delhi_dpcc_2026-06-27,2026-06-27,"mundka, delhi - dpcc",Delhi,Delhi,PM10,178.75,135.3051,43.44490051269531
+murthal_sonipat_hspcb_2026-06-27,2026-06-27,"murthal, sonipat - hspcb",Sonipat,Haryana,PM10,109.48249816894533,118.14642,8.663925170898423
+najafgarh_delhi_dpcc_2026-06-27,2026-06-27,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,107.91304347826087,102.528656,5.3843874724014995
+narela_delhi_dpcc_2026-06-27,2026-06-27,"narela, delhi - dpcc",Delhi,Delhi,PM10,174.25,129.81177,44.438232421875
+new_industrial_town_faridabad_hspcb_2026-06-27,2026-06-27,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,123.4375,144.57141,21.1339111328125
+nise_gwal_pahari_gurugram_iitm_2026-06-27,2026-06-27,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,161.87208333333334,128.34805,33.52403035481771
+patti_mehar_ambala_hspcb_2026-06-27,2026-06-27,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,158.24318181818182,99.53188,58.71129857843573
+punjab_agricultural_university_ludhiana_ppcb_2026-06-27,2026-06-27,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,94.00541666666668,84.22877,9.776649271647145
+punjabi_bagh_delhi_dpcc_2026-06-27,2026-06-27,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,174.25,151.42441,22.825592041015625
+r_k_puram_delhi_dpcc_2026-06-27,2026-06-27,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,168.66666666666666,220.92517,52.25850423177084
+rimt_university_mandi_gobindgarh_ppcb_2026-06-27,2026-06-27,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM10,51.23749923706055,100.72992,49.4924201965332
+rohini_delhi_dpcc_2026-06-27,2026-06-27,"rohini, delhi - dpcc",Delhi,Delhi,PM10,174.25,112.20291,62.047088623046875
+sector_11_faridabad_hspcb_2026-06-27,2026-06-27,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM10,263.9690476190476,144.57141,119.39763648623511
+sector_30_faridabad_hspcb_2026-06-27,2026-06-27,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,120.20791666666666,149.83392,29.626006673177088
+teri_gram_gurugram_hspcb_2026-06-27,2026-06-27,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,90.74458333333332,128.34805,37.6034696451823
+alipur_delhi_dpcc_2026-06-28,2026-06-28,"alipur, delhi - dpcc",Delhi,Delhi,PM10,172.75,94.01847,78.73152923583984
+anand_vihar_delhi_dpcc_2026-06-28,2026-06-28,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,272.3541666666667,177.7607,94.59347025553387
+ashok_vihar_delhi_dpcc_2026-06-28,2026-06-28,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,166.41666666666666,133.66554,32.751124064127595
+bawana_delhi_dpcc_2026-06-28,2026-06-28,"bawana, delhi - dpcc",Delhi,Delhi,PM10,120.69565217391305,97.42876,23.26689546004586
+civil_line_jalandhar_ppcb_2026-06-28,2026-06-28,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,90.11041666666668,92.63468,2.5242650349934763
+golden_temple_amritsar_ppcb_2026-06-28,2026-06-28,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,83.52041666666666,159.83629,76.31587178548178
+ito_delhi_cpcb_2026-06-28,2026-06-28,"ito, delhi - cpcb",Delhi,Delhi,PM10,145.07291666666666,128.93779,16.13512674967447
+mandir_marg_delhi_dpcc_2026-06-28,2026-06-28,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,165.25,137.09943,28.15057373046875
+model_town_patiala_ppcb_2026-06-28,2026-06-28,"model town, patiala - ppcb",Patiala,Punjab,PM10,120.80708333333332,77.25589,43.5511934407552
+mundka_delhi_dpcc_2026-06-28,2026-06-28,"mundka, delhi - dpcc",Delhi,Delhi,PM10,180.875,122.89459,57.98040771484375
+murthal_sonipat_hspcb_2026-06-28,2026-06-28,"murthal, sonipat - hspcb",Sonipat,Haryana,PM10,270.81041666666664,93.581436,177.22898050944008
+najafgarh_delhi_dpcc_2026-06-28,2026-06-28,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,106.33333333333331,110.66299,4.329653422037779
+narela_delhi_dpcc_2026-06-28,2026-06-28,"narela, delhi - dpcc",Delhi,Delhi,PM10,182.4583333333333,135.97618,46.48215230305985
+new_industrial_town_faridabad_hspcb_2026-06-28,2026-06-28,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,104.81791666666668,168.4449,63.62698384602864
+nise_gwal_pahari_gurugram_iitm_2026-06-28,2026-06-28,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,170.83416666666665,112.11172,58.72244944254555
+patti_mehar_ambala_hspcb_2026-06-28,2026-06-28,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,203.9499969482422,90.69714,113.25285339355469
+punjab_agricultural_university_ludhiana_ppcb_2026-06-28,2026-06-28,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,97.47166666666668,94.198654,3.2730124918619907
+punjabi_bagh_delhi_dpcc_2026-06-28,2026-06-28,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,182.4583333333333,121.49052,60.96781667073563
+r_k_puram_delhi_dpcc_2026-06-28,2026-06-28,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,196.41666666666663,161.59047,34.826197306315066
+rimt_university_mandi_gobindgarh_ppcb_2026-06-28,2026-06-28,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM10,51.01208333333333,87.94616,36.93407602945964
+rohini_delhi_dpcc_2026-06-28,2026-06-28,"rohini, delhi - dpcc",Delhi,Delhi,PM10,182.4583333333333,81.15767,101.30066426595047
+sector_30_faridabad_hspcb_2026-06-28,2026-06-28,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,118.96791666666668,212.61848,93.65056783040363
+teri_gram_gurugram_hspcb_2026-06-28,2026-06-28,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,91.35583333333334,112.11172,20.755883890787757
+vikas_sadan_gurugram_hspcb_2026-06-28,2026-06-28,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM10,239.76041666666663,132.23674,107.52367655436194
+alipur_delhi_dpcc_2026-06-29,2026-06-29,"alipur, delhi - dpcc",Delhi,Delhi,PM10,198.25,131.48094,66.76905822753906
+anand_vihar_delhi_dpcc_2026-06-29,2026-06-29,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,251.9583333333333,214.02325,37.935078938802036
+ashok_vihar_delhi_dpcc_2026-06-29,2026-06-29,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,185.0,138.82158,46.17842102050781
+bawana_delhi_dpcc_2026-06-29,2026-06-29,"bawana, delhi - dpcc",Delhi,Delhi,PM10,153.41666666666666,109.09145,44.32521311442056
+civil_line_jalandhar_ppcb_2026-06-29,2026-06-29,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,76.81875000000001,88.35473,11.53597869873046
+golden_temple_amritsar_ppcb_2026-06-29,2026-06-29,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,92.21499633789062,110.36397,18.148971557617188
+ito_delhi_cpcb_2026-06-29,2026-06-29,"ito, delhi - cpcb",Delhi,Delhi,PM10,127.35083333333334,164.27966,36.92882975260416
+mandir_marg_delhi_dpcc_2026-06-29,2026-06-29,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,177.08333333333334,132.73715,44.34618123372397
+model_town_patiala_ppcb_2026-06-29,2026-06-29,"model town, patiala - ppcb",Patiala,Punjab,PM10,119.77124786376952,116.11689,3.654357910156236
+mundka_delhi_dpcc_2026-06-29,2026-06-29,"mundka, delhi - dpcc",Delhi,Delhi,PM10,201.4583333333333,187.83429,13.624043782552036
+najafgarh_delhi_dpcc_2026-06-29,2026-06-29,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,130.5,108.16448,22.33551788330078
+narela_delhi_dpcc_2026-06-29,2026-06-29,"narela, delhi - dpcc",Delhi,Delhi,PM10,196.21875,125.802864,70.41588592529297
+new_industrial_town_faridabad_hspcb_2026-06-29,2026-06-29,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,115.04750061035156,125.43238,10.384880065917969
+nise_gwal_pahari_gurugram_iitm_2026-06-29,2026-06-29,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,171.31875,123.07976,48.23899230957031
+patti_mehar_ambala_hspcb_2026-06-29,2026-06-29,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,162.4600067138672,115.85903,46.600975036621094
+punjab_agricultural_university_ludhiana_ppcb_2026-06-29,2026-06-29,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,105.22583333333334,118.93722,13.711384379069003
+punjabi_bagh_delhi_dpcc_2026-06-29,2026-06-29,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,196.21875,164.45795,31.76080322265625
+r_k_puram_delhi_dpcc_2026-06-29,2026-06-29,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,185.9583333333333,146.89691,39.061421712239536
+rimt_university_mandi_gobindgarh_ppcb_2026-06-29,2026-06-29,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM10,72.37875366210938,114.82761,42.4488525390625
+rohini_delhi_dpcc_2026-06-29,2026-06-29,"rohini, delhi - dpcc",Delhi,Delhi,PM10,196.21875,122.01364,74.20510864257812
+sector_11_faridabad_hspcb_2026-06-29,2026-06-29,"sector 11, faridabad - hspcb",Faridabad,Haryana,PM10,285.239990234375,122.01851,163.2214813232422
+sector_30_faridabad_hspcb_2026-06-29,2026-06-29,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,114.5875015258789,126.31262,11.725120544433594
+teri_gram_gurugram_hspcb_2026-06-29,2026-06-29,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,136.89684210526315,123.07976,13.81708441483346
+vikas_sadan_gurugram_hspcb_2026-06-29,2026-06-29,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM10,268.80315789473684,109.51957,159.28358849776419
+alipur_delhi_dpcc_2026-06-30,2026-06-30,"alipur, delhi - dpcc",Delhi,Delhi,PM10,221.04166666666663,85.24822,135.7934443155924
+anand_vihar_delhi_dpcc_2026-06-30,2026-06-30,"anand vihar, delhi - dpcc",Delhi,Delhi,PM10,325.53458333333333,116.36208,209.17249989827474
+ashok_vihar_delhi_dpcc_2026-06-30,2026-06-30,"ashok vihar, delhi - dpcc",Delhi,Delhi,PM10,227.5,121.768265,105.73173522949219
+bawana_delhi_dpcc_2026-06-30,2026-06-30,"bawana, delhi - dpcc",Delhi,Delhi,PM10,196.375,89.49764,106.87735748291016
+civil_line_jalandhar_ppcb_2026-06-30,2026-06-30,"civil line, jalandhar - ppcb",Jalandhar,Punjab,PM10,96.79833333333332,118.51199,21.713660074869807
+golden_temple_amritsar_ppcb_2026-06-30,2026-06-30,"golden temple, amritsar - ppcb",Amritsar,Punjab,PM10,100.71499633789062,126.98734,26.27234649658203
+ito_delhi_cpcb_2026-06-30,2026-06-30,"ito, delhi - cpcb",Delhi,Delhi,PM10,166.6737518310547,113.61224,53.06150817871094
+mandir_marg_delhi_dpcc_2026-06-30,2026-06-30,"mandir marg, delhi - dpcc",Delhi,Delhi,PM10,217.5,113.61224,103.88775634765625
+model_town_patiala_ppcb_2026-06-30,2026-06-30,"model town, patiala - ppcb",Patiala,Punjab,PM10,150.27954545454546,115.80681,34.47273698286577
+mundka_delhi_dpcc_2026-06-30,2026-06-30,"mundka, delhi - dpcc",Delhi,Delhi,PM10,263.0833333333333,107.31968,155.7636540730794
+murthal_sonipat_hspcb_2026-06-30,2026-06-30,"murthal, sonipat - hspcb",Sonipat,Haryana,PM10,279.46166666666664,90.11718,189.34448679606118
+najafgarh_delhi_dpcc_2026-06-30,2026-06-30,"najafgarh, delhi - dpcc",Delhi,Delhi,PM10,207.66666666666663,153.8065,53.86016337076819
+narela_delhi_dpcc_2026-06-30,2026-06-30,"narela, delhi - dpcc",Delhi,Delhi,PM10,221.8020833333333,94.890205,126.9118779500325
+new_industrial_town_faridabad_hspcb_2026-06-30,2026-06-30,"new industrial town, faridabad - hspcb",Faridabad,Haryana,PM10,118.09250000000002,108.78028,9.312218933105484
+nise_gwal_pahari_gurugram_iitm_2026-06-30,2026-06-30,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,PM10,208.12458333333333,150.90161,57.222972005208334
+patti_mehar_ambala_hspcb_2026-06-30,2026-06-30,"patti mehar, ambala - hspcb",Ambala,Haryana,PM10,178.9491304347826,108.578766,70.37036456564198
+punjab_agricultural_university_ludhiana_ppcb_2026-06-30,2026-06-30,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,PM10,106.63541666666669,120.953606,14.318188985188783
+punjabi_bagh_delhi_dpcc_2026-06-30,2026-06-30,"punjabi bagh, delhi - dpcc",Delhi,Delhi,PM10,221.8020833333333,112.92015,108.88193257649735
+r_k_puram_delhi_dpcc_2026-06-30,2026-06-30,"r k puram, delhi - dpcc",Delhi,Delhi,PM10,222.91666666666663,110.01899,112.89767710367835
+rimt_university_mandi_gobindgarh_ppcb_2026-06-30,2026-06-30,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,PM10,90.30999755859376,107.391,17.081001281738267
+rohini_delhi_dpcc_2026-06-30,2026-06-30,"rohini, delhi - dpcc",Delhi,Delhi,PM10,221.8020833333333,120.66867,101.13341267903641
+sector_30_faridabad_hspcb_2026-06-30,2026-06-30,"sector 30, faridabad - hspcb",Faridabad,Haryana,PM10,155.36166666666665,107.6878,47.67386912027993
+teri_gram_gurugram_hspcb_2026-06-30,2026-06-30,"teri gram, gurugram - hspcb",Gurugram,Haryana,PM10,260.0144958496094,150.90161,109.11288452148438
+vikas_sadan_gurugram_hspcb_2026-06-30,2026-06-30,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,PM10,345.1016666666667,147.20827,197.89339945475263
+anand_vihar_delhi_dpcc_2026-06-24,2026-06-24,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,48.216251373291016,33.90265,14.313602447509766
+ashok_vihar_delhi_dpcc_2026-06-24,2026-06-24,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,27.273333333333337,30.369816,3.0964824930826786
+bawana_delhi_dpcc_2026-06-24,2026-06-24,"bawana, delhi - dpcc",Delhi,Delhi,NO2,14.172916666666666,26.13234,11.959422810872397
+civil_line_jalandhar_ppcb_2026-06-24,2026-06-24,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,15.600833333333334,32.87694,17.27610834757487
+golden_temple_amritsar_ppcb_2026-06-24,2026-06-24,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,13.339583333333332,30.914925,17.5753412882487
+hardev_nagar_bathinda_ppcb_2026-06-24,2026-06-24,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,NO2,23.548181818181817,22.968363,0.5798190099542779
+mandir_marg_delhi_dpcc_2026-06-24,2026-06-24,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,17.00166666666667,29.309439,12.307772038777667
+model_town_patiala_ppcb_2026-06-24,2026-06-24,"model town, patiala - ppcb",Patiala,Punjab,NO2,13.749166666666667,21.224812,7.475644887288411
+mundka_delhi_dpcc_2026-06-24,2026-06-24,"mundka, delhi - dpcc",Delhi,Delhi,NO2,89.00695652173913,29.637218,59.36973804639733
+murthal_sonipat_hspcb_2026-06-24,2026-06-24,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,5.780833333333334,27.055172,21.2743386332194
+najafgarh_delhi_dpcc_2026-06-24,2026-06-24,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,27.07333333333333,28.83594,1.7626060740153022
+narela_delhi_dpcc_2026-06-24,2026-06-24,"narela, delhi - dpcc",Delhi,Delhi,NO2,20.22208333333333,25.600376,5.37829279581706
+new_industrial_town_faridabad_hspcb_2026-06-24,2026-06-24,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,19.936250686645508,26.529423,6.593172073364258
+nise_gwal_pahari_gurugram_iitm_2026-06-24,2026-06-24,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,6.708749999999999,15.795319,9.086568603515627
+patti_mehar_ambala_hspcb_2026-06-24,2026-06-24,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.96583333333333,15.554412,8.41142144521077
+punjab_agricultural_university_ludhiana_ppcb_2026-06-24,2026-06-24,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,46.432498931884766,18.643515,27.788984298706055
+punjabi_bagh_delhi_dpcc_2026-06-24,2026-06-24,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,20.22208333333333,26.11456,5.892475840250654
+r_k_puram_delhi_dpcc_2026-06-24,2026-06-24,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,43.48041666666666,27.192696,16.287721048990882
+rimt_university_mandi_gobindgarh_ppcb_2026-06-24,2026-06-24,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,NO2,19.640416666666667,30.347496,10.707079366048177
+rohini_delhi_dpcc_2026-06-24,2026-06-24,"rohini, delhi - dpcc",Delhi,Delhi,NO2,20.22208333333333,27.723335,7.501251932779951
+sector_11_faridabad_hspcb_2026-06-24,2026-06-24,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,25.067916666666665,21.2778,3.790117060343423
+sector_30_faridabad_hspcb_2026-06-24,2026-06-24,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,30.081052631578945,29.082294,0.9987581674676171
+teri_gram_gurugram_hspcb_2026-06-24,2026-06-24,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,35.93000030517578,15.795319,20.134681701660156
+alipur_delhi_dpcc_2026-06-25,2026-06-25,"alipur, delhi - dpcc",Delhi,Delhi,NO2,12.418888888888889,28.851103,16.432213940090605
+anand_vihar_delhi_dpcc_2026-06-25,2026-06-25,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,60.21636363636364,32.919025,27.29733821522106
+ashok_vihar_delhi_dpcc_2026-06-25,2026-06-25,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,32.598751068115234,31.931019,0.6677322387695312
+bawana_delhi_dpcc_2026-06-25,2026-06-25,"bawana, delhi - dpcc",Delhi,Delhi,NO2,15.720416666666663,28.89396,13.173544286092126
+civil_line_jalandhar_ppcb_2026-06-25,2026-06-25,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,17.021249771118164,28.987637,11.966386795043945
+golden_temple_amritsar_ppcb_2026-06-25,2026-06-25,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,18.456666666666667,20.261677,1.8050101216634111
+hardev_nagar_bathinda_ppcb_2026-06-25,2026-06-25,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,NO2,17.22041666666667,34.093834,16.873417256673175
+ito_delhi_cpcb_2026-06-25,2026-06-25,"ito, delhi - cpcb",Delhi,Delhi,NO2,47.02333333333333,40.852516,6.170817159016927
+mandir_marg_delhi_dpcc_2026-06-25,2026-06-25,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,23.691666666666663,36.690426,12.998759206136071
+model_town_patiala_ppcb_2026-06-25,2026-06-25,"model town, patiala - ppcb",Patiala,Punjab,NO2,14.109565217391305,23.95568,9.846115629776664
+mundka_delhi_dpcc_2026-06-25,2026-06-25,"mundka, delhi - dpcc",Delhi,Delhi,NO2,112.59666666666668,43.613663,68.98300394694012
+murthal_sonipat_hspcb_2026-06-25,2026-06-25,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,5.736249999999999,29.306627,23.570377273559572
+najafgarh_delhi_dpcc_2026-06-25,2026-06-25,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,24.36124992370605,24.532991,0.17174148559570668
+narela_delhi_dpcc_2026-06-25,2026-06-25,"narela, delhi - dpcc",Delhi,Delhi,NO2,23.212083333333336,33.934845,10.72276163736979
+new_industrial_town_faridabad_hspcb_2026-06-25,2026-06-25,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,20.02083333333333,32.004143,11.98330942789714
+nise_gwal_pahari_gurugram_iitm_2026-06-25,2026-06-25,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,6.022916666666667,34.60891,28.585992940266927
+patti_mehar_ambala_hspcb_2026-06-25,2026-06-25,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,24.206249237060547,33.48094,9.27469253540039
+punjab_agricultural_university_ludhiana_ppcb_2026-06-25,2026-06-25,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,49.489583333333336,25.752134,23.73744901021322
+punjabi_bagh_delhi_dpcc_2026-06-25,2026-06-25,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,23.212083333333336,32.672947,9.460863596598305
+r_k_puram_delhi_dpcc_2026-06-25,2026-06-25,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,54.09041666666667,43.994568,10.09584879557292
+rohini_delhi_dpcc_2026-06-25,2026-06-25,"rohini, delhi - dpcc",Delhi,Delhi,NO2,23.212083333333336,26.745808,3.5337243143717423
+sector_11_faridabad_hspcb_2026-06-25,2026-06-25,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,24.835833333333337,29.8488,5.0129673258463505
+sector_30_faridabad_hspcb_2026-06-25,2026-06-25,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,30.15041666666667,30.270191,0.1197745259602847
+teri_gram_gurugram_hspcb_2026-06-25,2026-06-25,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,35.99208333333333,34.60891,1.3831737263997397
+anand_vihar_delhi_dpcc_2026-06-26,2026-06-26,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,42.76499999999999,33.66987,9.095131530761712
+ashok_vihar_delhi_dpcc_2026-06-26,2026-06-26,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,19.34000015258789,24.739138,5.399137496948242
+bawana_delhi_dpcc_2026-06-26,2026-06-26,"bawana, delhi - dpcc",Delhi,Delhi,NO2,9.759583333333332,32.77892,23.01933588663737
+civil_line_jalandhar_ppcb_2026-06-26,2026-06-26,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,18.206666666666667,33.120537,14.913870137532552
+golden_temple_amritsar_ppcb_2026-06-26,2026-06-26,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,24.20375061035156,26.633541,2.4297904968261754
+hardev_nagar_bathinda_ppcb_2026-06-26,2026-06-26,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,NO2,20.26749992370605,34.04165,13.774148941040043
+ito_delhi_cpcb_2026-06-26,2026-06-26,"ito, delhi - cpcb",Delhi,Delhi,NO2,46.841251373291016,21.478565,25.362686157226562
+mandir_marg_delhi_dpcc_2026-06-26,2026-06-26,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,18.803749084472656,21.478565,2.674816131591797
+model_town_patiala_ppcb_2026-06-26,2026-06-26,"model town, patiala - ppcb",Patiala,Punjab,NO2,13.862083333333333,27.072624,13.210540873209636
+mundka_delhi_dpcc_2026-06-26,2026-06-26,"mundka, delhi - dpcc",Delhi,Delhi,NO2,98.29499816894533,25.39096,72.90403747558595
+murthal_sonipat_hspcb_2026-06-26,2026-06-26,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,5.998333333333334,24.413464,18.415130259195962
+najafgarh_delhi_dpcc_2026-06-26,2026-06-26,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,20.81624984741211,22.563856,1.7476062774658203
+narela_delhi_dpcc_2026-06-26,2026-06-26,"narela, delhi - dpcc",Delhi,Delhi,NO2,17.092500686645508,21.786957,4.694456100463867
+new_industrial_town_faridabad_hspcb_2026-06-26,2026-06-26,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,20.100416666666668,29.57543,9.475013249715168
+nise_gwal_pahari_gurugram_iitm_2026-06-26,2026-06-26,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,5.5441666666666665,32.526413,26.982246297200522
+patti_mehar_ambala_hspcb_2026-06-26,2026-06-26,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.72249984741211,26.189142,2.466642379760742
+punjab_agricultural_university_ludhiana_ppcb_2026-06-26,2026-06-26,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,43.52041666666667,31.288662,12.23175470987956
+punjabi_bagh_delhi_dpcc_2026-06-26,2026-06-26,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,17.092500686645508,26.353502,9.261001586914062
+r_k_puram_delhi_dpcc_2026-06-26,2026-06-26,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,34.89208333333333,32.56038,2.3317043050130195
+rohini_delhi_dpcc_2026-06-26,2026-06-26,"rohini, delhi - dpcc",Delhi,Delhi,NO2,17.092500686645508,25.858074,8.765573501586914
+sector_11_faridabad_hspcb_2026-06-26,2026-06-26,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,24.874583333333334,33.312115,8.437531382242838
+sector_30_faridabad_hspcb_2026-06-26,2026-06-26,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,29.896666666666665,22.815512,7.081154963175454
+teri_gram_gurugram_hspcb_2026-06-26,2026-06-26,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,35.81541666666667,32.526413,3.2890037027994836
+alipur_delhi_dpcc_2026-06-27,2026-06-27,"alipur, delhi - dpcc",Delhi,Delhi,NO2,10.062777777777775,26.769121,16.70634339226617
+anand_vihar_delhi_dpcc_2026-06-27,2026-06-27,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,43.38458333333333,44.58832,1.203738352457684
+ashok_vihar_delhi_dpcc_2026-06-27,2026-06-27,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,23.856250762939453,39.563797,15.70754623413086
+bawana_delhi_dpcc_2026-06-27,2026-06-27,"bawana, delhi - dpcc",Delhi,Delhi,NO2,15.104166666666666,28.121916,13.017749150594076
+civil_line_jalandhar_ppcb_2026-06-27,2026-06-27,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,18.74416666666667,32.456207,13.712040608723957
+golden_temple_amritsar_ppcb_2026-06-27,2026-06-27,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,15.043749809265137,24.874163,9.830412864685059
+hardev_nagar_bathinda_ppcb_2026-06-27,2026-06-27,"hardev nagar, bathinda - ppcb",Bathinda,Punjab,NO2,26.534166666666668,19.035715,7.4984515635172535
+ito_delhi_cpcb_2026-06-27,2026-06-27,"ito, delhi - cpcb",Delhi,Delhi,NO2,44.88249969482422,31.338121,13.544378280639648
+mandir_marg_delhi_dpcc_2026-06-27,2026-06-27,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,14.189583333333331,33.856625,19.667041269938153
+model_town_patiala_ppcb_2026-06-27,2026-06-27,"model town, patiala - ppcb",Patiala,Punjab,NO2,13.9037504196167,23.243364,9.339613914489746
+mundka_delhi_dpcc_2026-06-27,2026-06-27,"mundka, delhi - dpcc",Delhi,Delhi,NO2,108.6374969482422,25.210066,83.4274311065674
+murthal_sonipat_hspcb_2026-06-27,2026-06-27,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,6.098333333333334,21.195288,15.09695437113444
+najafgarh_delhi_dpcc_2026-06-27,2026-06-27,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,23.44333333333333,20.753843,2.6894900258382144
+narela_delhi_dpcc_2026-06-27,2026-06-27,"narela, delhi - dpcc",Delhi,Delhi,NO2,19.24833333333333,24.906075,5.65774119059245
+new_industrial_town_faridabad_hspcb_2026-06-27,2026-06-27,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,20.04750061035156,33.242943,13.195442199707035
+nise_gwal_pahari_gurugram_iitm_2026-06-27,2026-06-27,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,5.457083333333333,27.137821,21.680737864176432
+patti_mehar_ambala_hspcb_2026-06-27,2026-06-27,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.746666666666663,29.974035,6.227368596394861
+punjab_agricultural_university_ludhiana_ppcb_2026-06-27,2026-06-27,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,39.205416666666665,21.286613,17.918803202311196
+punjabi_bagh_delhi_dpcc_2026-06-27,2026-06-27,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,19.24833333333333,31.012804,11.764470698038739
+r_k_puram_delhi_dpcc_2026-06-27,2026-06-27,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,39.75749969482422,43.10394,3.3464393615722656
+rimt_university_mandi_gobindgarh_ppcb_2026-06-27,2026-06-27,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,NO2,19.799999237060547,25.423483,5.623483657836914
+rohini_delhi_dpcc_2026-06-27,2026-06-27,"rohini, delhi - dpcc",Delhi,Delhi,NO2,19.24833333333333,19.611197,0.36286318461100464
+sector_11_faridabad_hspcb_2026-06-27,2026-06-27,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,24.96083333333333,33.242943,8.282109476725264
+sector_30_faridabad_hspcb_2026-06-27,2026-06-27,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,29.83083333333333,32.412228,2.5813942972819035
+teri_gram_gurugram_hspcb_2026-06-27,2026-06-27,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,35.937916666666666,27.137821,8.8000954691569
+alipur_delhi_dpcc_2026-06-28,2026-06-28,"alipur, delhi - dpcc",Delhi,Delhi,NO2,14.416111111111112,38.76255,24.346439242892792
+anand_vihar_delhi_dpcc_2026-06-28,2026-06-28,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,50.553749084472656,41.204987,9.348762512207031
+ashok_vihar_delhi_dpcc_2026-06-28,2026-06-28,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,27.201666666666668,32.142853,4.941186116536457
+bawana_delhi_dpcc_2026-06-28,2026-06-28,"bawana, delhi - dpcc",Delhi,Delhi,NO2,14.029999732971191,25.379333,11.349333763122559
+civil_line_jalandhar_ppcb_2026-06-28,2026-06-28,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,17.86041666666667,25.923302,8.062885030110674
+golden_temple_amritsar_ppcb_2026-06-28,2026-06-28,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,25.083809523809524,32.199654,7.115844101678757
+ito_delhi_cpcb_2026-06-28,2026-06-28,"ito, delhi - cpcb",Delhi,Delhi,NO2,46.10875000000001,25.868744,20.240006103515633
+mandir_marg_delhi_dpcc_2026-06-28,2026-06-28,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,26.46125030517578,32.784298,6.323047637939453
+model_town_patiala_ppcb_2026-06-28,2026-06-28,"model town, patiala - ppcb",Patiala,Punjab,NO2,14.195416666666668,33.508698,19.31328084309896
+mundka_delhi_dpcc_2026-06-28,2026-06-28,"mundka, delhi - dpcc",Delhi,Delhi,NO2,108.38666666666668,32.02926,76.35740793863934
+murthal_sonipat_hspcb_2026-06-28,2026-06-28,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,6.347083333333334,25.990252,19.64316820780436
+najafgarh_delhi_dpcc_2026-06-28,2026-06-28,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,21.96125030517578,26.214169,4.252918243408203
+narela_delhi_dpcc_2026-06-28,2026-06-28,"narela, delhi - dpcc",Delhi,Delhi,NO2,23.141666666666666,36.557766,13.416099294026694
+new_industrial_town_faridabad_hspcb_2026-06-28,2026-06-28,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,20.05500030517578,37.350124,17.295124053955078
+nise_gwal_pahari_gurugram_iitm_2026-06-28,2026-06-28,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,5.836249828338623,24.748594,18.912344455718994
+patti_mehar_ambala_hspcb_2026-06-28,2026-06-28,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.89583333333333,25.562332,1.666498819986984
+punjab_agricultural_university_ludhiana_ppcb_2026-06-28,2026-06-28,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,39.91916666666666,31.951479,7.967687708536779
+punjabi_bagh_delhi_dpcc_2026-06-28,2026-06-28,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,23.141666666666666,33.278957,10.137290700276694
+r_k_puram_delhi_dpcc_2026-06-28,2026-06-28,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,40.55791666666666,36.688526,3.8693905131022035
+rimt_university_mandi_gobindgarh_ppcb_2026-06-28,2026-06-28,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,NO2,19.799999237060547,27.856773,8.056774139404297
+rohini_delhi_dpcc_2026-06-28,2026-06-28,"rohini, delhi - dpcc",Delhi,Delhi,NO2,23.141666666666666,37.27464,14.132972462972006
+sector_11_faridabad_hspcb_2026-06-28,2026-06-28,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,24.97875022888184,32.26853,7.289781570434567
+sector_30_faridabad_hspcb_2026-06-28,2026-06-28,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,30.045000076293945,30.279755,0.2347545623779297
+teri_gram_gurugram_hspcb_2026-06-28,2026-06-28,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,33.99208333333333,24.748594,9.243489049275716
+alipur_delhi_dpcc_2026-06-29,2026-06-29,"alipur, delhi - dpcc",Delhi,Delhi,NO2,10.053000450134276,29.40067,19.347668647766113
+anand_vihar_delhi_dpcc_2026-06-29,2026-06-29,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,43.29958333333334,34.89927,8.400314229329432
+ashok_vihar_delhi_dpcc_2026-06-29,2026-06-29,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,22.444166666666664,25.992918,3.548751347859703
+bawana_delhi_dpcc_2026-06-29,2026-06-29,"bawana, delhi - dpcc",Delhi,Delhi,NO2,10.940833333333332,29.6584,18.71756624857585
+civil_line_jalandhar_ppcb_2026-06-29,2026-06-29,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,18.875833333333333,20.963938,2.0881044260660815
+golden_temple_amritsar_ppcb_2026-06-29,2026-06-29,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,13.1899995803833,24.734184,11.544184684753418
+ito_delhi_cpcb_2026-06-29,2026-06-29,"ito, delhi - cpcb",Delhi,Delhi,NO2,45.37916666666666,28.633644,16.745522562662757
+mandir_marg_delhi_dpcc_2026-06-29,2026-06-29,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,21.859166666666667,24.369053,2.5098862202962238
+model_town_patiala_ppcb_2026-06-29,2026-06-29,"model town, patiala - ppcb",Patiala,Punjab,NO2,13.810416666666669,38.265503,24.45508626302083
+mundka_delhi_dpcc_2026-06-29,2026-06-29,"mundka, delhi - dpcc",Delhi,Delhi,NO2,104.32291666666669,39.45405,64.8688685099284
+murthal_sonipat_hspcb_2026-06-29,2026-06-29,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,5.888333333333333,36.283577,30.3952436319987
+najafgarh_delhi_dpcc_2026-06-29,2026-06-29,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,23.725416666666664,22.439552,1.285864359537758
+narela_delhi_dpcc_2026-06-29,2026-06-29,"narela, delhi - dpcc",Delhi,Delhi,NO2,20.817083333333333,28.042772,7.225688959757488
+new_industrial_town_faridabad_hspcb_2026-06-29,2026-06-29,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,20.045000076293945,25.245186,5.200185775756836
+nise_gwal_pahari_gurugram_iitm_2026-06-29,2026-06-29,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,5.759166666666666,29.306023,23.546855977376303
+patti_mehar_ambala_hspcb_2026-06-29,2026-06-29,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.97083333333333,37.883926,13.913093058268231
+punjab_agricultural_university_ludhiana_ppcb_2026-06-29,2026-06-29,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,38.83124923706055,28.83183,9.999420166015625
+punjabi_bagh_delhi_dpcc_2026-06-29,2026-06-29,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,20.817083333333333,29.312609,8.495525385538738
+r_k_puram_delhi_dpcc_2026-06-29,2026-06-29,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,37.33590909090909,28.650295,8.685613833340732
+rimt_university_mandi_gobindgarh_ppcb_2026-06-29,2026-06-29,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,NO2,19.799999237060547,31.837362,12.037363052368164
+rohini_delhi_dpcc_2026-06-29,2026-06-29,"rohini, delhi - dpcc",Delhi,Delhi,NO2,20.817083333333333,25.55848,4.7413959757486985
+sector_11_faridabad_hspcb_2026-06-29,2026-06-29,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,25.10166666666667,25.324625,0.22295834859211894
+sector_30_faridabad_hspcb_2026-06-29,2026-06-29,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,29.95499992370605,30.065289,0.11028861999512074
+teri_gram_gurugram_hspcb_2026-06-29,2026-06-29,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,31.4247619047619,29.306023,2.1187392607189324
+alipur_delhi_dpcc_2026-06-30,2026-06-30,"alipur, delhi - dpcc",Delhi,Delhi,NO2,9.84000015258789,25.187143,15.347143173217773
+anand_vihar_delhi_dpcc_2026-06-30,2026-06-30,"anand vihar, delhi - dpcc",Delhi,Delhi,NO2,32.00833333333333,29.860691,2.1476422627766922
+ashok_vihar_delhi_dpcc_2026-06-30,2026-06-30,"ashok vihar, delhi - dpcc",Delhi,Delhi,NO2,22.227083333333336,29.702911,7.475828043619789
+bawana_delhi_dpcc_2026-06-30,2026-06-30,"bawana, delhi - dpcc",Delhi,Delhi,NO2,14.225833333333334,30.722338,16.496504389444986
+civil_line_jalandhar_ppcb_2026-06-30,2026-06-30,"civil line, jalandhar - ppcb",Jalandhar,Punjab,NO2,21.09583333333333,28.13575,7.0399164835612
+golden_temple_amritsar_ppcb_2026-06-30,2026-06-30,"golden temple, amritsar - ppcb",Amritsar,Punjab,NO2,14.545000076293944,25.392567,10.84756660461426
+ito_delhi_cpcb_2026-06-30,2026-06-30,"ito, delhi - cpcb",Delhi,Delhi,NO2,46.212501525878906,36.42755,9.784950256347656
+mandir_marg_delhi_dpcc_2026-06-30,2026-06-30,"mandir marg, delhi - dpcc",Delhi,Delhi,NO2,16.512500762939453,35.818592,19.30609130859375
+model_town_patiala_ppcb_2026-06-30,2026-06-30,"model town, patiala - ppcb",Patiala,Punjab,NO2,14.0,22.856838,8.85683822631836
+mundka_delhi_dpcc_2026-06-30,2026-06-30,"mundka, delhi - dpcc",Delhi,Delhi,NO2,93.08999633789062,28.478703,64.61129379272461
+murthal_sonipat_hspcb_2026-06-30,2026-06-30,"murthal, sonipat - hspcb",Sonipat,Haryana,NO2,6.148333333333333,22.96286,16.81452677408854
+najafgarh_delhi_dpcc_2026-06-30,2026-06-30,"najafgarh, delhi - dpcc",Delhi,Delhi,NO2,23.086250000000003,33.65438,10.56813079833984
+narela_delhi_dpcc_2026-06-30,2026-06-30,"narela, delhi - dpcc",Delhi,Delhi,NO2,18.357500076293945,25.187143,6.829643249511719
+new_industrial_town_faridabad_hspcb_2026-06-30,2026-06-30,"new industrial town, faridabad - hspcb",Faridabad,Haryana,NO2,19.96999931335449,29.038986,9.068986892700199
+nise_gwal_pahari_gurugram_iitm_2026-06-30,2026-06-30,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,NO2,5.8254166666666665,33.844704,28.01928700764974
+patti_mehar_ambala_hspcb_2026-06-30,2026-06-30,"patti mehar, ambala - hspcb",Ambala,Haryana,NO2,23.832083333333333,24.098988,0.26690424601236984
+punjab_agricultural_university_ludhiana_ppcb_2026-06-30,2026-06-30,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,NO2,32.68083333333333,28.27183,4.409003728230793
+punjabi_bagh_delhi_dpcc_2026-06-30,2026-06-30,"punjabi bagh, delhi - dpcc",Delhi,Delhi,NO2,18.357500076293945,27.955442,9.597942352294922
+r_k_puram_delhi_dpcc_2026-06-30,2026-06-30,"r k puram, delhi - dpcc",Delhi,Delhi,NO2,28.29083333333333,30.208527,1.9176932779947933
+rimt_university_mandi_gobindgarh_ppcb_2026-06-30,2026-06-30,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,NO2,19.799999237060547,19.084852,0.7151470184326172
+rohini_delhi_dpcc_2026-06-30,2026-06-30,"rohini, delhi - dpcc",Delhi,Delhi,NO2,18.357500076293945,25.577635,7.220134735107422
+sector_11_faridabad_hspcb_2026-06-30,2026-06-30,"sector 11, faridabad - hspcb",Faridabad,Haryana,NO2,25.01083333333333,29.038986,4.028152872721357
+sector_30_faridabad_hspcb_2026-06-30,2026-06-30,"sector 30, faridabad - hspcb",Faridabad,Haryana,NO2,30.077916666666667,29.060755,1.0171618906656903
+teri_gram_gurugram_hspcb_2026-06-30,2026-06-30,"teri gram, gurugram - hspcb",Gurugram,Haryana,NO2,27.97083333333333,33.844704,5.873870340983075
+alipur_delhi_dpcc_2026-06-24,2026-06-24,"alipur, delhi - dpcc",Delhi,Delhi,O3,16.289583333333333,23.467386,7.177802912394206
+anand_vihar_delhi_dpcc_2026-06-24,2026-06-24,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,26.555217391304343,24.320236,2.234981185249655
+ashok_vihar_delhi_dpcc_2026-06-24,2026-06-24,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,18.377500534057617,25.212286,6.834785461425781
+bawana_delhi_dpcc_2026-06-24,2026-06-24,"bawana, delhi - dpcc",Delhi,Delhi,O3,10.288333333333332,42.71584,32.427506052652994
+civil_line_jalandhar_ppcb_2026-06-24,2026-06-24,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,42.40083333333333,40.750404,1.650428975423175
+golden_temple_amritsar_ppcb_2026-06-24,2026-06-24,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,24.579166666666666,41.06058,16.481414540608725
+mandir_marg_delhi_dpcc_2026-06-24,2026-06-24,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,21.207916666666662,33.978683,12.770766805013025
+model_town_patiala_ppcb_2026-06-24,2026-06-24,"model town, patiala - ppcb",Patiala,Punjab,O3,26.10333333333333,29.697134,3.593800684611004
+mundka_delhi_dpcc_2026-06-24,2026-06-24,"mundka, delhi - dpcc",Delhi,Delhi,O3,9.47913043478261,23.056662,13.577531171052351
+murthal_sonipat_hspcb_2026-06-24,2026-06-24,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,46.522499084472656,31.775974,14.746524810791016
+najafgarh_delhi_dpcc_2026-06-24,2026-06-24,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,16.2137508392334,25.604105,9.39035415649414
+narela_delhi_dpcc_2026-06-24,2026-06-24,"narela, delhi - dpcc",Delhi,Delhi,O3,16.232727272727274,34.762405,18.52967812278054
+new_industrial_town_faridabad_hspcb_2026-06-24,2026-06-24,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,14.045833333333334,26.77752,12.731685892740884
+nise_gwal_pahari_gurugram_iitm_2026-06-24,2026-06-24,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,47.72958333333333,22.859365,24.870217870076495
+patti_mehar_ambala_hspcb_2026-06-24,2026-06-24,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,15.701666666666666,44.642746,28.94107930501302
+punjab_agricultural_university_ludhiana_ppcb_2026-06-24,2026-06-24,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,55.75833333333333,41.38166,14.376672871907552
+punjabi_bagh_delhi_dpcc_2026-06-24,2026-06-24,"punjabi bagh, delhi - dpcc",Delhi,Delhi,O3,16.232727272727274,30.475067,14.2423398659446
+r_k_puram_delhi_dpcc_2026-06-24,2026-06-24,"r k puram, delhi - dpcc",Delhi,Delhi,O3,30.469166666666663,27.330553,3.1386136118570924
+rimt_university_mandi_gobindgarh_ppcb_2026-06-24,2026-06-24,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,O3,40.43666666666667,24.135271,16.301395594278972
+rohini_delhi_dpcc_2026-06-24,2026-06-24,"rohini, delhi - dpcc",Delhi,Delhi,O3,16.232727272727274,34.16092,17.92819191672585
+sector_11_faridabad_hspcb_2026-06-24,2026-06-24,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,15.054583333333332,27.78634,12.731757380167645
+teri_gram_gurugram_hspcb_2026-06-24,2026-06-24,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,19.675833333333333,22.859365,3.1835321299235027
+vikas_sadan_gurugram_hspcb_2026-06-24,2026-06-24,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,29.903749465942383,21.552732,8.351016998291016
+alipur_delhi_dpcc_2026-06-25,2026-06-25,"alipur, delhi - dpcc",Delhi,Delhi,O3,17.052916666666665,24.558815,7.5058983357747415
+anand_vihar_delhi_dpcc_2026-06-25,2026-06-25,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,15.811304347826086,33.359085,17.547780735181725
+ashok_vihar_delhi_dpcc_2026-06-25,2026-06-25,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,16.12874984741211,26.620974,10.492223739624023
+bawana_delhi_dpcc_2026-06-25,2026-06-25,"bawana, delhi - dpcc",Delhi,Delhi,O3,10.455416666666666,33.401848,22.946431172688804
+civil_line_jalandhar_ppcb_2026-06-25,2026-06-25,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,42.776248931884766,28.435087,14.341161727905273
+golden_temple_amritsar_ppcb_2026-06-25,2026-06-25,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,24.27541666666667,29.770798,5.495381062825519
+ito_delhi_cpcb_2026-06-25,2026-06-25,"ito, delhi - cpcb",Delhi,Delhi,O3,29.71666666666667,27.536476,2.1801905314127623
+mandir_marg_delhi_dpcc_2026-06-25,2026-06-25,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,14.911250114440918,26.364212,11.452961921691895
+model_town_patiala_ppcb_2026-06-25,2026-06-25,"model town, patiala - ppcb",Patiala,Punjab,O3,25.38043478260869,46.295834,20.915398805037796
+mundka_delhi_dpcc_2026-06-25,2026-06-25,"mundka, delhi - dpcc",Delhi,Delhi,O3,10.7787504196167,26.483013,15.704262733459473
+murthal_sonipat_hspcb_2026-06-25,2026-06-25,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,57.75249862670898,39.713215,18.0392837524414
+najafgarh_delhi_dpcc_2026-06-25,2026-06-25,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,19.77541666666667,34.1,14.324581807454425
+narela_delhi_dpcc_2026-06-25,2026-06-25,"narela, delhi - dpcc",Delhi,Delhi,O3,3.927272727272728,25.81289,21.885616371848364
+new_industrial_town_faridabad_hspcb_2026-06-25,2026-06-25,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,13.987083333333333,34.289574,20.302490336100263
+nise_gwal_pahari_gurugram_iitm_2026-06-25,2026-06-25,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,48.16999816894531,23.657377,24.51262092590332
+patti_mehar_ambala_hspcb_2026-06-25,2026-06-25,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,18.131250381469727,22.339254,4.208003997802734
+punjab_agricultural_university_ludhiana_ppcb_2026-06-25,2026-06-25,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,47.79458333333333,48.842144,1.0475606791178436
+punjabi_bagh_delhi_dpcc_2026-06-25,2026-06-25,"punjabi bagh, delhi - dpcc",Delhi,Delhi,O3,3.927272727272728,26.95537,23.02809722206809
+r_k_puram_delhi_dpcc_2026-06-25,2026-06-25,"r k puram, delhi - dpcc",Delhi,Delhi,O3,31.11208333333333,23.729267,7.382816212972003
+rohini_delhi_dpcc_2026-06-25,2026-06-25,"rohini, delhi - dpcc",Delhi,Delhi,O3,3.927272727272728,34.627712,30.70043952248313
+sector_11_faridabad_hspcb_2026-06-25,2026-06-25,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,15.145416666666668,24.853472,9.708055089314778
+sector_30_faridabad_hspcb_2026-06-25,2026-06-25,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,7.287894736842105,32.735287,25.44739197580438
+teri_gram_gurugram_hspcb_2026-06-25,2026-06-25,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,19.527083333333334,23.657377,4.130293909708659
+vikas_sadan_gurugram_hspcb_2026-06-25,2026-06-25,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,29.964583333333334,30.857433,0.8928499857584633
+alipur_delhi_dpcc_2026-06-26,2026-06-26,"alipur, delhi - dpcc",Delhi,Delhi,O3,19.18458333333333,46.547398,27.36281428019206
+anand_vihar_delhi_dpcc_2026-06-26,2026-06-26,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,22.47583333333333,39.589153,17.11331995646159
+ashok_vihar_delhi_dpcc_2026-06-26,2026-06-26,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,22.643749237060547,31.281956,8.638206481933594
+bawana_delhi_dpcc_2026-06-26,2026-06-26,"bawana, delhi - dpcc",Delhi,Delhi,O3,11.642916666666666,39.608532,27.965615285237632
+civil_line_jalandhar_ppcb_2026-06-26,2026-06-26,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,45.11291666666667,32.152622,12.96029444376628
+golden_temple_amritsar_ppcb_2026-06-26,2026-06-26,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,37.27375030517578,30.332119,6.941631317138672
+ito_delhi_cpcb_2026-06-26,2026-06-26,"ito, delhi - cpcb",Delhi,Delhi,O3,35.73708333333334,38.771515,3.034431559244787
+mandir_marg_delhi_dpcc_2026-06-26,2026-06-26,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,23.030416666666667,38.771515,15.741098225911458
+model_town_patiala_ppcb_2026-06-26,2026-06-26,"model town, patiala - ppcb",Patiala,Punjab,O3,26.207083333333333,43.772957,17.565873514811198
+mundka_delhi_dpcc_2026-06-26,2026-06-26,"mundka, delhi - dpcc",Delhi,Delhi,O3,11.998333333333331,34.668358,22.670024515787762
+murthal_sonipat_hspcb_2026-06-26,2026-06-26,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,83.79541666666667,43.800037,39.995379282633465
+najafgarh_delhi_dpcc_2026-06-26,2026-06-26,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,24.967500686645508,45.747623,20.780122756958008
+narela_delhi_dpcc_2026-06-26,2026-06-26,"narela, delhi - dpcc",Delhi,Delhi,O3,5.005454545454546,41.280483,36.27502870039506
+new_industrial_town_faridabad_hspcb_2026-06-26,2026-06-26,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,14.126250267028809,42.5833,28.457051277160645
+nise_gwal_pahari_gurugram_iitm_2026-06-26,2026-06-26,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,52.903333333333336,19.156004,33.74732938130697
+patti_mehar_ambala_hspcb_2026-06-26,2026-06-26,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,20.63083333333333,45.35781,24.726977640787762
+punjab_agricultural_university_ludhiana_ppcb_2026-06-26,2026-06-26,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,62.13333333333333,44.185146,17.948187001546223
+punjabi_bagh_delhi_dpcc_2026-06-26,2026-06-26,"punjabi bagh, delhi - dpcc",Delhi,Delhi,O3,5.005454545454546,33.50286,28.49740647749467
+r_k_puram_delhi_dpcc_2026-06-26,2026-06-26,"r k puram, delhi - dpcc",Delhi,Delhi,O3,36.85260869565217,24.74265,12.109959617283032
+rohini_delhi_dpcc_2026-06-26,2026-06-26,"rohini, delhi - dpcc",Delhi,Delhi,O3,5.005454545454546,46.14802,41.1425671525435
+sector_11_faridabad_hspcb_2026-06-26,2026-06-26,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,14.891249656677246,29.681564,14.790314674377441
+sector_30_faridabad_hspcb_2026-06-26,2026-06-26,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,17.9424991607666,45.96959,28.027090072631836
+teri_gram_gurugram_hspcb_2026-06-26,2026-06-26,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,19.80333333333333,19.156004,0.6473293813069638
+vikas_sadan_gurugram_hspcb_2026-06-26,2026-06-26,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,29.85166666666667,28.925392,0.9262745157877639
+alipur_delhi_dpcc_2026-06-27,2026-06-27,"alipur, delhi - dpcc",Delhi,Delhi,O3,15.646666666666668,39.842422,24.195755818684894
+anand_vihar_delhi_dpcc_2026-06-27,2026-06-27,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,21.905416666666667,36.92569,15.020273030598958
+ashok_vihar_delhi_dpcc_2026-06-27,2026-06-27,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,20.289583333333333,32.960274,12.670690409342448
+bawana_delhi_dpcc_2026-06-27,2026-06-27,"bawana, delhi - dpcc",Delhi,Delhi,O3,5.0512500000000005,40.023266,34.972015838623044
+civil_line_jalandhar_ppcb_2026-06-27,2026-06-27,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,45.26791666666667,42.71482,2.5530958048502654
+golden_temple_amritsar_ppcb_2026-06-27,2026-06-27,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,55.67291666666667,46.642284,9.030632273356126
+ito_delhi_cpcb_2026-06-27,2026-06-27,"ito, delhi - cpcb",Delhi,Delhi,O3,33.80833333333333,36.16578,2.3574457804362012
+mandir_marg_delhi_dpcc_2026-06-27,2026-06-27,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,30.089166666666667,38.98727,8.898103688557942
+model_town_patiala_ppcb_2026-06-27,2026-06-27,"model town, patiala - ppcb",Patiala,Punjab,O3,26.123750686645508,44.417786,18.294034957885742
+mundka_delhi_dpcc_2026-06-27,2026-06-27,"mundka, delhi - dpcc",Delhi,Delhi,O3,9.791666666666666,32.49256,22.700894673665367
+murthal_sonipat_hspcb_2026-06-27,2026-06-27,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,79.61541666666666,40.293663,39.32175364176432
+najafgarh_delhi_dpcc_2026-06-27,2026-06-27,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,21.552916666666665,51.312336,29.759419301350913
+new_industrial_town_faridabad_hspcb_2026-06-27,2026-06-27,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,14.011666666666663,42.45365,28.441984761555993
+nise_gwal_pahari_gurugram_iitm_2026-06-27,2026-06-27,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,59.13708333333333,46.71973,12.417352956136064
+patti_mehar_ambala_hspcb_2026-06-27,2026-06-27,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,17.496363636363636,45.77256,28.27619648326527
+punjab_agricultural_university_ludhiana_ppcb_2026-06-27,2026-06-27,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,61.32624816894531,46.11006,15.2161865234375
+r_k_puram_delhi_dpcc_2026-06-27,2026-06-27,"r k puram, delhi - dpcc",Delhi,Delhi,O3,31.28249931335449,35.794956,4.512456893920902
+rimt_university_mandi_gobindgarh_ppcb_2026-06-27,2026-06-27,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,O3,37.91041666666667,34.85169,3.0587282816569044
+sector_11_faridabad_hspcb_2026-06-27,2026-06-27,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,19.551250457763672,42.45365,22.902400970458984
+sector_30_faridabad_hspcb_2026-06-27,2026-06-27,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,14.280416666666667,41.53955,27.259134114583333
+teri_gram_gurugram_hspcb_2026-06-27,2026-06-27,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,19.43874931335449,46.71973,27.280981063842777
+vikas_sadan_gurugram_hspcb_2026-06-27,2026-06-27,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,30.02750015258789,32.17029,2.142791748046875
+alipur_delhi_dpcc_2026-06-28,2026-06-28,"alipur, delhi - dpcc",Delhi,Delhi,O3,16.30666666666667,27.288935,10.982268040974933
+anand_vihar_delhi_dpcc_2026-06-28,2026-06-28,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,19.37333333333333,25.839663,6.4663292185465515
+ashok_vihar_delhi_dpcc_2026-06-28,2026-06-28,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,20.27458333333333,26.584766,6.310183054606124
+bawana_delhi_dpcc_2026-06-28,2026-06-28,"bawana, delhi - dpcc",Delhi,Delhi,O3,5.940833333333334,25.475927,19.53509401957194
+civil_line_jalandhar_ppcb_2026-06-28,2026-06-28,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,45.28874969482422,32.70079,12.587959289550781
+golden_temple_amritsar_ppcb_2026-06-28,2026-06-28,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,56.17791666666667,29.36143,26.81648745218913
+ito_delhi_cpcb_2026-06-28,2026-06-28,"ito, delhi - cpcb",Delhi,Delhi,O3,32.13333333333333,26.07849,6.054844029744466
+mandir_marg_delhi_dpcc_2026-06-28,2026-06-28,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,29.20458333333333,26.312107,2.892476247151688
+model_town_patiala_ppcb_2026-06-28,2026-06-28,"model town, patiala - ppcb",Patiala,Punjab,O3,26.14208333333333,45.82056,19.678477121988937
+mundka_delhi_dpcc_2026-06-28,2026-06-28,"mundka, delhi - dpcc",Delhi,Delhi,O3,11.785416666666668,25.817833,14.032416280110676
+murthal_sonipat_hspcb_2026-06-28,2026-06-28,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,91.48166666666668,39.207863,52.27380381266278
+najafgarh_delhi_dpcc_2026-06-28,2026-06-28,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,30.024583333333336,27.440592,2.583991521199547
+new_industrial_town_faridabad_hspcb_2026-06-28,2026-06-28,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,13.989166666666668,26.91367,12.924502919514973
+nise_gwal_pahari_gurugram_iitm_2026-06-28,2026-06-28,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,55.69124984741211,36.254757,19.436492919921875
+patti_mehar_ambala_hspcb_2026-06-28,2026-06-28,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,12.302916666666668,41.551197,29.248280385335285
+punjab_agricultural_university_ludhiana_ppcb_2026-06-28,2026-06-28,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,55.35124969482422,46.211224,9.140026092529297
+r_k_puram_delhi_dpcc_2026-06-28,2026-06-28,"r k puram, delhi - dpcc",Delhi,Delhi,O3,35.650001525878906,26.289183,9.360818862915039
+rimt_university_mandi_gobindgarh_ppcb_2026-06-28,2026-06-28,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,O3,37.70000076293945,34.437496,3.2625045776367188
+sector_11_faridabad_hspcb_2026-06-28,2026-06-28,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,24.977083333333336,27.903973,2.9268892923990855
+sector_30_faridabad_hspcb_2026-06-28,2026-06-28,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,14.422499656677246,27.10741,12.684910774230957
+teri_gram_gurugram_hspcb_2026-06-28,2026-06-28,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,21.277916666666663,36.254757,14.976840260823572
+vikas_sadan_gurugram_hspcb_2026-06-28,2026-06-28,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,30.058333333333334,27.463541,2.5947923024495445
+alipur_delhi_dpcc_2026-06-29,2026-06-29,"alipur, delhi - dpcc",Delhi,Delhi,O3,11.636666666666663,36.68298,25.04631291707357
+anand_vihar_delhi_dpcc_2026-06-29,2026-06-29,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,16.332105263157896,36.765846,20.43374098928351
+ashok_vihar_delhi_dpcc_2026-06-29,2026-06-29,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,15.204999923706056,26.147108,10.942108154296873
+bawana_delhi_dpcc_2026-06-29,2026-06-29,"bawana, delhi - dpcc",Delhi,Delhi,O3,5.091666666666667,34.65831,29.56664326985677
+civil_line_jalandhar_ppcb_2026-06-29,2026-06-29,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,46.70541666666667,41.468563,5.236853586832687
+golden_temple_amritsar_ppcb_2026-06-29,2026-06-29,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,65.26333333333334,35.756447,29.50688649495443
+mandir_marg_delhi_dpcc_2026-06-29,2026-06-29,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,23.238750457763672,31.224827,7.986076354980469
+model_town_patiala_ppcb_2026-06-29,2026-06-29,"model town, patiala - ppcb",Patiala,Punjab,O3,26.155416666666667,29.9324,3.776983083089192
+mundka_delhi_dpcc_2026-06-29,2026-06-29,"mundka, delhi - dpcc",Delhi,Delhi,O3,7.718333333333334,20.956532,13.23819819132487
+murthal_sonipat_hspcb_2026-06-29,2026-06-29,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,81.1875,40.893036,40.294464111328125
+najafgarh_delhi_dpcc_2026-06-29,2026-06-29,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,18.660416666666663,54.850796,36.19037907918295
+new_industrial_town_faridabad_hspcb_2026-06-29,2026-06-29,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,13.944583333333334,30.10948,16.16489657084147
+nise_gwal_pahari_gurugram_iitm_2026-06-29,2026-06-29,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,43.81499862670898,25.176517,18.63848114013671
+patti_mehar_ambala_hspcb_2026-06-29,2026-06-29,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,12.371250000000002,31.741447,19.370197448730465
+punjab_agricultural_university_ludhiana_ppcb_2026-06-29,2026-06-29,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,62.71666666666667,29.792866,32.92380091349284
+r_k_puram_delhi_dpcc_2026-06-29,2026-06-29,"r k puram, delhi - dpcc",Delhi,Delhi,O3,28.530416666666667,34.242622,5.712205708821614
+rimt_university_mandi_gobindgarh_ppcb_2026-06-29,2026-06-29,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,O3,43.432498931884766,33.588303,9.844196319580078
+sector_11_faridabad_hspcb_2026-06-29,2026-06-29,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,24.98583333333333,25.401585,0.41575129191081217
+sector_30_faridabad_hspcb_2026-06-29,2026-06-29,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,16.655000686645508,30.70066,14.045660018920898
+teri_gram_gurugram_hspcb_2026-06-29,2026-06-29,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,20.38652173913044,25.176517,4.789995747441825
+vikas_sadan_gurugram_hspcb_2026-06-29,2026-06-29,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,28.640416666666667,43.188007,14.547590688069661
+alipur_delhi_dpcc_2026-06-30,2026-06-30,"alipur, delhi - dpcc",Delhi,Delhi,O3,9.625,27.590607,17.965606689453125
+anand_vihar_delhi_dpcc_2026-06-30,2026-06-30,"anand vihar, delhi - dpcc",Delhi,Delhi,O3,18.44700050354004,31.15382,12.706819534301758
+ashok_vihar_delhi_dpcc_2026-06-30,2026-06-30,"ashok vihar, delhi - dpcc",Delhi,Delhi,O3,10.569583333333332,28.800943,18.231360041300455
+bawana_delhi_dpcc_2026-06-30,2026-06-30,"bawana, delhi - dpcc",Delhi,Delhi,O3,5.237500190734863,25.191086,19.953585624694824
+civil_line_jalandhar_ppcb_2026-06-30,2026-06-30,"civil line, jalandhar - ppcb",Jalandhar,Punjab,O3,48.17416666666667,25.894608,22.27955912272136
+golden_temple_amritsar_ppcb_2026-06-30,2026-06-30,"golden temple, amritsar - ppcb",Amritsar,Punjab,O3,24.47666666666667,29.87863,5.401963017781572
+mandir_marg_delhi_dpcc_2026-06-30,2026-06-30,"mandir marg, delhi - dpcc",Delhi,Delhi,O3,18.60874938964844,35.813755,17.20500564575195
+model_town_patiala_ppcb_2026-06-30,2026-06-30,"model town, patiala - ppcb",Patiala,Punjab,O3,30.367826086956523,26.508842,3.858983618694804
+mundka_delhi_dpcc_2026-06-30,2026-06-30,"mundka, delhi - dpcc",Delhi,Delhi,O3,7.647500038146973,34.941326,27.29382610321045
+murthal_sonipat_hspcb_2026-06-30,2026-06-30,"murthal, sonipat - hspcb",Sonipat,Haryana,O3,76.58624999999999,27.406366,49.17988365173339
+najafgarh_delhi_dpcc_2026-06-30,2026-06-30,"najafgarh, delhi - dpcc",Delhi,Delhi,O3,15.308750000000002,23.981657,8.67290702819824
+narela_delhi_dpcc_2026-06-30,2026-06-30,"narela, delhi - dpcc",Delhi,Delhi,O3,8.707916666666668,27.537483,18.829566548665362
+new_industrial_town_faridabad_hspcb_2026-06-30,2026-06-30,"new industrial town, faridabad - hspcb",Faridabad,Haryana,O3,14.049583333333333,35.907486,21.85790262858073
+nise_gwal_pahari_gurugram_iitm_2026-06-30,2026-06-30,"nise gwal pahari, gurugram - iitm",Gurugram,Haryana,O3,38.8337516784668,23.543947,15.289804458618164
+patti_mehar_ambala_hspcb_2026-06-30,2026-06-30,"patti mehar, ambala - hspcb",Ambala,Haryana,O3,13.497916666666669,27.276915,13.778997929890949
+punjab_agricultural_university_ludhiana_ppcb_2026-06-30,2026-06-30,"punjab agricultural university, ludhiana - ppcb",Ludhiana,Punjab,O3,58.59708333333333,31.918756,26.67832684834798
+punjabi_bagh_delhi_dpcc_2026-06-30,2026-06-30,"punjabi bagh, delhi - dpcc",Delhi,Delhi,O3,8.707916666666668,34.106064,25.398147176106768
+r_k_puram_delhi_dpcc_2026-06-30,2026-06-30,"r k puram, delhi - dpcc",Delhi,Delhi,O3,16.891250610351562,34.354618,17.463367462158203
+rimt_university_mandi_gobindgarh_ppcb_2026-06-30,2026-06-30,"rimt university, mandi gobindgarh - ppcb",Mandi Gobindgarh,Punjab,O3,38.83000183105469,25.189434,13.640567779541016
+rohini_delhi_dpcc_2026-06-30,2026-06-30,"rohini, delhi - dpcc",Delhi,Delhi,O3,8.707916666666668,29.328535,20.620618413289385
+sector_11_faridabad_hspcb_2026-06-30,2026-06-30,"sector 11, faridabad - hspcb",Faridabad,Haryana,O3,25.012916666666666,35.907486,10.894569295247397
+sector_30_faridabad_hspcb_2026-06-30,2026-06-30,"sector 30, faridabad - hspcb",Faridabad,Haryana,O3,20.201666666666664,32.6206,12.41893498738607
+teri_gram_gurugram_hspcb_2026-06-30,2026-06-30,"teri gram, gurugram - hspcb",Gurugram,Haryana,O3,16.27958333333333,23.543947,7.2643638865153015
+vikas_sadan_gurugram_hspcb_2026-06-30,2026-06-30,"vikas sadan, gurugram - hspcb",Gurugram,Haryana,O3,24.21583333333333,22.322145,1.893687871297196

@@ -1,0 +1,781 @@
+station,date,O3_8H_MAX,O3_VALID_HOURS
+"alipur, delhi - dpcc",2026-06-01,39.29,24
+"alipur, delhi - dpcc",2026-06-02,43.71125,24
+"alipur, delhi - dpcc",2026-06-03,46.66714285714285,23
+"alipur, delhi - dpcc",2026-06-04,35.456250000000004,24
+"alipur, delhi - dpcc",2026-06-05,37.943749999999994,24
+"alipur, delhi - dpcc",2026-06-06,40.305,24
+"alipur, delhi - dpcc",2026-06-07,33.87625,24
+"alipur, delhi - dpcc",2026-06-08,40.005,24
+"alipur, delhi - dpcc",2026-06-09,43.4,24
+"alipur, delhi - dpcc",2026-06-10,,15
+"alipur, delhi - dpcc",2026-06-11,30.22375,22
+"alipur, delhi - dpcc",2026-06-12,28.18375,24
+"alipur, delhi - dpcc",2026-06-13,40.18625,24
+"alipur, delhi - dpcc",2026-06-14,37.04625,24
+"alipur, delhi - dpcc",2026-06-15,24.62125,24
+"alipur, delhi - dpcc",2026-06-16,23.885,24
+"alipur, delhi - dpcc",2026-06-17,35.1975,24
+"alipur, delhi - dpcc",2026-06-18,22.19875,21
+"alipur, delhi - dpcc",2026-06-19,30.1925,24
+"alipur, delhi - dpcc",2026-06-20,28.91875,24
+"alipur, delhi - dpcc",2026-06-21,23.75,23
+"alipur, delhi - dpcc",2026-06-22,27.34875,24
+"alipur, delhi - dpcc",2026-06-23,26.67875,24
+"alipur, delhi - dpcc",2026-06-24,29.65125,24
+"alipur, delhi - dpcc",2026-06-25,32.33375,24
+"alipur, delhi - dpcc",2026-06-26,32.785,24
+"alipur, delhi - dpcc",2026-06-27,31.384999999999998,24
+"alipur, delhi - dpcc",2026-06-28,33.6425,24
+"alipur, delhi - dpcc",2026-06-29,21.93375,24
+"alipur, delhi - dpcc",2026-06-30,18.21125,24
+"anand vihar, delhi - dpcc",2026-06-01,38.91,20
+"anand vihar, delhi - dpcc",2026-06-02,45.754999999999995,24
+"anand vihar, delhi - dpcc",2026-06-03,57.7325,24
+"anand vihar, delhi - dpcc",2026-06-04,26.137500000000003,24
+"anand vihar, delhi - dpcc",2026-06-05,34.27375,24
+"anand vihar, delhi - dpcc",2026-06-06,22.131250000000005,24
+"anand vihar, delhi - dpcc",2026-06-07,35.72125,24
+"anand vihar, delhi - dpcc",2026-06-08,38.75125,24
+"anand vihar, delhi - dpcc",2026-06-09,43.776250000000005,24
+"anand vihar, delhi - dpcc",2026-06-10,26.76,24
+"anand vihar, delhi - dpcc",2026-06-11,50.35625,24
+"anand vihar, delhi - dpcc",2026-06-12,39.79625,22
+"anand vihar, delhi - dpcc",2026-06-13,64.755,24
+"anand vihar, delhi - dpcc",2026-06-14,53.322500000000005,24
+"anand vihar, delhi - dpcc",2026-06-15,28.60125,24
+"anand vihar, delhi - dpcc",2026-06-16,34.0125,24
+"anand vihar, delhi - dpcc",2026-06-17,61.508750000000006,24
+"anand vihar, delhi - dpcc",2026-06-18,39.105000000000004,24
+"anand vihar, delhi - dpcc",2026-06-19,44.29500000000001,24
+"anand vihar, delhi - dpcc",2026-06-20,40.8675,24
+"anand vihar, delhi - dpcc",2026-06-21,31.346250000000005,24
+"anand vihar, delhi - dpcc",2026-06-22,46.84125,24
+"anand vihar, delhi - dpcc",2026-06-23,52.005,24
+"anand vihar, delhi - dpcc",2026-06-24,56.673750000000005,23
+"anand vihar, delhi - dpcc",2026-06-25,38.78285714285715,23
+"anand vihar, delhi - dpcc",2026-06-26,45.10875,24
+"anand vihar, delhi - dpcc",2026-06-27,43.88000000000001,24
+"anand vihar, delhi - dpcc",2026-06-28,39.78,24
+"anand vihar, delhi - dpcc",2026-06-29,32.04166666666667,19
+"anand vihar, delhi - dpcc",2026-06-30,33.34375,20
+"ashok vihar, delhi - dpcc",2026-06-01,58.927499999999995,24
+"ashok vihar, delhi - dpcc",2026-06-02,65.35125000000001,24
+"ashok vihar, delhi - dpcc",2026-06-03,78.79625,24
+"ashok vihar, delhi - dpcc",2026-06-04,55.31125,24
+"ashok vihar, delhi - dpcc",2026-06-05,43.489999999999995,24
+"ashok vihar, delhi - dpcc",2026-06-06,51.78125,24
+"ashok vihar, delhi - dpcc",2026-06-07,42.15875,24
+"ashok vihar, delhi - dpcc",2026-06-08,53.776250000000005,24
+"ashok vihar, delhi - dpcc",2026-06-09,64.05625,24
+"ashok vihar, delhi - dpcc",2026-06-10,44.786249999999995,24
+"ashok vihar, delhi - dpcc",2026-06-11,42.1925,21
+"ashok vihar, delhi - dpcc",2026-06-12,,15
+"ashok vihar, delhi - dpcc",2026-06-13,59.12,24
+"ashok vihar, delhi - dpcc",2026-06-14,39.99,24
+"ashok vihar, delhi - dpcc",2026-06-15,28.10875,24
+"ashok vihar, delhi - dpcc",2026-06-16,29.080000000000002,24
+"ashok vihar, delhi - dpcc",2026-06-17,35.6075,24
+"ashok vihar, delhi - dpcc",2026-06-18,32.0425,24
+"ashok vihar, delhi - dpcc",2026-06-19,37.505,24
+"ashok vihar, delhi - dpcc",2026-06-20,30.87375,24
+"ashok vihar, delhi - dpcc",2026-06-21,26.38375,24
+"ashok vihar, delhi - dpcc",2026-06-22,34.64625,24
+"ashok vihar, delhi - dpcc",2026-06-23,38.0075,24
+"ashok vihar, delhi - dpcc",2026-06-24,35.739999999999995,24
+"ashok vihar, delhi - dpcc",2026-06-25,34.49,24
+"ashok vihar, delhi - dpcc",2026-06-26,39.61,24
+"ashok vihar, delhi - dpcc",2026-06-27,37.713750000000005,24
+"ashok vihar, delhi - dpcc",2026-06-28,37.59,24
+"ashok vihar, delhi - dpcc",2026-06-29,25.5225,24
+"ashok vihar, delhi - dpcc",2026-06-30,17.75,24
+"bawana, delhi - dpcc",2026-06-01,36.5425,24
+"bawana, delhi - dpcc",2026-06-02,45.5075,24
+"bawana, delhi - dpcc",2026-06-03,48.6225,24
+"bawana, delhi - dpcc",2026-06-04,29.822499999999998,24
+"bawana, delhi - dpcc",2026-06-05,34.92875,24
+"bawana, delhi - dpcc",2026-06-06,28.002499999999998,24
+"bawana, delhi - dpcc",2026-06-07,26.541249999999998,24
+"bawana, delhi - dpcc",2026-06-08,40.74875,24
+"bawana, delhi - dpcc",2026-06-09,50.05625,24
+"bawana, delhi - dpcc",2026-06-10,34.45,24
+"bawana, delhi - dpcc",2026-06-11,24.7325,24
+"bawana, delhi - dpcc",2026-06-12,18.74875,24
+"bawana, delhi - dpcc",2026-06-13,43.116249999999994,24
+"bawana, delhi - dpcc",2026-06-14,31.036250000000003,24
+"bawana, delhi - dpcc",2026-06-15,21.1425,24
+"bawana, delhi - dpcc",2026-06-16,16.9375,24
+"bawana, delhi - dpcc",2026-06-17,28.96,24
+"bawana, delhi - dpcc",2026-06-18,19.205000000000002,24
+"bawana, delhi - dpcc",2026-06-19,22.03125,24
+"bawana, delhi - dpcc",2026-06-20,19.357499999999998,24
+"bawana, delhi - dpcc",2026-06-21,17.16125,24
+"bawana, delhi - dpcc",2026-06-22,24.025,24
+"bawana, delhi - dpcc",2026-06-23,18.70625,24
+"bawana, delhi - dpcc",2026-06-24,18.54625,24
+"bawana, delhi - dpcc",2026-06-25,19.018749999999997,24
+"bawana, delhi - dpcc",2026-06-26,22.020000000000003,24
+"bawana, delhi - dpcc",2026-06-27,13.05875,24
+"bawana, delhi - dpcc",2026-06-28,10.56875,24
+"bawana, delhi - dpcc",2026-06-29,8.34,24
+"bawana, delhi - dpcc",2026-06-30,8.767499999999998,24
+"civil line, jalandhar - ppcb",2026-06-01,44.96,24
+"civil line, jalandhar - ppcb",2026-06-02,49.57,24
+"civil line, jalandhar - ppcb",2026-06-03,49.988749999999996,24
+"civil line, jalandhar - ppcb",2026-06-04,45.515,24
+"civil line, jalandhar - ppcb",2026-06-05,45.057500000000005,24
+"civil line, jalandhar - ppcb",2026-06-06,46.12625,24
+"civil line, jalandhar - ppcb",2026-06-07,45.834999999999994,24
+"civil line, jalandhar - ppcb",2026-06-08,50.150000000000006,24
+"civil line, jalandhar - ppcb",2026-06-09,51.169999999999995,24
+"civil line, jalandhar - ppcb",2026-06-10,45.515,24
+"civil line, jalandhar - ppcb",2026-06-11,41.57125,24
+"civil line, jalandhar - ppcb",2026-06-12,36.21625,24
+"civil line, jalandhar - ppcb",2026-06-13,31.941249999999997,24
+"civil line, jalandhar - ppcb",2026-06-14,32.0725,24
+"civil line, jalandhar - ppcb",2026-06-15,36.34875,24
+"civil line, jalandhar - ppcb",2026-06-16,36.93,24
+"civil line, jalandhar - ppcb",2026-06-17,41.3525,24
+"civil line, jalandhar - ppcb",2026-06-18,44.901250000000005,24
+"civil line, jalandhar - ppcb",2026-06-19,45.855,24
+"civil line, jalandhar - ppcb",2026-06-20,46.07,24
+"civil line, jalandhar - ppcb",2026-06-21,45.67625,24
+"civil line, jalandhar - ppcb",2026-06-22,49.56625,24
+"civil line, jalandhar - ppcb",2026-06-23,50.522499999999994,24
+"civil line, jalandhar - ppcb",2026-06-24,44.989999999999995,24
+"civil line, jalandhar - ppcb",2026-06-25,45.42125,24
+"civil line, jalandhar - ppcb",2026-06-26,45.98625,24
+"civil line, jalandhar - ppcb",2026-06-27,45.94625,24
+"civil line, jalandhar - ppcb",2026-06-28,45.900000000000006,24
+"civil line, jalandhar - ppcb",2026-06-29,49.89875,24
+"civil line, jalandhar - ppcb",2026-06-30,50.54750000000001,24
+"golden temple, amritsar - ppcb",2026-06-01,54.1625,24
+"golden temple, amritsar - ppcb",2026-06-02,53.34875,24
+"golden temple, amritsar - ppcb",2026-06-03,52.665000000000006,24
+"golden temple, amritsar - ppcb",2026-06-04,54.294999999999995,24
+"golden temple, amritsar - ppcb",2026-06-05,50.6225,24
+"golden temple, amritsar - ppcb",2026-06-06,51.3775,24
+"golden temple, amritsar - ppcb",2026-06-07,52.6625,24
+"golden temple, amritsar - ppcb",2026-06-08,54.464999999999996,24
+"golden temple, amritsar - ppcb",2026-06-09,52.75375,24
+"golden temple, amritsar - ppcb",2026-06-10,55.438571428571436,21
+"golden temple, amritsar - ppcb",2026-06-11,56.32875000000001,24
+"golden temple, amritsar - ppcb",2026-06-12,57.0775,24
+"golden temple, amritsar - ppcb",2026-06-13,72.46375,24
+"golden temple, amritsar - ppcb",2026-06-14,72.38250000000001,24
+"golden temple, amritsar - ppcb",2026-06-15,72.36874999999999,24
+"golden temple, amritsar - ppcb",2026-06-16,72.3625,24
+"golden temple, amritsar - ppcb",2026-06-17,72.28125,24
+"golden temple, amritsar - ppcb",2026-06-18,24.32875,24
+"golden temple, amritsar - ppcb",2026-06-19,24.34125,24
+"golden temple, amritsar - ppcb",2026-06-20,24.333750000000002,24
+"golden temple, amritsar - ppcb",2026-06-21,24.35375,24
+"golden temple, amritsar - ppcb",2026-06-22,24.3425,24
+"golden temple, amritsar - ppcb",2026-06-23,24.32875,24
+"golden temple, amritsar - ppcb",2026-06-24,25.36375,24
+"golden temple, amritsar - ppcb",2026-06-25,24.29625,24
+"golden temple, amritsar - ppcb",2026-06-26,48.27875,24
+"golden temple, amritsar - ppcb",2026-06-27,72.28625,24
+"golden temple, amritsar - ppcb",2026-06-28,72.35374999999999,24
+"golden temple, amritsar - ppcb",2026-06-29,72.345,24
+"golden temple, amritsar - ppcb",2026-06-30,46.71625,24
+"hardev nagar, bathinda - ppcb",2026-06-01,,0
+"hardev nagar, bathinda - ppcb",2026-06-02,,0
+"hardev nagar, bathinda - ppcb",2026-06-03,,0
+"hardev nagar, bathinda - ppcb",2026-06-04,,0
+"hardev nagar, bathinda - ppcb",2026-06-05,,0
+"hardev nagar, bathinda - ppcb",2026-06-06,,0
+"hardev nagar, bathinda - ppcb",2026-06-07,,0
+"hardev nagar, bathinda - ppcb",2026-06-08,,0
+"hardev nagar, bathinda - ppcb",2026-06-09,,0
+"hardev nagar, bathinda - ppcb",2026-06-10,,0
+"hardev nagar, bathinda - ppcb",2026-06-11,,0
+"hardev nagar, bathinda - ppcb",2026-06-12,,0
+"hardev nagar, bathinda - ppcb",2026-06-13,,0
+"hardev nagar, bathinda - ppcb",2026-06-14,,0
+"hardev nagar, bathinda - ppcb",2026-06-15,,0
+"hardev nagar, bathinda - ppcb",2026-06-16,,0
+"hardev nagar, bathinda - ppcb",2026-06-17,,0
+"hardev nagar, bathinda - ppcb",2026-06-18,,0
+"hardev nagar, bathinda - ppcb",2026-06-19,,0
+"hardev nagar, bathinda - ppcb",2026-06-20,,0
+"hardev nagar, bathinda - ppcb",2026-06-21,,0
+"hardev nagar, bathinda - ppcb",2026-06-22,,0
+"hardev nagar, bathinda - ppcb",2026-06-23,,0
+"hardev nagar, bathinda - ppcb",2026-06-24,,0
+"hardev nagar, bathinda - ppcb",2026-06-25,,0
+"hardev nagar, bathinda - ppcb",2026-06-26,,0
+"hardev nagar, bathinda - ppcb",2026-06-27,,0
+"hardev nagar, bathinda - ppcb",2026-06-28,,0
+"hardev nagar, bathinda - ppcb",2026-06-29,,0
+"hardev nagar, bathinda - ppcb",2026-06-30,,0
+"ito, delhi - cpcb",2026-06-01,41.0325,24
+"ito, delhi - cpcb",2026-06-02,42.8275,24
+"ito, delhi - cpcb",2026-06-03,50.816250000000004,24
+"ito, delhi - cpcb",2026-06-04,38.379999999999995,24
+"ito, delhi - cpcb",2026-06-05,38.1625,24
+"ito, delhi - cpcb",2026-06-06,34.58,24
+"ito, delhi - cpcb",2026-06-07,39.71375,24
+"ito, delhi - cpcb",2026-06-08,48.23625,24
+"ito, delhi - cpcb",2026-06-09,60.441250000000004,24
+"ito, delhi - cpcb",2026-06-10,50.17250000000001,24
+"ito, delhi - cpcb",2026-06-11,30.98125,24
+"ito, delhi - cpcb",2026-06-12,28.805714285714288,23
+"ito, delhi - cpcb",2026-06-13,52.071250000000006,24
+"ito, delhi - cpcb",2026-06-14,47.943749999999994,24
+"ito, delhi - cpcb",2026-06-15,35.574999999999996,24
+"ito, delhi - cpcb",2026-06-16,36.613749999999996,24
+"ito, delhi - cpcb",2026-06-17,69.9725,24
+"ito, delhi - cpcb",2026-06-18,43.94625,24
+"ito, delhi - cpcb",2026-06-19,53.07625,24
+"ito, delhi - cpcb",2026-06-20,51.54625,24
+"ito, delhi - cpcb",2026-06-21,44.103750000000005,24
+"ito, delhi - cpcb",2026-06-22,,11
+"ito, delhi - cpcb",2026-06-23,,2
+"ito, delhi - cpcb",2026-06-24,,2
+"ito, delhi - cpcb",2026-06-25,49.498749999999994,24
+"ito, delhi - cpcb",2026-06-26,56.515,24
+"ito, delhi - cpcb",2026-06-27,56.92125,24
+"ito, delhi - cpcb",2026-06-28,55.5875,24
+"ito, delhi - cpcb",2026-06-29,,6
+"ito, delhi - cpcb",2026-06-30,,13
+"mandir marg, delhi - dpcc",2026-06-01,65.53,24
+"mandir marg, delhi - dpcc",2026-06-02,66.835,24
+"mandir marg, delhi - dpcc",2026-06-03,91.39375000000001,24
+"mandir marg, delhi - dpcc",2026-06-04,69.85875,24
+"mandir marg, delhi - dpcc",2026-06-05,47.72125,24
+"mandir marg, delhi - dpcc",2026-06-06,32.864999999999995,24
+"mandir marg, delhi - dpcc",2026-06-07,35.85,24
+"mandir marg, delhi - dpcc",2026-06-08,45.29,24
+"mandir marg, delhi - dpcc",2026-06-09,55.43375,24
+"mandir marg, delhi - dpcc",2026-06-10,38.14875,24
+"mandir marg, delhi - dpcc",2026-06-11,44.62125,24
+"mandir marg, delhi - dpcc",2026-06-12,45.48625,24
+"mandir marg, delhi - dpcc",2026-06-13,67.6875,24
+"mandir marg, delhi - dpcc",2026-06-14,57.7625,24
+"mandir marg, delhi - dpcc",2026-06-15,33.536249999999995,24
+"mandir marg, delhi - dpcc",2026-06-16,41.548750000000005,24
+"mandir marg, delhi - dpcc",2026-06-17,69.93375,24
+"mandir marg, delhi - dpcc",2026-06-18,51.16375,24
+"mandir marg, delhi - dpcc",2026-06-19,49.60375,24
+"mandir marg, delhi - dpcc",2026-06-20,47.808749999999996,24
+"mandir marg, delhi - dpcc",2026-06-21,38.54,24
+"mandir marg, delhi - dpcc",2026-06-22,43.73625,24
+"mandir marg, delhi - dpcc",2026-06-23,47.605000000000004,24
+"mandir marg, delhi - dpcc",2026-06-24,41.91375,24
+"mandir marg, delhi - dpcc",2026-06-25,30.4325,24
+"mandir marg, delhi - dpcc",2026-06-26,40.50125,24
+"mandir marg, delhi - dpcc",2026-06-27,54.845,24
+"mandir marg, delhi - dpcc",2026-06-28,57.14875,24
+"mandir marg, delhi - dpcc",2026-06-29,37.769999999999996,24
+"mandir marg, delhi - dpcc",2026-06-30,31.34,24
+"model town, patiala - ppcb",2026-06-01,40.60875,24
+"model town, patiala - ppcb",2026-06-02,40.745000000000005,24
+"model town, patiala - ppcb",2026-06-03,40.72625,24
+"model town, patiala - ppcb",2026-06-04,40.6275,24
+"model town, patiala - ppcb",2026-06-05,,16
+"model town, patiala - ppcb",2026-06-06,,15
+"model town, patiala - ppcb",2026-06-07,40.67999999999999,24
+"model town, patiala - ppcb",2026-06-08,40.72625,24
+"model town, patiala - ppcb",2026-06-09,50.1625,24
+"model town, patiala - ppcb",2026-06-10,40.685,24
+"model town, patiala - ppcb",2026-06-11,40.70375,24
+"model town, patiala - ppcb",2026-06-12,40.693749999999994,24
+"model town, patiala - ppcb",2026-06-13,40.707499999999996,24
+"model town, patiala - ppcb",2026-06-14,40.620000000000005,24
+"model town, patiala - ppcb",2026-06-15,42.0,22
+"model town, patiala - ppcb",2026-06-16,40.646249999999995,24
+"model town, patiala - ppcb",2026-06-17,40.67,24
+"model town, patiala - ppcb",2026-06-18,46.23166666666666,18
+"model town, patiala - ppcb",2026-06-19,40.68666666666667,19
+"model town, patiala - ppcb",2026-06-20,40.78166666666666,20
+"model town, patiala - ppcb",2026-06-21,40.73625,24
+"model town, patiala - ppcb",2026-06-22,42.10166666666667,21
+"model town, patiala - ppcb",2026-06-23,40.59375,24
+"model town, patiala - ppcb",2026-06-24,40.675000000000004,24
+"model town, patiala - ppcb",2026-06-25,40.03142857142857,23
+"model town, patiala - ppcb",2026-06-26,40.61,24
+"model town, patiala - ppcb",2026-06-27,40.84,24
+"model town, patiala - ppcb",2026-06-28,40.6625,24
+"model town, patiala - ppcb",2026-06-29,40.701249999999995,24
+"model town, patiala - ppcb",2026-06-30,56.878571428571426,23
+"mundka, delhi - dpcc",2026-06-01,33.53875,24
+"mundka, delhi - dpcc",2026-06-02,34.765,24
+"mundka, delhi - dpcc",2026-06-03,35.96875,24
+"mundka, delhi - dpcc",2026-06-04,29.73375,24
+"mundka, delhi - dpcc",2026-06-05,28.6825,24
+"mundka, delhi - dpcc",2026-06-06,21.68,24
+"mundka, delhi - dpcc",2026-06-07,18.28625,24
+"mundka, delhi - dpcc",2026-06-08,22.505000000000003,24
+"mundka, delhi - dpcc",2026-06-09,24.701249999999998,24
+"mundka, delhi - dpcc",2026-06-10,16.37875,24
+"mundka, delhi - dpcc",2026-06-11,21.90625,24
+"mundka, delhi - dpcc",2026-06-12,18.580000000000002,24
+"mundka, delhi - dpcc",2026-06-13,33.77125,24
+"mundka, delhi - dpcc",2026-06-14,23.23625,24
+"mundka, delhi - dpcc",2026-06-15,16.8975,24
+"mundka, delhi - dpcc",2026-06-16,15.129999999999999,24
+"mundka, delhi - dpcc",2026-06-17,25.5575,24
+"mundka, delhi - dpcc",2026-06-18,17.857499999999998,24
+"mundka, delhi - dpcc",2026-06-19,18.583750000000002,24
+"mundka, delhi - dpcc",2026-06-20,17.20625,24
+"mundka, delhi - dpcc",2026-06-21,14.03,24
+"mundka, delhi - dpcc",2026-06-22,16.465,24
+"mundka, delhi - dpcc",2026-06-23,17.474999999999998,24
+"mundka, delhi - dpcc",2026-06-24,16.834285714285713,23
+"mundka, delhi - dpcc",2026-06-25,18.330000000000002,24
+"mundka, delhi - dpcc",2026-06-26,20.14625,24
+"mundka, delhi - dpcc",2026-06-27,17.65875,24
+"mundka, delhi - dpcc",2026-06-28,20.9525,24
+"mundka, delhi - dpcc",2026-06-29,12.247499999999999,24
+"mundka, delhi - dpcc",2026-06-30,13.407499999999999,24
+"murthal, sonipat - hspcb",2026-06-01,50.56714285714286,24
+"murthal, sonipat - hspcb",2026-06-02,50.982499999999995,24
+"murthal, sonipat - hspcb",2026-06-03,50.528749999999995,24
+"murthal, sonipat - hspcb",2026-06-04,50.64375,21
+"murthal, sonipat - hspcb",2026-06-05,50.61125,24
+"murthal, sonipat - hspcb",2026-06-06,50.612500000000004,24
+"murthal, sonipat - hspcb",2026-06-07,50.565,24
+"murthal, sonipat - hspcb",2026-06-08,50.89125,24
+"murthal, sonipat - hspcb",2026-06-09,50.58375,24
+"murthal, sonipat - hspcb",2026-06-10,,16
+"murthal, sonipat - hspcb",2026-06-11,31.991249999999997,24
+"murthal, sonipat - hspcb",2026-06-12,50.6625,22
+"murthal, sonipat - hspcb",2026-06-13,94.07875,24
+"murthal, sonipat - hspcb",2026-06-14,106.96875,24
+"murthal, sonipat - hspcb",2026-06-15,83.21375,21
+"murthal, sonipat - hspcb",2026-06-16,82.13375,19
+"murthal, sonipat - hspcb",2026-06-17,92.3275,24
+"murthal, sonipat - hspcb",2026-06-18,86.20125,24
+"murthal, sonipat - hspcb",2026-06-19,87.55,24
+"murthal, sonipat - hspcb",2026-06-20,94.47874999999999,24
+"murthal, sonipat - hspcb",2026-06-21,77.11749999999999,24
+"murthal, sonipat - hspcb",2026-06-22,67.99625,24
+"murthal, sonipat - hspcb",2026-06-23,58.6675,24
+"murthal, sonipat - hspcb",2026-06-24,70.9675,24
+"murthal, sonipat - hspcb",2026-06-25,77.31,24
+"murthal, sonipat - hspcb",2026-06-26,108.57125,24
+"murthal, sonipat - hspcb",2026-06-27,100.78375000000001,24
+"murthal, sonipat - hspcb",2026-06-28,118.27624999999999,24
+"murthal, sonipat - hspcb",2026-06-29,102.91125,24
+"murthal, sonipat - hspcb",2026-06-30,95.74,24
+"najafgarh, delhi - dpcc",2026-06-01,59.5325,24
+"najafgarh, delhi - dpcc",2026-06-02,52.727500000000006,24
+"najafgarh, delhi - dpcc",2026-06-03,74.89625,24
+"najafgarh, delhi - dpcc",2026-06-04,57.06285714285714,23
+"najafgarh, delhi - dpcc",2026-06-05,65.96124999999999,24
+"najafgarh, delhi - dpcc",2026-06-06,45.27625,24
+"najafgarh, delhi - dpcc",2026-06-07,38.92375,24
+"najafgarh, delhi - dpcc",2026-06-08,45.40625,24
+"najafgarh, delhi - dpcc",2026-06-09,53.3575,24
+"najafgarh, delhi - dpcc",2026-06-10,38.1625,24
+"najafgarh, delhi - dpcc",2026-06-11,44.28125,24
+"najafgarh, delhi - dpcc",2026-06-12,36.265,24
+"najafgarh, delhi - dpcc",2026-06-13,61.6725,24
+"najafgarh, delhi - dpcc",2026-06-14,51.93875,24
+"najafgarh, delhi - dpcc",2026-06-15,36.53125,24
+"najafgarh, delhi - dpcc",2026-06-16,29.765,24
+"najafgarh, delhi - dpcc",2026-06-17,45.385,24
+"najafgarh, delhi - dpcc",2026-06-18,35.88125,24
+"najafgarh, delhi - dpcc",2026-06-19,43.35124999999999,24
+"najafgarh, delhi - dpcc",2026-06-20,38.1075,24
+"najafgarh, delhi - dpcc",2026-06-21,35.4425,24
+"najafgarh, delhi - dpcc",2026-06-22,44.13375,24
+"najafgarh, delhi - dpcc",2026-06-23,41.06249999999999,24
+"najafgarh, delhi - dpcc",2026-06-24,32.34625,24
+"najafgarh, delhi - dpcc",2026-06-25,34.035,24
+"najafgarh, delhi - dpcc",2026-06-26,42.65875,24
+"najafgarh, delhi - dpcc",2026-06-27,41.87,24
+"najafgarh, delhi - dpcc",2026-06-28,52.38375,24
+"najafgarh, delhi - dpcc",2026-06-29,30.857499999999998,24
+"najafgarh, delhi - dpcc",2026-06-30,26.58375,24
+"narela, delhi - dpcc",2026-06-01,16.5775,24
+"narela, delhi - dpcc",2026-06-02,16.8175,24
+"narela, delhi - dpcc",2026-06-03,15.139999999999999,24
+"narela, delhi - dpcc",2026-06-04,12.005,24
+"narela, delhi - dpcc",2026-06-05,19.794999999999998,24
+"narela, delhi - dpcc",2026-06-06,,8
+"narela, delhi - dpcc",2026-06-07,,14
+"narela, delhi - dpcc",2026-06-08,26.29,24
+"narela, delhi - dpcc",2026-06-09,29.27,22
+"narela, delhi - dpcc",2026-06-10,19.8625,24
+"narela, delhi - dpcc",2026-06-11,25.16375,21
+"narela, delhi - dpcc",2026-06-12,20.78875,24
+"narela, delhi - dpcc",2026-06-13,28.745,24
+"narela, delhi - dpcc",2026-06-14,21.90875,23
+"narela, delhi - dpcc",2026-06-15,15.4525,24
+"narela, delhi - dpcc",2026-06-16,12.577499999999999,22
+"narela, delhi - dpcc",2026-06-17,22.73,24
+"narela, delhi - dpcc",2026-06-18,18.18,23
+"narela, delhi - dpcc",2026-06-19,28.81,23
+"narela, delhi - dpcc",2026-06-20,20.298750000000002,23
+"narela, delhi - dpcc",2026-06-21,16.68,23
+"narela, delhi - dpcc",2026-06-22,18.4875,24
+"narela, delhi - dpcc",2026-06-23,18.03125,22
+"narela, delhi - dpcc",2026-06-24,34.7325,22
+"narela, delhi - dpcc",2026-06-25,18.144999999999996,22
+"narela, delhi - dpcc",2026-06-26,8.035,22
+"narela, delhi - dpcc",2026-06-27,,17
+"narela, delhi - dpcc",2026-06-28,,5
+"narela, delhi - dpcc",2026-06-29,,16
+"narela, delhi - dpcc",2026-06-30,10.105,24
+"new industrial town, faridabad - hspcb",2026-06-01,23.23,24
+"new industrial town, faridabad - hspcb",2026-06-02,23.045,24
+"new industrial town, faridabad - hspcb",2026-06-03,23.150000000000002,24
+"new industrial town, faridabad - hspcb",2026-06-04,23.04625,24
+"new industrial town, faridabad - hspcb",2026-06-05,23.12375,24
+"new industrial town, faridabad - hspcb",2026-06-06,23.225,24
+"new industrial town, faridabad - hspcb",2026-06-07,23.263749999999998,24
+"new industrial town, faridabad - hspcb",2026-06-08,23.14125,24
+"new industrial town, faridabad - hspcb",2026-06-09,23.09,24
+"new industrial town, faridabad - hspcb",2026-06-10,23.06375,21
+"new industrial town, faridabad - hspcb",2026-06-11,23.16375,24
+"new industrial town, faridabad - hspcb",2026-06-12,23.17,21
+"new industrial town, faridabad - hspcb",2026-06-13,23.1725,24
+"new industrial town, faridabad - hspcb",2026-06-14,23.06875,24
+"new industrial town, faridabad - hspcb",2026-06-15,23.04625,24
+"new industrial town, faridabad - hspcb",2026-06-16,23.197499999999998,24
+"new industrial town, faridabad - hspcb",2026-06-17,23.11,24
+"new industrial town, faridabad - hspcb",2026-06-18,23.11,24
+"new industrial town, faridabad - hspcb",2026-06-19,23.13875,23
+"new industrial town, faridabad - hspcb",2026-06-20,23.16375,24
+"new industrial town, faridabad - hspcb",2026-06-21,23.19125,24
+"new industrial town, faridabad - hspcb",2026-06-22,23.05625,23
+"new industrial town, faridabad - hspcb",2026-06-23,14.13625,24
+"new industrial town, faridabad - hspcb",2026-06-24,14.12125,24
+"new industrial town, faridabad - hspcb",2026-06-25,14.24125,24
+"new industrial town, faridabad - hspcb",2026-06-26,14.223749999999999,24
+"new industrial town, faridabad - hspcb",2026-06-27,14.091249999999999,24
+"new industrial town, faridabad - hspcb",2026-06-28,14.07125,24
+"new industrial town, faridabad - hspcb",2026-06-29,14.071250000000001,24
+"new industrial town, faridabad - hspcb",2026-06-30,14.21625,24
+"nise gwal pahari, gurugram - iitm",2026-06-01,104.18499999999999,24
+"nise gwal pahari, gurugram - iitm",2026-06-02,93.54125,24
+"nise gwal pahari, gurugram - iitm",2026-06-03,142.6,24
+"nise gwal pahari, gurugram - iitm",2026-06-04,84.52125000000001,24
+"nise gwal pahari, gurugram - iitm",2026-06-05,109.02125,24
+"nise gwal pahari, gurugram - iitm",2026-06-06,88.7875,23
+"nise gwal pahari, gurugram - iitm",2026-06-07,71.515,23
+"nise gwal pahari, gurugram - iitm",2026-06-08,70.30125,24
+"nise gwal pahari, gurugram - iitm",2026-06-09,84.3775,24
+"nise gwal pahari, gurugram - iitm",2026-06-10,65.07125,24
+"nise gwal pahari, gurugram - iitm",2026-06-11,82.35374999999999,24
+"nise gwal pahari, gurugram - iitm",2026-06-12,75.52125,24
+"nise gwal pahari, gurugram - iitm",2026-06-13,99.87750000000001,24
+"nise gwal pahari, gurugram - iitm",2026-06-14,100.64375,23
+"nise gwal pahari, gurugram - iitm",2026-06-15,67.0425,22
+"nise gwal pahari, gurugram - iitm",2026-06-16,73.16375000000001,20
+"nise gwal pahari, gurugram - iitm",2026-06-17,90.655,24
+"nise gwal pahari, gurugram - iitm",2026-06-18,75.445,24
+"nise gwal pahari, gurugram - iitm",2026-06-19,78.25500000000001,24
+"nise gwal pahari, gurugram - iitm",2026-06-20,72.67625000000001,24
+"nise gwal pahari, gurugram - iitm",2026-06-21,67.27875,24
+"nise gwal pahari, gurugram - iitm",2026-06-22,78.99499999999999,24
+"nise gwal pahari, gurugram - iitm",2026-06-23,76.35499999999999,24
+"nise gwal pahari, gurugram - iitm",2026-06-24,82.82375,24
+"nise gwal pahari, gurugram - iitm",2026-06-25,81.89875,24
+"nise gwal pahari, gurugram - iitm",2026-06-26,87.7175,24
+"nise gwal pahari, gurugram - iitm",2026-06-27,95.38625,24
+"nise gwal pahari, gurugram - iitm",2026-06-28,101.15375,24
+"nise gwal pahari, gurugram - iitm",2026-06-29,55.730000000000004,24
+"nise gwal pahari, gurugram - iitm",2026-06-30,61.01125,24
+"patti mehar, ambala - hspcb",2026-06-01,39.2175,24
+"patti mehar, ambala - hspcb",2026-06-02,42.26,24
+"patti mehar, ambala - hspcb",2026-06-03,43.887499999999996,24
+"patti mehar, ambala - hspcb",2026-06-04,40.97625000000001,24
+"patti mehar, ambala - hspcb",2026-06-05,35.7675,24
+"patti mehar, ambala - hspcb",2026-06-06,33.7575,24
+"patti mehar, ambala - hspcb",2026-06-07,33.19,24
+"patti mehar, ambala - hspcb",2026-06-08,32.34125,24
+"patti mehar, ambala - hspcb",2026-06-09,34.56125,24
+"patti mehar, ambala - hspcb",2026-06-10,34.43,24
+"patti mehar, ambala - hspcb",2026-06-11,37.512499999999996,24
+"patti mehar, ambala - hspcb",2026-06-12,36.4525,24
+"patti mehar, ambala - hspcb",2026-06-13,10.238750000000001,24
+"patti mehar, ambala - hspcb",2026-06-14,10.01,24
+"patti mehar, ambala - hspcb",2026-06-15,10.01,24
+"patti mehar, ambala - hspcb",2026-06-16,10.01,24
+"patti mehar, ambala - hspcb",2026-06-17,10.01,24
+"patti mehar, ambala - hspcb",2026-06-18,22.49125,24
+"patti mehar, ambala - hspcb",2026-06-19,25.215,23
+"patti mehar, ambala - hspcb",2026-06-20,15.85125,24
+"patti mehar, ambala - hspcb",2026-06-21,15.838750000000001,24
+"patti mehar, ambala - hspcb",2026-06-22,15.226249999999999,24
+"patti mehar, ambala - hspcb",2026-06-23,15.9325,24
+"patti mehar, ambala - hspcb",2026-06-24,16.18375,24
+"patti mehar, ambala - hspcb",2026-06-25,21.785,24
+"patti mehar, ambala - hspcb",2026-06-26,21.896250000000002,24
+"patti mehar, ambala - hspcb",2026-06-27,20.995,22
+"patti mehar, ambala - hspcb",2026-06-28,12.814285714285715,24
+"patti mehar, ambala - hspcb",2026-06-29,12.68625,24
+"patti mehar, ambala - hspcb",2026-06-30,15.03375,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-01,54.62625,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-02,78.48375,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-03,72.1225,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-04,49.3275,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-05,58.02875,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-06,69.42125,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-07,80.19,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-08,80.26625000000001,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-09,83.39874999999999,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-10,89.89875,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-11,81.37125,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-12,62.26875,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-13,53.754999999999995,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-14,61.085,18
+"punjab agricultural university, ludhiana - ppcb",2026-06-15,61.99375,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-16,64.31375,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-17,54.989999999999995,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-18,46.00875,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-19,60.665,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-20,56.3725,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-21,51.9225,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-22,59.571250000000006,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-23,61.97,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-24,69.27374999999999,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-25,63.88625,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-26,74.2075,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-27,71.78875,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-28,66.17,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-29,76.71499999999999,24
+"punjab agricultural university, ludhiana - ppcb",2026-06-30,66.94624999999999,24
+"punjabi bagh, delhi - dpcc",2026-06-01,16.5775,24
+"punjabi bagh, delhi - dpcc",2026-06-02,16.8175,24
+"punjabi bagh, delhi - dpcc",2026-06-03,15.139999999999999,24
+"punjabi bagh, delhi - dpcc",2026-06-04,12.005,24
+"punjabi bagh, delhi - dpcc",2026-06-05,19.794999999999998,24
+"punjabi bagh, delhi - dpcc",2026-06-06,,8
+"punjabi bagh, delhi - dpcc",2026-06-07,,14
+"punjabi bagh, delhi - dpcc",2026-06-08,26.29,24
+"punjabi bagh, delhi - dpcc",2026-06-09,29.27,22
+"punjabi bagh, delhi - dpcc",2026-06-10,19.8625,24
+"punjabi bagh, delhi - dpcc",2026-06-11,25.16375,21
+"punjabi bagh, delhi - dpcc",2026-06-12,20.78875,24
+"punjabi bagh, delhi - dpcc",2026-06-13,28.745,24
+"punjabi bagh, delhi - dpcc",2026-06-14,21.90875,23
+"punjabi bagh, delhi - dpcc",2026-06-15,15.4525,24
+"punjabi bagh, delhi - dpcc",2026-06-16,12.577499999999999,22
+"punjabi bagh, delhi - dpcc",2026-06-17,22.73,24
+"punjabi bagh, delhi - dpcc",2026-06-18,18.18,23
+"punjabi bagh, delhi - dpcc",2026-06-19,28.81,23
+"punjabi bagh, delhi - dpcc",2026-06-20,20.298750000000002,23
+"punjabi bagh, delhi - dpcc",2026-06-21,16.68,23
+"punjabi bagh, delhi - dpcc",2026-06-22,18.4875,24
+"punjabi bagh, delhi - dpcc",2026-06-23,18.03125,22
+"punjabi bagh, delhi - dpcc",2026-06-24,34.7325,22
+"punjabi bagh, delhi - dpcc",2026-06-25,18.144999999999996,22
+"punjabi bagh, delhi - dpcc",2026-06-26,8.035,22
+"punjabi bagh, delhi - dpcc",2026-06-27,,17
+"punjabi bagh, delhi - dpcc",2026-06-28,,5
+"punjabi bagh, delhi - dpcc",2026-06-29,,16
+"punjabi bagh, delhi - dpcc",2026-06-30,10.105,24
+"r k puram, delhi - dpcc",2026-06-01,41.5825,24
+"r k puram, delhi - dpcc",2026-06-02,37.80125,24
+"r k puram, delhi - dpcc",2026-06-03,54.4075,22
+"r k puram, delhi - dpcc",2026-06-04,38.70625,24
+"r k puram, delhi - dpcc",2026-06-05,21.812857142857144,23
+"r k puram, delhi - dpcc",2026-06-06,12.958749999999998,24
+"r k puram, delhi - dpcc",2026-06-07,13.76125,24
+"r k puram, delhi - dpcc",2026-06-08,12.725,24
+"r k puram, delhi - dpcc",2026-06-09,46.041250000000005,24
+"r k puram, delhi - dpcc",2026-06-10,32.55,24
+"r k puram, delhi - dpcc",2026-06-11,35.77375,24
+"r k puram, delhi - dpcc",2026-06-12,27.439999999999998,24
+"r k puram, delhi - dpcc",2026-06-13,43.16375,24
+"r k puram, delhi - dpcc",2026-06-14,,14
+"r k puram, delhi - dpcc",2026-06-15,25.79375,24
+"r k puram, delhi - dpcc",2026-06-16,17.66125,24
+"r k puram, delhi - dpcc",2026-06-17,37.52875,24
+"r k puram, delhi - dpcc",2026-06-18,53.397499999999994,24
+"r k puram, delhi - dpcc",2026-06-19,45.68,24
+"r k puram, delhi - dpcc",2026-06-20,44.746249999999996,21
+"r k puram, delhi - dpcc",2026-06-21,26.4675,23
+"r k puram, delhi - dpcc",2026-06-22,42.68625,20
+"r k puram, delhi - dpcc",2026-06-23,,16
+"r k puram, delhi - dpcc",2026-06-24,63.2925,24
+"r k puram, delhi - dpcc",2026-06-25,67.05875,24
+"r k puram, delhi - dpcc",2026-06-26,66.64375000000001,23
+"r k puram, delhi - dpcc",2026-06-27,60.92375,24
+"r k puram, delhi - dpcc",2026-06-28,70.62625,24
+"r k puram, delhi - dpcc",2026-06-29,51.441250000000004,24
+"r k puram, delhi - dpcc",2026-06-30,36.118750000000006,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-01,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-02,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-03,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-04,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-05,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-06,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-07,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-08,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-09,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-10,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-11,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-12,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-13,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-14,,0
+"rimt university, mandi gobindgarh - ppcb",2026-06-15,,9
+"rimt university, mandi gobindgarh - ppcb",2026-06-16,45.85000000000001,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-17,48.99,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-18,40.80625,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-19,38.68375,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-20,38.673750000000005,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-21,38.70125,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-22,38.645,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-23,41.935,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-24,42.56,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-25,,11
+"rimt university, mandi gobindgarh - ppcb",2026-06-26,,13
+"rimt university, mandi gobindgarh - ppcb",2026-06-27,38.71125,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-28,37.739999999999995,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-29,52.2725,24
+"rimt university, mandi gobindgarh - ppcb",2026-06-30,38.83,24
+"rohini, delhi - dpcc",2026-06-01,16.5775,24
+"rohini, delhi - dpcc",2026-06-02,16.8175,24
+"rohini, delhi - dpcc",2026-06-03,15.139999999999999,24
+"rohini, delhi - dpcc",2026-06-04,12.005,24
+"rohini, delhi - dpcc",2026-06-05,19.794999999999998,24
+"rohini, delhi - dpcc",2026-06-06,,8
+"rohini, delhi - dpcc",2026-06-07,,14
+"rohini, delhi - dpcc",2026-06-08,26.29,24
+"rohini, delhi - dpcc",2026-06-09,29.27,22
+"rohini, delhi - dpcc",2026-06-10,19.8625,24
+"rohini, delhi - dpcc",2026-06-11,25.16375,21
+"rohini, delhi - dpcc",2026-06-12,20.78875,24
+"rohini, delhi - dpcc",2026-06-13,28.745,24
+"rohini, delhi - dpcc",2026-06-14,21.90875,23
+"rohini, delhi - dpcc",2026-06-15,15.4525,24
+"rohini, delhi - dpcc",2026-06-16,12.577499999999999,22
+"rohini, delhi - dpcc",2026-06-17,22.73,24
+"rohini, delhi - dpcc",2026-06-18,18.18,23
+"rohini, delhi - dpcc",2026-06-19,28.81,23
+"rohini, delhi - dpcc",2026-06-20,20.298750000000002,23
+"rohini, delhi - dpcc",2026-06-21,16.68,23
+"rohini, delhi - dpcc",2026-06-22,18.4875,24
+"rohini, delhi - dpcc",2026-06-23,18.03125,22
+"rohini, delhi - dpcc",2026-06-24,34.7325,22
+"rohini, delhi - dpcc",2026-06-25,18.144999999999996,22
+"rohini, delhi - dpcc",2026-06-26,8.035,22
+"rohini, delhi - dpcc",2026-06-27,,17
+"rohini, delhi - dpcc",2026-06-28,,5
+"rohini, delhi - dpcc",2026-06-29,,16
+"rohini, delhi - dpcc",2026-06-30,10.105,24
+"sector 11, faridabad - hspcb",2026-06-01,15.0125,24
+"sector 11, faridabad - hspcb",2026-06-02,15.252500000000001,24
+"sector 11, faridabad - hspcb",2026-06-03,15.33375,24
+"sector 11, faridabad - hspcb",2026-06-04,15.12375,24
+"sector 11, faridabad - hspcb",2026-06-05,15.15125,24
+"sector 11, faridabad - hspcb",2026-06-06,15.28875,24
+"sector 11, faridabad - hspcb",2026-06-07,15.245000000000001,24
+"sector 11, faridabad - hspcb",2026-06-08,15.14875,24
+"sector 11, faridabad - hspcb",2026-06-09,15.079999999999998,24
+"sector 11, faridabad - hspcb",2026-06-10,15.172500000000001,24
+"sector 11, faridabad - hspcb",2026-06-11,15.17125,24
+"sector 11, faridabad - hspcb",2026-06-12,15.18875,24
+"sector 11, faridabad - hspcb",2026-06-13,15.16625,24
+"sector 11, faridabad - hspcb",2026-06-14,15.113750000000001,24
+"sector 11, faridabad - hspcb",2026-06-15,15.03625,24
+"sector 11, faridabad - hspcb",2026-06-16,15.1275,24
+"sector 11, faridabad - hspcb",2026-06-17,15.12125,24
+"sector 11, faridabad - hspcb",2026-06-18,15.206249999999999,24
+"sector 11, faridabad - hspcb",2026-06-19,15.1225,24
+"sector 11, faridabad - hspcb",2026-06-20,15.13125,24
+"sector 11, faridabad - hspcb",2026-06-21,15.171249999999999,24
+"sector 11, faridabad - hspcb",2026-06-22,15.108749999999999,24
+"sector 11, faridabad - hspcb",2026-06-23,15.14,24
+"sector 11, faridabad - hspcb",2026-06-24,15.16375,24
+"sector 11, faridabad - hspcb",2026-06-25,15.22625,24
+"sector 11, faridabad - hspcb",2026-06-26,15.100000000000001,24
+"sector 11, faridabad - hspcb",2026-06-27,25.07875,24
+"sector 11, faridabad - hspcb",2026-06-28,25.083750000000002,24
+"sector 11, faridabad - hspcb",2026-06-29,25.1,24
+"sector 11, faridabad - hspcb",2026-06-30,25.06625,24
+"sector 30, faridabad - hspcb",2026-06-01,10.082500000000001,24
+"sector 30, faridabad - hspcb",2026-06-02,10.08625,24
+"sector 30, faridabad - hspcb",2026-06-03,10.0775,24
+"sector 30, faridabad - hspcb",2026-06-04,10.141250000000001,24
+"sector 30, faridabad - hspcb",2026-06-05,10.059999999999999,24
+"sector 30, faridabad - hspcb",2026-06-06,10.069999999999999,24
+"sector 30, faridabad - hspcb",2026-06-07,10.0475,24
+"sector 30, faridabad - hspcb",2026-06-08,10.05875,24
+"sector 30, faridabad - hspcb",2026-06-09,10.0375,24
+"sector 30, faridabad - hspcb",2026-06-10,10.395,19
+"sector 30, faridabad - hspcb",2026-06-11,,0
+"sector 30, faridabad - hspcb",2026-06-12,,0
+"sector 30, faridabad - hspcb",2026-06-13,,7
+"sector 30, faridabad - hspcb",2026-06-14,10.973749999999999,24
+"sector 30, faridabad - hspcb",2026-06-15,28.86,19
+"sector 30, faridabad - hspcb",2026-06-16,140.14857142857144,22
+"sector 30, faridabad - hspcb",2026-06-17,12.456249999999999,24
+"sector 30, faridabad - hspcb",2026-06-18,80.9357142857143,23
+"sector 30, faridabad - hspcb",2026-06-19,10.815714285714284,21
+"sector 30, faridabad - hspcb",2026-06-20,6.9437500000000005,21
+"sector 30, faridabad - hspcb",2026-06-21,11.33625,23
+"sector 30, faridabad - hspcb",2026-06-22,21.34142857142857,22
+"sector 30, faridabad - hspcb",2026-06-23,,14
+"sector 30, faridabad - hspcb",2026-06-24,,15
+"sector 30, faridabad - hspcb",2026-06-25,12.168333333333335,19
+"sector 30, faridabad - hspcb",2026-06-26,35.693749999999994,24
+"sector 30, faridabad - hspcb",2026-06-27,27.25125,24
+"sector 30, faridabad - hspcb",2026-06-28,22.798750000000002,24
+"sector 30, faridabad - hspcb",2026-06-29,25.25875,24
+"sector 30, faridabad - hspcb",2026-06-30,24.313750000000002,24
+"teri gram, gurugram - hspcb",2026-06-01,,0
+"teri gram, gurugram - hspcb",2026-06-02,,0
+"teri gram, gurugram - hspcb",2026-06-03,,8
+"teri gram, gurugram - hspcb",2026-06-04,,16
+"teri gram, gurugram - hspcb",2026-06-05,,14
+"teri gram, gurugram - hspcb",2026-06-06,,17
+"teri gram, gurugram - hspcb",2026-06-07,47.515,24
+"teri gram, gurugram - hspcb",2026-06-08,,10
+"teri gram, gurugram - hspcb",2026-06-09,,7
+"teri gram, gurugram - hspcb",2026-06-10,,17
+"teri gram, gurugram - hspcb",2026-06-11,49.8575,24
+"teri gram, gurugram - hspcb",2026-06-12,48.3625,24
+"teri gram, gurugram - hspcb",2026-06-13,49.11875,24
+"teri gram, gurugram - hspcb",2026-06-14,48.3275,24
+"teri gram, gurugram - hspcb",2026-06-15,49.64,24
+"teri gram, gurugram - hspcb",2026-06-16,49.13125,24
+"teri gram, gurugram - hspcb",2026-06-17,48.963750000000005,22
+"teri gram, gurugram - hspcb",2026-06-18,48.92250000000001,24
+"teri gram, gurugram - hspcb",2026-06-19,50.83375,24
+"teri gram, gurugram - hspcb",2026-06-20,48.237500000000004,24
+"teri gram, gurugram - hspcb",2026-06-21,26.07375,24
+"teri gram, gurugram - hspcb",2026-06-22,37.36875,24
+"teri gram, gurugram - hspcb",2026-06-23,37.17625,24
+"teri gram, gurugram - hspcb",2026-06-24,37.275,24
+"teri gram, gurugram - hspcb",2026-06-25,36.84250000000001,24
+"teri gram, gurugram - hspcb",2026-06-26,37.87625,24
+"teri gram, gurugram - hspcb",2026-06-27,36.7575,24
+"teri gram, gurugram - hspcb",2026-06-28,41.165000000000006,24
+"teri gram, gurugram - hspcb",2026-06-29,37.18000000000001,23
+"teri gram, gurugram - hspcb",2026-06-30,28.313750000000006,24
+"vikas sadan, gurugram - hspcb",2026-06-01,24.585,24
+"vikas sadan, gurugram - hspcb",2026-06-02,24.5025,24
+"vikas sadan, gurugram - hspcb",2026-06-03,24.652500000000003,24
+"vikas sadan, gurugram - hspcb",2026-06-04,24.621250000000003,24
+"vikas sadan, gurugram - hspcb",2026-06-05,24.6825,24
+"vikas sadan, gurugram - hspcb",2026-06-06,25.25333333333333,21
+"vikas sadan, gurugram - hspcb",2026-06-07,22.86,24
+"vikas sadan, gurugram - hspcb",2026-06-08,24.612499999999997,24
+"vikas sadan, gurugram - hspcb",2026-06-09,25.001428571428573,23
+"vikas sadan, gurugram - hspcb",2026-06-10,,14
+"vikas sadan, gurugram - hspcb",2026-06-11,,13
+"vikas sadan, gurugram - hspcb",2026-06-12,,13
+"vikas sadan, gurugram - hspcb",2026-06-13,24.744999999999997,24
+"vikas sadan, gurugram - hspcb",2026-06-14,24.50375,24
+"vikas sadan, gurugram - hspcb",2026-06-15,24.67625,24
+"vikas sadan, gurugram - hspcb",2026-06-16,24.50375,24
+"vikas sadan, gurugram - hspcb",2026-06-17,24.552857142857142,23
+"vikas sadan, gurugram - hspcb",2026-06-18,24.66625,24
+"vikas sadan, gurugram - hspcb",2026-06-19,34.46875,24
+"vikas sadan, gurugram - hspcb",2026-06-20,35.7275,24
+"vikas sadan, gurugram - hspcb",2026-06-21,35.85375,24
+"vikas sadan, gurugram - hspcb",2026-06-22,31.085,24
+"vikas sadan, gurugram - hspcb",2026-06-23,31.903333333333332,20
+"vikas sadan, gurugram - hspcb",2026-06-24,40.32,24
+"vikas sadan, gurugram - hspcb",2026-06-25,40.3425,24
+"vikas sadan, gurugram - hspcb",2026-06-26,40.105,24
+"vikas sadan, gurugram - hspcb",2026-06-27,40.3125,24
+"vikas sadan, gurugram - hspcb",2026-06-28,40.2725,24
+"vikas sadan, gurugram - hspcb",2026-06-29,40.36875,24
+"vikas sadan, gurugram - hspcb",2026-06-30,34.18375,24

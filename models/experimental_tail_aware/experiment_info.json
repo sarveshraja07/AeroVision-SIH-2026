@@ -1,0 +1,10 @@
+{
+  "strength": 0.0,
+  "validation_AQI_MAE": 32.0690761849785,
+  "GT100": 7,
+  "GT150": 5,
+  "max_error": 221.46850501896785,
+  "training_period": "2026-06-01 to 2026-06-23",
+  "validation_period": "2026-06-24 to 2026-06-30",
+  "note": "Experimental tail-aware PM25/PM10 models. No validation CPCB values used during training."
+}

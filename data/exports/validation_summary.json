@@ -1,0 +1,45 @@
+{
+  "validation_period": "24\u201330 June 2026",
+  "aqi": {
+    "r2": 0.207,
+    "correlation": 0.47,
+    "mae": 38.57,
+    "rmse": 61.2,
+    "bias": -4.94,
+    "category_agreement": 73.86,
+    "dominant_pollutant_agreement": 87.5
+  },
+  "models": {
+    "PM2.5": {
+      "r2": 0.334,
+      "mae": 17.611,
+      "rmse": 30.398,
+      "correlation": 0.64
+    },
+    "PM10": {
+      "r2": 0.304,
+      "mae": 37.383,
+      "rmse": 50.314,
+      "correlation": 0.587
+    },
+    "NO2": {
+      "r2": 0.755,
+      "mae": 5.956,
+      "rmse": 9.568,
+      "correlation": 0.885
+    },
+    "O3_8H": {
+      "r2": 0.565,
+      "mae": 11.57,
+      "rmse": 15.199,
+      "correlation": 0.772
+    }
+  },
+  "event": {
+    "date": "2026-06-08",
+    "fire_detections": 359,
+    "hcho_hotspots": 1711,
+    "hotspots_near_fire": 462,
+    "association_percentage": 27.0
+  }
+}

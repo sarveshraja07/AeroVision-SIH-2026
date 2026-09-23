@@ -1,0 +1,7 @@
+,Predicted_Good,Predicted_Satisfactory,Predicted_Moderate,Predicted_Poor,Predicted_Very Poor,Predicted_Severe
+Actual_Good,0,1,3,1,0,0
+Actual_Satisfactory,0,21,16,1,0,0
+Actual_Moderate,0,5,105,3,0,0
+Actual_Poor,0,0,2,4,0,0
+Actual_Very Poor,0,0,10,4,0,0
+Actual_Severe,0,0,0,0,0,0

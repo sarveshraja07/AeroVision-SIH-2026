@@ -1,0 +1,27 @@
+station,hourly_rows,PM25_valid_hours,PM25_coverage_pct,PM10_valid_hours,PM10_coverage_pct,NO2_valid_hours,NO2_coverage_pct,O3_valid_hours,O3_coverage_pct
+"alipur, delhi - dpcc",720,689,95.7,682,94.7,651,90.4,704,97.8
+"anand vihar, delhi - dpcc",720,698,96.9,697,96.8,693,96.2,703,97.6
+"ashok vihar, delhi - dpcc",720,704,97.8,704,97.8,707,98.2,708,98.3
+"bawana, delhi - dpcc",720,707,98.2,705,97.9,720,100.0,720,100.0
+"civil line, jalandhar - ppcb",720,720,100.0,720,100.0,704,97.8,720,100.0
+"golden temple, amritsar - ppcb",720,720,100.0,720,100.0,698,96.9,717,99.6
+"hardev nagar, bathinda - ppcb",720,615,85.4,616,85.6,648,90.0,0,0.0
+"ito, delhi - cpcb",720,663,92.1,662,91.9,663,92.1,633,87.9
+"mandir marg, delhi - dpcc",720,621,86.2,718,99.7,719,99.9,720,100.0
+"model town, patiala - ppcb",720,676,93.9,682,94.7,683,94.9,681,94.6
+"mundka, delhi - dpcc",720,710,98.6,698,96.9,718,99.7,719,99.9
+"murthal, sonipat - hspcb",720,655,91.0,653,90.7,699,97.1,699,97.1
+"najafgarh, delhi - dpcc",720,710,98.6,708,98.3,718,99.7,719,99.9
+"narela, delhi - dpcc",720,704,97.8,702,97.5,706,98.1,640,88.9
+"new industrial town, faridabad - hspcb",720,692,96.1,677,94.0,712,98.9,712,98.9
+"nise gwal pahari, gurugram - iitm",720,714,99.2,710,98.6,720,100.0,711,98.8
+"patti mehar, ambala - hspcb",720,698,96.9,701,97.4,719,99.9,717,99.6
+"punjab agricultural university, ludhiana - ppcb",720,718,99.7,718,99.7,720,100.0,714,99.2
+"punjabi bagh, delhi - dpcc",720,704,97.8,702,97.5,706,98.1,640,88.9
+"r k puram, delhi - dpcc",720,706,98.1,683,94.9,707,98.2,690,95.8
+"rimt university, mandi gobindgarh - ppcb",720,336,46.7,345,47.9,345,47.9,345,47.9
+"rohini, delhi - dpcc",720,704,97.8,702,97.5,706,98.1,640,88.9
+"sector 11, faridabad - hspcb",720,714,99.2,670,93.1,720,100.0,720,100.0
+"sector 30, faridabad - hspcb",720,629,87.4,629,87.4,631,87.6,609,84.6
+"teri gram, gurugram - hspcb",720,563,78.2,563,78.2,581,80.7,590,81.9
+"vikas sadan, gurugram - hspcb",720,593,82.4,598,83.1,164,22.8,679,94.3

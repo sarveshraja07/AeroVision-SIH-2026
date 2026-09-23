@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AeroVision India | Air Quality Intelligence
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/landing.css"
+    >
+<!-- <link
+    rel="stylesheet"
+    href="/aerovision-ui.css"
+> -->
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="main-header">
+
+    <div class="header-inner">
+
+
+        <a
+            class="brand"
+            href="/"
+        >
+
+            <div class="brand-icon">
+                AV
+            </div>
+
+
+            <div>
+
+                <h1>
+                    AeroVision
+                </h1>
+
+                <span>
+                    AIR QUALITY INTELLIGENCE
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a
+                href="#overview"
+                class="nav-link active"
+            >
+                AQI
+            </a>
+
+
+            <a
+                href="#history"
+                class="nav-link"
+            >
+                June History
+            </a>
+
+
+            <a
+                href="#environment"
+                class="nav-link"
+            >
+                Environment
+            </a>
+
+
+            <a
+                href="/map.html"
+                class="nav-link map-nav"
+            >
+                🗺 AQI Map
+            </a>
+
+
+            <a
+                href="#validation"
+                class="nav-link"
+            >
+                Model
+            </a>
+
+
+            <a
+                href="#sources"
+                class="nav-link"
+            >
+                Data Sources
+            </a>
+
+        </nav>
+
+
+        <div class="real-badge">
+
+            <span class="real-dot"></span>
+
+            REAL DATA · JUNE 2026
+
+        </div>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     PAGE
+========================================================= -->
+
+<main class="page-container">
+
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<div class="breadcrumb">
+
+    Dashboard
+
+    <span>›</span>
+
+    AeroVision India
+
+    <span>›</span>
+
+    June 2026
+
+</div>
+
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section
+    class="intro-section"
+    id="overview"
+>
+
+    <div>
+
+        <div class="dataset-label">
+
+            <span class="dataset-dot"></span>
+
+            CPCB + SATELLITE + METEOROLOGY + FIRMS
+
+        </div>
+
+
+        <h2>
+            Air Quality Intelligence
+        </h2>
+
+
+        <p>
+
+            Real CPCB observations combined with satellite,
+            meteorological and fire intelligence.
+
+        </p>
+
+
+        <small id="datasetDate">
+            Loading June 2026 observations...
+        </small>
+
+    </div>
+
+
+    <div class="intro-actions">
+
+
+        <select
+            id="stationSelector"
+            class="station-selector"
+        >
+
+            <option value="">
+                Loading stations...
+            </option>
+
+        </select>
+
+
+        <a
+            href="/map.html"
+            class="primary-map-button"
+        >
+            🗺 Open AQI Map
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DATA VIEW SELECTOR
+========================================================= -->
+
+<section class="data-view-navigation">
+
+    <button
+        type="button"
+        class="data-view-btn active"
+        data-view="AQI"
+    >
+        AQI
+    </button>
+
+    <button
+        type="button"
+        class="data-view-btn"
+        data-view="HISTORY"
+    >
+        ↶ History
+    </button>
+
+    <button
+        type="button"
+        class="data-view-btn"
+        data-view="PM25"
+    >
+        PM₂.₅
+    </button>
+
+    <button
+        type="button"
+        class="data-view-btn"
+        data-view="PM10"
+    >
+        PM₁₀
+    </button>
+
+    <button
+        type="button"
+        class="data-view-btn"
+        data-view="NO2"
+    >
+        NO₂
+    </button>
+
+    <button
+        type="button"
+        class="data-view-btn"
+        data-view="O3"
+    >
+        O₃ 8H
+    </button>
+
+</section>
+
+
+<!-- =========================================================
+     SPECIFIC POLLUTANT DETAILS
+========================================================= -->
+
+<section
+    id="specificDataPanel"
+    class="specific-data-panel"
+    hidden
+>
+
+    <div class="specific-data-header">
+
+        <div>
+
+            <span class="section-eyebrow">
+                SELECTED PARAMETER
+            </span>
+
+            <h2 id="specificDataTitle">
+                PM2.5
+            </h2>
+
+        </div>
+
+        <div>
+
+            <span id="specificStationName">
+                --
+            </span>
+
+            <strong id="specificDataDate">
+                --
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="specific-value-grid">
+
+        <article class="specific-value-card">
+
+            <span>
+                CPCB Observation
+            </span>
+
+            <strong id="specificCPCB">
+                --
+            </strong>
+
+            <small id="specificUnitCPCB">
+                µg/m³
+            </small>
+
+        </article>
+
+
+        <article class="specific-value-card aero">
+
+            <span>
+                AeroVision Estimate
+            </span>
+
+            <strong id="specificAero">
+                --
+            </strong>
+
+            <small id="specificUnitAero">
+                µg/m³
+            </small>
+
+        </article>
+
+
+        <article class="specific-value-card">
+
+            <span>
+                Difference
+            </span>
+
+            <strong id="specificDifference">
+                --
+            </strong>
+
+            <small>
+                Observation vs model
+            </small>
+
+        </article>
+
+
+        <article class="specific-value-card">
+
+            <span>
+                Selected Day
+            </span>
+
+            <strong id="specificDay">
+                --
+            </strong>
+
+            <small>
+                June 2026
+            </small>
+
+        </article>
+
+    </div>
+
+
+    <div class="specific-history">
+
+        <div class="specific-history-head">
+
+            <div>
+
+                <span class="section-eyebrow">
+                    JUNE 2026
+                </span>
+
+                <h3 id="specificHistoryTitle">
+                    PM2.5 History
+                </h3>
+
+            </div>
+
+
+            <div class="specific-history-legend">
+
+                <span>
+                    <i class="specific-cpcb-dot"></i>
+                    CPCB
+                </span>
+
+                <span>
+                    <i class="specific-aero-dot"></i>
+                    AeroVision
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="specificHistoryChart"
+            class="specific-history-chart"
+        >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- YOUR EXISTING HERO STARTS HERE -->
+<section class="hero-grid">
+
+
+    <article
+        class="aqi-hero"
+        id="aqiHero"
+    >
+
+
+        <div class="hero-top">
+
+
+            <div>
+
+                <span class="hero-eyebrow">
+                    SELECTED LOCATION
+                </span>
+
+
+                <h3 id="heroStation">
+                    Loading...
+                </h3>
+
+
+                <p id="heroLocation">
+                    CPCB observation station
+                </p>
+
+            </div>
+
+
+            <div class="observation-badge">
+
+                Observation
+
+                <strong id="heroDate">
+                    --
+                </strong>
+
+                <span id="heroPeriodLabel">
+                    --
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-content">
+
+
+            <div class="aqi-main">
+
+                <div class="aqi-label">
+                    AeroVision AQI
+                </div>
+
+
+                <div
+                    class="aqi-number"
+                    id="heroAeroAQI"
+                >
+                    --
+                </div>
+
+
+                <div
+                    class="aqi-category"
+                    id="heroAeroCategory"
+                >
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="comparison-divider"></div>
+
+
+            <div class="reference-block">
+
+
+                <div class="reference-item">
+
+                    <span>
+                        CPCB AQI
+                    </span>
+
+                    <strong id="heroCpcbAQI">
+                        --
+                    </strong>
+
+                    <small id="heroCpcbCategory">
+                        --
+                    </small>
+
+                </div>
+
+
+                <div class="reference-item">
+
+                    <span>
+                        AQI Difference
+                    </span>
+
+                    <strong id="heroDifference">
+                        --
+                    </strong>
+
+                    <small id="heroReferenceStatus">
+                        CPCB reference
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="aqi-scale">
+
+            <div class="scale-segment scale-good">
+                Good
+            </div>
+
+            <div class="scale-segment scale-satisfactory">
+                Satisfactory
+            </div>
+
+            <div class="scale-segment scale-moderate">
+                Moderate
+            </div>
+
+            <div class="scale-segment scale-poor">
+                Poor
+            </div>
+
+            <div class="scale-segment scale-very-poor">
+                Very Poor
+            </div>
+
+            <div class="scale-segment scale-severe">
+                Severe
+            </div>
+
+        </div>
+
+
+    </article>
+
+
+
+    <!-- =====================================================
+         MAP PREVIEW
+    ====================================================== -->
+
+    <article class="map-preview-card">
+
+        <div class="map-preview-background">
+
+            <div class="preview-rings"></div>
+
+            <div class="preview-marker marker-one"></div>
+            <div class="preview-marker marker-two"></div>
+            <div class="preview-marker marker-three"></div>
+
+
+            <div class="map-preview-content">
+
+                <div class="map-preview-icon">
+                    🗺️
+                </div>
+
+
+                <h3>
+                    AeroVision AQI Map
+                </h3>
+
+
+                <p>
+
+                    Explore the existing AeroVision core map
+                    with CPCB stations, predicted AQI surface,
+                    HCHO hotspots, FIRMS fires and ERA5 wind.
+
+                </p>
+
+
+                <a
+                    href="/map.html"
+                    class="map-preview-button"
+                >
+                    Open Core Map →
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     JUNE 1 - 30 TIMELINE
+========================================================= -->
+
+<section
+    class="june-timeline-section"
+    id="history"
+>
+
+
+    <div class="timeline-heading">
+
+
+        <div>
+
+            <span class="section-eyebrow">
+                FULL JUNE DATASET
+            </span>
+
+
+            <h2>
+                June 2026 AQI Timeline
+            </h2>
+
+
+            <p>
+                Select any available station-day from
+                01 June through 30 June 2026.
+            </p>
+
+        </div>
+
+
+        <div class="timeline-current-date">
+
+            Selected Date
+
+            <strong id="timelineSelectedDate">
+                --
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <div
+        id="juneTimeline"
+        class="june-timeline"
+    >
+    </div>
+
+
+
+    <div class="timeline-chart">
+
+
+        <div class="timeline-chart-top">
+
+
+            <div class="timeline-chart-legend">
+
+                <span>
+                    <i class="legend-cpcb"></i>
+                    CPCB AQI
+                </span>
+
+
+                <span>
+                    <i class="legend-aero"></i>
+                    AeroVision AQI
+                </span>
+
+            </div>
+
+
+            <span class="chart-station-name" id="chartStationName">
+                --
+            </span>
+
+        </div>
+
+
+
+        <div class="chart-area">
+
+            <div class="chart-y-axis">
+
+                <span>500</span>
+                <span>400</span>
+                <span>300</span>
+                <span>200</span>
+                <span>100</span>
+                <span>0</span>
+
+            </div>
+
+
+            <div
+                id="aqiTimelineChart"
+                class="aqi-timeline-chart"
+            >
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="timeline-notes">
+
+        <span>
+            Days 01–23: model estimate within training period.
+        </span>
+
+        <span>
+            Days 24–30: held-out validation period.
+        </span>
+
+        <span>
+            Missing real station-day measurements remain N/A.
+        </span>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     POLLUTANTS
+========================================================= -->
+
+<section class="content-section">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                AIR POLLUTANTS
+            </span>
+
+            <h2>
+                Major Pollutants
+            </h2>
+
+        </div>
+
+
+        <div class="comparison-key">
+
+            <span>
+                ● CPCB Observation
+            </span>
+
+            <span>
+                ● AeroVision Estimate
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="pollutant-grid">
+
+
+        <article class="pollutant-card">
+
+            <div class="pollutant-icon">
+                PM
+            </div>
+
+            <div class="pollutant-info">
+
+                <span>
+                    Particulate Matter
+                </span>
+
+                <strong>
+                    PM2.5
+                </strong>
+
+                <small>
+                    µg/m³
+                </small>
+
+            </div>
+
+            <div class="pollutant-values">
+
+                <div>
+
+                    <small>
+                        CPCB
+                    </small>
+
+                    <strong id="cardPM25">
+                        --
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <small>
+                        AeroVision
+                    </small>
+
+                    <strong id="cardPredPM25">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="pollutant-card">
+
+            <div class="pollutant-icon">
+                PM
+            </div>
+
+            <div class="pollutant-info">
+
+                <span>
+                    Particulate Matter
+                </span>
+
+                <strong>
+                    PM10
+                </strong>
+
+                <small>
+                    µg/m³
+                </small>
+
+            </div>
+
+            <div class="pollutant-values">
+
+                <div>
+
+                    <small>
+                        CPCB
+                    </small>
+
+                    <strong id="cardPM10">
+                        --
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <small>
+                        AeroVision
+                    </small>
+
+                    <strong id="cardPredPM10">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="pollutant-card">
+
+            <div class="pollutant-icon">
+                NO₂
+            </div>
+
+            <div class="pollutant-info">
+
+                <span>
+                    Nitrogen Dioxide
+                </span>
+
+                <strong>
+                    NO₂
+                </strong>
+
+                <small>
+                    µg/m³
+                </small>
+
+            </div>
+
+            <div class="pollutant-values">
+
+                <div>
+
+                    <small>
+                        CPCB
+                    </small>
+
+                    <strong id="cardNO2">
+                        --
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <small>
+                        AeroVision
+                    </small>
+
+                    <strong id="cardPredNO2">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="pollutant-card">
+
+            <div class="pollutant-icon">
+                O₃
+            </div>
+
+            <div class="pollutant-info">
+
+                <span>
+                    Ozone
+                </span>
+
+                <strong>
+                    O₃ 8H
+                </strong>
+
+                <small>
+                    µg/m³
+                </small>
+
+            </div>
+
+            <div class="pollutant-values">
+
+                <div>
+
+                    <small>
+                        CPCB
+                    </small>
+
+                    <strong id="cardO3">
+                        --
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <small>
+                        AeroVision
+                    </small>
+
+                    <strong id="cardPredO3">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     ENVIRONMENTAL INTELLIGENCE
+========================================================= -->
+
+<section
+    class="content-section"
+    id="environment"
+>
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                REAL SATELLITE + METEOROLOGY
+            </span>
+
+            <h2>
+                Environmental Intelligence
+            </h2>
+
+        </div>
+
+
+        <span class="section-note">
+            Station-day environmental features
+        </span>
+
+    </div>
+
+
+
+    <div class="environment-grid">
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                🛰
+            </span>
+
+            <small>
+                MODIS AOD
+            </small>
+
+            <strong id="envAOD">
+                --
+            </strong>
+
+            <em id="envAODStatus">
+                MODIS MAIAC
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                🧪
+            </span>
+
+            <small>
+                Sentinel-5P HCHO
+            </small>
+
+            <strong id="envHCHO">
+                --
+            </strong>
+
+            <em>
+                mol/m²
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                🛰
+            </span>
+
+            <small>
+                Sentinel-5P NO₂
+            </small>
+
+            <strong id="envSatNO2">
+                --
+            </strong>
+
+            <em>
+                mol/m²
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                🌡
+            </span>
+
+            <small>
+                ERA5 Temperature
+            </small>
+
+            <strong id="envTemp">
+                --
+            </strong>
+
+            <em>
+                Daily mean
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                💧
+            </span>
+
+            <small>
+                Relative Humidity
+            </small>
+
+            <strong id="envRH">
+                --
+            </strong>
+
+            <em>
+                ERA5-derived
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                💨
+            </span>
+
+            <small>
+                Wind Speed
+            </small>
+
+            <strong id="envWind">
+                --
+            </strong>
+
+            <em>
+                ERA5-Land
+            </em>
+
+        </article>
+
+
+
+        <article class="environment-card">
+
+            <span class="environment-icon">
+                🔥
+            </span>
+
+            <small>
+                Fires within 25 km
+            </small>
+
+            <strong id="envFire">
+                --
+            </strong>
+
+            <em>
+                NASA FIRMS
+            </em>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="environment-note">
+
+        Satellite values can legitimately be unavailable because
+        of cloud cover, quality masking or missing pixel coverage.
+        AeroVision displays N/A instead of fabricating a value.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     MAP CTA
+========================================================= -->
+
+<section class="map-cta-section">
+
+
+    <div>
+
+        <span class="section-eyebrow map-eyebrow">
+            AEROVISION CORE MAP
+        </span>
+
+        <h2>
+            Explore the Geospatial Intelligence Map
+        </h2>
+
+        <p>
+
+            Open the unchanged AeroVision core map with CPCB
+            stations, interpolated AeroVision predicted AQI
+            surface, Sentinel-5P HCHO hotspots, NASA FIRMS
+            fires, ERA5 wind and exact-coordinate prediction.
+
+        </p>
+
+    </div>
+
+
+    <a
+        href="/map.html"
+        class="large-map-button"
+    >
+        🗺 Launch AQI Map
+    </a>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     STATION TABLE
+========================================================= -->
+
+<section class="content-section">
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                CPCB STATION-DAY RECORDS
+            </span>
+
+            <h2>
+                Station Comparison
+            </h2>
+
+        </div>
+
+
+        <span
+            class="section-note"
+            id="tableDateLabel"
+        >
+            Selected June observation date
+        </span>
+
+    </div>
+
+
+
+    <div class="table-wrapper">
+
+
+        <table class="station-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Station
+                    </th>
+
+                    <th>
+                        Location
+                    </th>
+
+                    <th>
+                        CPCB AQI
+                    </th>
+
+                    <th>
+                        AeroVision
+                    </th>
+
+                    <th>
+                        Category
+                    </th>
+
+                    <th>
+                        PM2.5
+                    </th>
+
+                    <th>
+                        PM10
+                    </th>
+
+                    <th>
+                        NO₂
+                    </th>
+
+                    <th>
+                        O₃ 8H
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="stationTableBody">
+
+                <tr>
+
+                    <td colspan="9">
+                        Loading real CPCB station data...
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     MODEL VALIDATION
+========================================================= -->
+
+<section
+    class="content-section"
+    id="validation"
+>
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                HELD-OUT VALIDATION
+            </span>
+
+            <h2>
+                AeroVision V3 Performance
+            </h2>
+
+        </div>
+
+
+        <span class="section-note">
+            Validation period: 24–30 June 2026
+        </span>
+
+    </div>
+
+
+
+    <div class="validation-grid">
+
+
+        <article class="validation-card">
+
+            <small>
+                PM2.5 R²
+            </small>
+
+            <strong>
+                0.348
+            </strong>
+
+            <span>
+                MAE 17.25
+            </span>
+
+        </article>
+
+
+        <article class="validation-card">
+
+            <small>
+                PM10 R²
+            </small>
+
+            <strong>
+                0.326
+            </strong>
+
+            <span>
+                MAE 36.59
+            </span>
+
+        </article>
+
+
+        <article class="validation-card validation-good">
+
+            <small>
+                NO₂ R²
+            </small>
+
+            <strong>
+                0.742
+            </strong>
+
+            <span>
+                MAE 6.03
+            </span>
+
+        </article>
+
+
+        <article class="validation-card">
+
+            <small>
+                O₃ 8H R²
+            </small>
+
+            <strong>
+                0.573
+            </strong>
+
+            <span>
+                MAE 11.66
+            </span>
+
+        </article>
+
+
+        <article class="validation-card validation-highlight">
+
+            <small>
+                AQI MAE
+            </small>
+
+            <strong>
+                31.86
+            </strong>
+
+            <span>
+                AQI points
+            </span>
+
+        </article>
+
+
+        <article class="validation-card">
+
+            <small>
+                Median AQI Error
+            </small>
+
+            <strong>
+                22.74
+            </strong>
+
+            <span>
+                AQI points
+            </span>
+
+        </article>
+
+
+        <article class="validation-card">
+
+            <small>
+                Category Agreement
+            </small>
+
+            <strong>
+                74.48%
+            </strong>
+
+            <span>
+                Full CPCB references
+            </span>
+
+        </article>
+
+
+        <article class="validation-card">
+
+            <small>
+                Full CPCB References
+            </small>
+
+            <strong>
+                145
+            </strong>
+
+            <span>
+                Held-out station-days
+            </span>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="validation-note">
+
+        The largest errors occur during extreme local particulate
+        episodes, especially PM2.5 and PM10. The current model is
+        validated for the regional Delhi–Haryana–Punjab prototype
+        dataset rather than India-wide deployment.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     EVENT INTELLIGENCE
+========================================================= -->
+
+<section class="event-intelligence">
+
+
+    <div class="event-main">
+
+        <span class="section-eyebrow">
+            ATMOSPHERIC EVENT INTELLIGENCE
+        </span>
+
+        <h2>
+            08 June 2026
+        </h2>
+
+        <p>
+
+            Real satellite and fire observations used to examine
+            spatial relationships between high-confidence fire
+            activity and elevated atmospheric HCHO.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="event-metrics">
+
+
+        <div>
+
+            <span>
+                🔥
+            </span>
+
+            <strong>
+                359
+            </strong>
+
+            <small>
+                High-confidence FIRMS detections
+            </small>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                🛰
+            </span>
+
+            <strong>
+                1,711
+            </strong>
+
+            <small>
+                Elevated HCHO hotspot cells
+            </small>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                🔗
+            </span>
+
+            <strong>
+                462
+            </strong>
+
+            <small>
+                Hotspots within 25 km of fires
+            </small>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                %
+            </span>
+
+            <strong>
+                27%
+            </strong>
+
+            <small>
+                Spatial association
+            </small>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="event-warning">
+
+        Spatial proximity indicates association and does not,
+        by itself, establish causation.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     DATA SOURCES
+========================================================= -->
+
+<section
+    class="content-section"
+    id="sources"
+>
+
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                DATA PROVENANCE
+            </span>
+
+            <h2>
+                Real Data Sources
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="sources-grid">
+
+
+        <div class="source-card">
+
+            <strong>
+                CPCB
+            </strong>
+
+            <span>
+                Ground pollutant observations
+            </span>
+
+        </div>
+
+
+        <div class="source-card">
+
+            <strong>
+                MODIS MAIAC
+            </strong>
+
+            <span>
+                Aerosol Optical Depth
+            </span>
+
+        </div>
+
+
+        <div class="source-card">
+
+            <strong>
+                Sentinel-5P
+            </strong>
+
+            <span>
+                HCHO + NO₂ columns
+            </span>
+
+        </div>
+
+
+        <div class="source-card">
+
+            <strong>
+                ERA5-Land
+            </strong>
+
+            <span>
+                Temperature, RH and wind
+            </span>
+
+        </div>
+
+
+        <div class="source-card">
+
+            <strong>
+                NASA FIRMS
+            </strong>
+
+            <span>
+                High-confidence fire detections
+            </span>
+
+        </div>
+
+
+        <div class="source-card">
+
+            <strong>
+                XGBoost V3
+            </strong>
+
+            <span>
+                AeroVision pollutant estimation
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="main-footer">
+
+    <div>
+
+        <strong>
+            AeroVision India
+        </strong>
+
+        <span>
+            AI-powered satellite air-quality intelligence
+        </span>
+
+    </div>
+
+
+    <div>
+        REAL DATA · JUNE 2026 · Regional ML prototype
+    </div>
+
+</footer>
+
+
+
+<script src="/landing.js"></script>
+<!-- <script src="/aerovision-ui.js"></script> -->
+
+</body>
+
+</html>

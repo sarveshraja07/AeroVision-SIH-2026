@@ -1,0 +1,3142 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #071018;
+
+    color: white;
+}
+
+
+#map {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.top-header {
+
+    position: absolute;
+
+    z-index: 1000;
+
+    top: 18px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        min(
+            820px,
+            calc(100% - 520px)
+        );
+
+    min-width: 520px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        11px 18px;
+
+    border-radius:
+        13px;
+
+    border:
+        1px solid
+        #00d9a4;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.95
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.35);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.brand h1 {
+
+    margin: 0;
+
+    color:
+        #00f0b5;
+
+    font-size:
+        25px;
+
+    letter-spacing:
+        1px;
+}
+
+
+.brand p {
+
+    margin:
+        3px 0 0;
+
+    color:
+        #9bb0ba;
+
+    font-size:
+        11px;
+}
+
+
+.pipeline-status {
+
+    font-size:
+        11px;
+
+    font-weight:
+        600;
+
+    color:
+        #e0edf1;
+}
+
+
+.status-dot {
+
+    display:
+        inline-block;
+
+    width:
+        8px;
+
+    height:
+        8px;
+
+    margin-right:
+        7px;
+
+    border-radius:
+        50%;
+
+    background:
+        #00ff88;
+
+    box-shadow:
+        0 0 10px
+        #00ff88;
+}
+
+
+/* ============================================================
+   TOP STATS
+   ============================================================ */
+
+.top-stats {
+
+    position: absolute;
+
+    z-index: 1000;
+
+    top: 96px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.stat-card {
+
+    width: 150px;
+
+    padding:
+        8px 11px;
+
+    text-align:
+        center;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.94
+        );
+
+    border:
+        1px solid
+        #29454f;
+
+    border-radius:
+        8px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0,0,0,.2);
+}
+
+
+.stat-card span {
+
+    display:
+        block;
+
+    color:
+        #809aa5;
+
+    font-size:
+        9px;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        .4px;
+}
+
+
+.stat-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #00f0b5;
+
+    font-size:
+        17px;
+}
+
+
+/* ============================================================
+   LEFT SIDEBAR
+   ============================================================ */
+
+.sidebar {
+
+    position: absolute;
+
+    z-index: 1000;
+
+    top: 92px;
+    left: 13px;
+
+    width:
+        220px;
+
+    max-height:
+        calc(100vh - 115px);
+
+    overflow-y:
+        auto;
+
+    padding:
+        14px;
+
+    border:
+        1px solid
+        #29454f;
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.95
+        );
+
+    box-shadow:
+        0 6px 20px
+        rgba(0,0,0,.3);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.sidebar h3 {
+
+    margin:
+        0 0 10px;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        1px;
+
+    color:
+        #7899a6;
+}
+
+
+.layer-button {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    margin:
+        6px 0;
+
+    padding:
+        10px;
+
+    text-align:
+        left;
+
+    color:
+        #e0edf2;
+
+    border:
+        1px solid
+        #35505a;
+
+    border-radius:
+        6px;
+
+    background:
+        #10212a;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.15s;
+}
+
+
+.layer-button:hover {
+
+    background:
+        #17313d;
+}
+
+
+.layer-button.active {
+
+    color:
+        #00241a;
+
+    background:
+        #00d9a4;
+
+    border-color:
+        #00f2b8;
+
+    font-weight:
+        700;
+}
+
+
+.divider {
+
+    height:
+        1px;
+
+    margin:
+        14px 0;
+
+    background:
+        #29414a;
+}
+
+
+.sidebar-text {
+
+    color:
+        #c9d8dd;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.45;
+}
+
+
+.sidebar-warning {
+
+    color:
+        #ffc857;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.4;
+}
+
+
+.source-list {
+
+    color:
+        #d7e6eb;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.75;
+}
+
+
+/* ============================================================
+   MODEL PANEL
+   ============================================================ */
+
+.model-panel {
+
+    position:
+        absolute;
+
+    z-index: 1000;
+
+    top:
+        92px;
+
+    right:
+        13px;
+
+    width:
+        210px;
+
+    padding:
+        14px;
+
+    border:
+        1px solid
+        #29454f;
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.95
+        );
+
+    box-shadow:
+        0 6px 20px
+        rgba(0,0,0,.3);
+}
+
+
+.model-panel h3 {
+
+    margin:
+        0 0 10px;
+
+    font-size:
+        10px;
+
+    color:
+        #7899a6;
+
+    letter-spacing:
+        .8px;
+}
+
+
+.model-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    margin:
+        7px 0;
+
+    padding:
+        8px;
+
+    border-radius:
+        5px;
+
+    background:
+        #10212a;
+}
+
+
+.model-row span {
+
+    color:
+        #dce8ec;
+
+    font-size:
+        12px;
+}
+
+
+.model-row strong {
+
+    color:
+        #ffc94c;
+
+    font-size:
+        12px;
+}
+
+
+.model-row.model-good strong {
+
+    color:
+        #00f0b5;
+}
+
+
+.validation-details {
+
+    color:
+        #d9e5e9;
+
+    font-size:
+        11px;
+}
+
+
+.validation-details p {
+
+    margin:
+        7px 0;
+}
+
+
+.model-panel small {
+
+    display:
+        block;
+
+    margin-top:
+        9px;
+
+    color:
+        #78929d;
+
+    font-size:
+        9px;
+}
+
+
+/* ============================================================
+   EVENT PANEL
+   ============================================================ */
+
+.event-panel {
+
+    position:
+        absolute;
+
+    z-index:
+        1000;
+
+    right:
+        13px;
+
+    bottom:
+        20px;
+
+    width:
+        300px;
+
+    padding:
+        15px;
+
+    border:
+        1px solid
+        #00d9a4;
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.96
+        );
+
+    box-shadow:
+        0 6px 20px
+        rgba(0,0,0,.35);
+}
+
+
+.event-panel h3 {
+
+    margin:
+        0 0 5px;
+
+    color:
+        #00f0b5;
+
+    font-size:
+        16px;
+}
+
+
+.event-date {
+
+    margin-bottom:
+        10px;
+
+    color:
+        #819ba5;
+
+    font-size:
+        10px;
+}
+
+
+.event-panel p {
+
+    color:
+        #e0ebee;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.5;
+}
+
+
+.association-box {
+
+    margin:
+        11px 0;
+
+    padding:
+        8px;
+
+    text-align:
+        center;
+
+    color:
+        #ffd45c;
+
+    border-radius:
+        5px;
+
+    background:
+        rgba(
+            255,
+            200,
+            70,
+            0.08
+        );
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+}
+
+
+.scientific-note {
+
+    color:
+        #849fa9 !important;
+
+    font-size:
+        9px !important;
+}
+
+
+/* ============================================================
+   AQI LEGEND
+   ============================================================ */
+
+.aqi-legend {
+
+    position:
+        absolute;
+
+    z-index:
+        1000;
+
+    left:
+        13px;
+
+    bottom:
+        20px;
+
+    min-width:
+        130px;
+
+    padding:
+        10px;
+
+    border:
+        1px solid
+        #29454f;
+
+    border-radius:
+        8px;
+
+    background:
+        rgba(
+            4,
+            15,
+            23,
+            0.94
+        );
+
+    font-size:
+        10px;
+}
+
+
+.aqi-legend h4 {
+
+    margin:
+        0 0 7px;
+
+    color:
+        #d5e3e8;
+}
+
+
+.aqi-legend div {
+
+    margin:
+        4px 0;
+
+    color:
+        #d0dfe4;
+}
+
+
+.legend-dot {
+
+    display:
+        inline-block;
+
+    width:
+        9px;
+
+    height:
+        9px;
+
+    margin-right:
+        6px;
+
+    border-radius:
+        50%;
+}
+
+
+.legend-good {
+    background: #00b050;
+}
+
+.legend-satisfactory {
+    background: #8cc63f;
+}
+
+.legend-moderate {
+    background: #f9d423;
+}
+
+.legend-poor {
+    background: #ff8c00;
+}
+
+.legend-very-poor {
+    background: #d32f2f;
+}
+
+.legend-severe {
+    background: #7e0023;
+}
+
+
+/* ============================================================
+   WIND
+   ============================================================ */
+
+.wind-arrow {
+
+    border:
+        none !important;
+
+    background:
+        transparent !important;
+}
+
+
+.wind-arrow-inner {
+
+    color:
+        #00dfff;
+
+    font-weight:
+        bold;
+
+    line-height:
+        18px;
+
+    text-shadow:
+        0 0 4px
+        #000;
+}
+
+
+/* ============================================================
+   POPUPS
+   ============================================================ */
+
+.aqi-popup {
+
+    min-width:
+        280px;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+
+.aqi-popup h3 {
+
+    margin:
+        0;
+
+    font-size:
+        15px;
+}
+
+
+.popup-date {
+
+    margin:
+        2px 0 10px;
+
+    color:
+        #777;
+
+    font-size:
+        10px;
+}
+
+
+.aqi-comparison {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        8px;
+
+    margin:
+        9px 0;
+}
+
+
+.aqi-side {
+
+    flex:
+        1;
+
+    text-align:
+        center;
+}
+
+
+.aqi-side small {
+
+    display:
+        block;
+
+    color:
+        #666;
+
+    font-size:
+        8px;
+}
+
+
+.aqi-side strong {
+
+    display:
+        block;
+
+    margin:
+        3px 0;
+
+    font-size:
+        26px;
+}
+
+
+.aqi-side span {
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+}
+
+
+.versus {
+
+    color:
+        #888;
+
+    font-size:
+        9px;
+
+    font-weight:
+        bold;
+}
+
+
+.aqi-difference {
+
+    margin:
+        8px 0;
+
+    padding:
+        6px;
+
+    text-align:
+        center;
+
+    background:
+        #f3f3f3;
+
+    border-radius:
+        5px;
+
+    font-size:
+        10px;
+}
+
+
+.pollutant-table {
+
+    width:
+        100%;
+
+    border-collapse:
+        collapse;
+
+    font-size:
+        10px;
+}
+
+
+.pollutant-table th,
+.pollutant-table td {
+
+    padding:
+        5px;
+
+    border-bottom:
+        1px solid
+        #ddd;
+
+    text-align:
+        center;
+}
+
+
+.popup-footnote {
+
+    margin-top:
+        8px;
+
+    color:
+        #777;
+
+    font-size:
+        8px;
+
+    line-height:
+        1.4;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (
+    max-width: 1100px
+) {
+
+    .top-header {
+
+        width:
+            600px;
+
+        min-width:
+            0;
+
+    }
+
+
+    .stat-card {
+
+        width:
+            125px;
+
+    }
+
+}
+
+/* ============================================================
+   REACTIVE STATION PANEL
+   ============================================================ */
+
+#selectedLocationPanel {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #00d9a4;
+    border-radius: 7px;
+    background: rgba(0, 217, 164, 0.05);
+}
+
+.selected-title {
+    margin-bottom: 5px;
+    color: #7899a6;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+#selectedLocationName {
+    color: #00f0b5;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#selectedLocationDate {
+    margin: 4px 0 9px;
+    color: #78929d;
+    font-size: 9px;
+}
+
+.selected-category {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 6px 0;
+    font-size: 10px;
+}
+
+.selected-category span { color: #91a8b1; }
+.selected-category strong { color: #e7f4f6; text-align: right; }
+
+.selected-pollutants {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9px;
+}
+
+.selected-pollutants th { color: #7899a6; font-weight: 600; }
+
+.selected-pollutants th,
+.selected-pollutants td {
+    padding: 5px 2px;
+    text-align: center;
+    border-bottom: 1px solid #1d3740;
+}
+
+.selected-pollutants td:nth-child(2) { color: #ffffff; }
+.selected-pollutants td:nth-child(3) { color: #00f0b5; font-weight: 600; }
+
+.top-stats .stat-card:first-child { width: 220px; }
+
+#selectedStation {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+/* ============================================================
+   WHY THIS AQI
+   ============================================================ */
+
+.why-aqi-box {
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 170, 255, 0.06);
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.why-section {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.why-section:last-of-type {
+    border-bottom: none;
+}
+
+.why-section b {
+    font-size: 11px;
+}
+
+.why-note {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    background: rgba(255, 193, 7, 0.12);
+    font-size: 10px;
+    line-height: 1.45;
+}
+/* =========================================================
+   AEROVISION UI STACKING FIX
+   Keeps dashboard controls permanently above Leaflet
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   MAP MUST REMAIN THE BACKGROUND
+   --------------------------------------------------------- */
+
+#map {
+    position: fixed !important;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LEAFLET ITSELF
+   --------------------------------------------------------- */
+
+.leaflet-container {
+    z-index: 1 !important;
+}
+
+
+/* ---------------------------------------------------------
+   HEADER
+   --------------------------------------------------------- */
+
+.top-header {
+    position: fixed !important;
+
+    z-index: 5000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TOP AQI CARDS
+   --------------------------------------------------------- */
+
+.top-stats {
+    position: fixed !important;
+
+    z-index: 4900 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LEFT MAP-LAYER SIDEBAR
+   --------------------------------------------------------- */
+
+.sidebar {
+    position: fixed !important;
+
+    z-index: 5000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   RIGHT SELECTED LOCATION / VALIDATION PANEL
+   --------------------------------------------------------- */
+
+.model-panel {
+    position: fixed !important;
+
+    z-index: 5000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   EVENT EXPLANATION PANEL
+   --------------------------------------------------------- */
+
+.event-panel {
+    position: fixed !important;
+
+    z-index: 5000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   AQI LEGEND
+   --------------------------------------------------------- */
+
+.aqi-legend {
+    position: fixed !important;
+
+    z-index: 5000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LEAFLET CONTROLS
+   + / - BUTTONS
+   --------------------------------------------------------- */
+
+.leaflet-control-container {
+    position: relative;
+
+    z-index: 3000 !important;
+}
+
+
+/* ---------------------------------------------------------
+   POPUPS
+   Must remain above the AQI surface, but below our
+   main dashboard panels where possible.
+   --------------------------------------------------------- */
+
+.leaflet-popup-pane {
+    z-index: 1500 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TOOLTIPS
+   --------------------------------------------------------- */
+
+.leaflet-tooltip-pane {
+    z-index: 1400 !important;
+}
+
+
+/* ---------------------------------------------------------
+   PREVENT LEAFLET SVG/CANVAS FROM ESCAPING ITS MAP
+   --------------------------------------------------------- */
+
+.leaflet-map-pane,
+.leaflet-tile-pane,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane {
+    position: absolute;
+}
+
+
+/* ---------------------------------------------------------
+   SIDEBAR BUTTONS MUST ALWAYS BE CLICKABLE
+   --------------------------------------------------------- */
+
+.sidebar,
+.sidebar *,
+.model-panel,
+.model-panel *,
+.event-panel,
+.event-panel *,
+.top-header,
+.top-header *,
+.top-stats,
+.top-stats *,
+.aqi-legend,
+.aqi-legend * {
+    pointer-events: auto;
+}
+
+
+/* ---------------------------------------------------------
+   SAFETY: NO MAP SVG SHOULD COVER THE DASHBOARD
+   --------------------------------------------------------- */
+
+.leaflet-pane {
+    pointer-events: none;
+}
+
+
+/* Re-enable interaction with actual map objects */
+
+.leaflet-interactive {
+    pointer-events: auto;
+}
+.surface-info {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(5, 20, 28, 0.9);
+    border: 1px solid rgba(0, 255, 200, 0.25);
+    font-size: 10px;
+    line-height: 1.45;
+}
+
+.surface-info h3 {
+    margin: 0 0 7px 0;
+    font-size: 10px;
+    letter-spacing: 0.7px;
+    color: #00ffd0;
+}
+
+.surface-info p {
+    margin: 3px 0;
+    color: #d8f5ef;
+}
+
+.surface-note {
+    margin-top: 7px !important;
+    color: #9fcfc5 !important;
+    font-size: 9px;
+}
+/* =========================================================
+   AEROVISION PRESENTATION-SIZE UI
+   ========================================================= */
+
+
+/* ---------- LEFT SIDEBAR ---------- */
+
+.sidebar {
+    width: 190px !important;
+    padding: 14px !important;
+
+    font-size: 12px !important;
+}
+
+.sidebar h3,
+.sidebar-title {
+    font-size: 11px !important;
+}
+
+
+/* ---------- LAYER BUTTONS ---------- */
+
+.layer-button {
+    min-height: 38px !important;
+
+    padding: 9px 11px !important;
+
+    margin-bottom: 7px !important;
+
+    font-size: 12px !important;
+
+    font-weight: 600 !important;
+
+    border-radius: 6px !important;
+}
+
+
+/* ---------- SIDEBAR TEXT ---------- */
+
+.sidebar p,
+.sidebar div {
+    line-height: 1.5;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.top-header {
+    min-width: 500px !important;
+
+    padding: 10px 20px !important;
+}
+
+.top-header h1 {
+    font-size: 22px !important;
+}
+
+.top-header p {
+    font-size: 10px !important;
+}
+
+
+/* ---------- TOP STAT CARDS ---------- */
+
+.top-stats {
+    gap: 8px !important;
+}
+
+.stat-card {
+    min-width: 145px !important;
+
+    min-height: 55px !important;
+
+    padding: 8px 12px !important;
+}
+
+.stat-card small {
+    font-size: 9px !important;
+}
+
+.stat-card strong {
+    font-size: 15px !important;
+}
+
+
+/* ---------- RIGHT PANEL ---------- */
+
+.model-panel {
+    width: 215px !important;
+
+    padding: 14px !important;
+
+    font-size: 11px !important;
+}
+
+.model-panel h3 {
+    font-size: 11px !important;
+}
+
+.model-panel h4 {
+    font-size: 11px !important;
+}
+
+
+/* ---------- RIGHT PANEL TABLE ---------- */
+
+.model-panel table {
+    width: 100% !important;
+
+    font-size: 10px !important;
+}
+
+.model-panel td,
+.model-panel th {
+    padding: 6px 4px !important;
+}
+
+
+/* ---------- GLOBAL VALIDATION ---------- */
+
+.model-panel .metric-row {
+    min-height: 31px !important;
+
+    padding: 6px 3px !important;
+}
+
+
+/* ---------- EVENT PANEL ---------- */
+
+.event-panel {
+    width: 230px !important;
+
+    padding: 13px !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.5 !important;
+}
+
+.event-panel h3 {
+    font-size: 14px !important;
+}
+
+
+/* ---------- AQI LEGEND ---------- */
+
+.aqi-legend {
+    width: 110px !important;
+
+    padding: 11px !important;
+
+    font-size: 10px !important;
+}
+
+.aqi-legend div {
+    margin: 4px 0 !important;
+}
+
+
+/* ---------- POPUPS ---------- */
+
+.leaflet-popup-content {
+    font-size: 12px !important;
+
+    line-height: 1.45 !important;
+}
+
+.aqi-popup {
+    min-width: 270px !important;
+}
+
+.aqi-popup h3 {
+    font-size: 16px !important;
+}
+
+
+/* ---------- POLLUTANT TABLE ---------- */
+
+.pollutant-table {
+    font-size: 11px !important;
+}
+
+.pollutant-table td,
+.pollutant-table th {
+    padding: 6px !important;
+}
+
+
+/* ---------- SURFACE INFO ---------- */
+
+.surface-info {
+    font-size: 10px !important;
+}
+
+.surface-info h3 {
+    font-size: 11px !important;
+}
+/* =========================================================
+   AEROVISION LIVE PREDICTION PIPELINE
+   ========================================================= */
+
+.prediction-pipeline {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    border: 1px solid rgba(0, 234, 255, 0.28);
+
+    border-radius: 8px;
+
+    background:
+        rgba(0, 20, 28, 0.78);
+
+    box-shadow:
+        0 0 12px
+        rgba(0, 234, 255, 0.08);
+
+}
+
+
+.pipeline-title {
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    color: #00eaff;
+
+    margin-bottom: 7px;
+
+}
+
+
+.pipeline-stage {
+
+    min-height: 16px;
+
+    font-size: 10px;
+
+    color: #dffcff;
+
+    margin-bottom: 7px;
+
+}
+
+
+.pipeline-progress {
+
+    width: 100%;
+
+    height: 5px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.10);
+
+    overflow: hidden;
+
+}
+
+
+.pipeline-progress-bar {
+
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00eaff,
+            #00ff9d
+        );
+
+    transition:
+        width 0.35s ease;
+
+    box-shadow:
+        0 0 8px
+        rgba(0, 234, 255, 0.8);
+
+}
+
+
+.prediction-pipeline.pipeline-success {
+
+    border-color:
+        rgba(0, 255, 157, 0.45);
+
+}
+
+
+.prediction-pipeline.pipeline-error {
+
+    border-color:
+        rgba(255, 82, 82, 0.50);
+
+}
+
+
+.prediction-pipeline.pipeline-error
+.pipeline-stage {
+
+    color: #ff8a80;
+
+}
+/* =========================================================
+   AEROVISION DEMO RESET BUTTON
+   ========================================================= */
+
+.demo-reset-button {
+
+    margin-top: 10px !important;
+
+    border:
+        1px solid
+        rgba(0, 234, 255, 0.45) !important;
+
+    background:
+        rgba(0, 234, 255, 0.08) !important;
+
+    color:
+        #bffcff !important;
+
+    font-weight:
+        700 !important;
+
+}
+
+
+.demo-reset-button:hover {
+
+    background:
+        rgba(0, 234, 255, 0.18) !important;
+
+    box-shadow:
+        0 0 10px
+        rgba(0, 234, 255, 0.20);
+
+}
+/* =========================================================
+   REAL DATA SOURCE STATUS STRIP
+   ========================================================= */
+
+.data-status-strip {
+
+    position: fixed;
+
+    top: 70px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 4800;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(5, 18, 24, 0.88);
+
+    border:
+        1px solid
+        rgba(0, 234, 255, 0.20);
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.25);
+
+}
+
+
+.status-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    color: #d7faff;
+
+    white-space: nowrap;
+
+}
+
+
+.status-dot {
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #00ff9d;
+
+    box-shadow:
+        0 0 7px
+        rgba(0, 255, 157, 0.9);
+
+}
+
+
+.model-status {
+
+    color: #00eaff;
+
+    font-weight: 800;
+
+    padding-left: 6px;
+
+    border-left:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+
+}
+
+
+/* Smaller screens */
+
+@media (max-width: 1100px) {
+
+    .data-status-strip {
+
+        gap: 7px;
+
+        padding: 5px 9px;
+
+    }
+
+
+    .status-item {
+
+        font-size: 8px;
+
+    }
+
+}
+/* ============================================================
+   AEROVISION CORE MAP
+   PRESENTATION READABILITY ENHANCEMENT
+   VISUAL SIZE ONLY — NO MAP/DATA/JS CHANGES
+   ============================================================ */
+
+
+/* ============================================================
+   LEFT SIDEBAR
+   ============================================================ */
+
+.sidebar {
+    width: 190px !important;
+    padding: 16px !important;
+}
+
+.sidebar h3,
+.sidebar-title {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+}
+
+.sidebar h4 {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.sidebar p,
+.sidebar span,
+.sidebar small,
+.sidebar label,
+.sidebar li {
+    font-size: 11px !important;
+    line-height: 1.55 !important;
+}
+
+
+/* Map layer buttons */
+
+.sidebar button,
+.layer-btn,
+.layer-button {
+    min-height: 38px !important;
+    padding: 9px 11px !important;
+
+    font-size: 11px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.25 !important;
+}
+
+
+/* Section headings inside sidebar */
+
+.sidebar .section-title,
+.sidebar .panel-section-title {
+    margin-top: 15px !important;
+    margin-bottom: 8px !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: 0.5px !important;
+}
+
+
+/* ============================================================
+   RIGHT SELECTED LOCATION / VALIDATION PANEL
+   ============================================================ */
+
+.model-panel {
+    width: 245px !important;
+
+    padding: 17px !important;
+}
+
+.model-panel h2,
+.model-panel h3 {
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+}
+
+.model-panel h4 {
+    font-size: 12px !important;
+}
+
+.model-panel p,
+.model-panel span,
+.model-panel small,
+.model-panel td,
+.model-panel th,
+.model-panel div {
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+
+/* Don't accidentally shrink major numbers */
+
+.model-panel strong {
+    font-size: 12px;
+}
+
+
+/* ============================================================
+   SELECTED LOCATION NAME
+   ============================================================ */
+
+#selected-location-name,
+#selectedLocationName {
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    line-height: 1.35 !important;
+}
+
+
+/* ============================================================
+   POLLUTANT TABLE
+   ============================================================ */
+
+.model-panel table {
+    width: 100% !important;
+
+    border-spacing: 0 !important;
+}
+
+.model-panel th {
+    padding: 8px 5px !important;
+
+    font-size: 10px !important;
+    font-weight: 800 !important;
+}
+
+.model-panel td {
+    padding: 8px 5px !important;
+
+    font-size: 11px !important;
+}
+
+
+/* ============================================================
+   GLOBAL VALIDATION METRICS
+   ============================================================ */
+
+.model-panel .metric,
+.model-panel .validation-row {
+    min-height: 31px !important;
+
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.model-panel .metric strong,
+.model-panel .validation-row strong {
+    font-size: 12px !important;
+}
+
+
+/* ============================================================
+   TOP AEROVISION HEADER
+   ============================================================ */
+
+.top-header {
+    min-height: 72px !important;
+
+    padding: 10px 20px !important;
+}
+
+.top-header h1 {
+    font-size: 20px !important;
+}
+
+.top-header p,
+.top-header span,
+.top-header small {
+    font-size: 10px !important;
+}
+
+
+/* ============================================================
+   TOP STAT CARDS
+   ============================================================ */
+
+.top-stats {
+    gap: 8px !important;
+}
+
+.top-stats > div,
+.stat-card {
+    min-width: 145px !important;
+
+    padding: 10px 13px !important;
+}
+
+.top-stats span,
+.top-stats small,
+.stat-card span,
+.stat-card small {
+    font-size: 9px !important;
+}
+
+.top-stats strong,
+.stat-card strong {
+    font-size: 16px !important;
+}
+
+
+/* ============================================================
+   EVENT PANEL — BOTTOM RIGHT
+   ============================================================ */
+
+.event-panel {
+    width: 270px !important;
+
+    padding: 17px !important;
+}
+
+.event-panel h2,
+.event-panel h3 {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+}
+
+.event-panel h4 {
+    font-size: 12px !important;
+}
+
+.event-panel p,
+.event-panel span,
+.event-panel small,
+.event-panel li {
+    font-size: 11px !important;
+    line-height: 1.55 !important;
+}
+
+.event-panel strong {
+    font-size: 12px !important;
+}
+
+
+/* Event statistics */
+
+.event-panel .event-stat,
+.event-panel .metric {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+
+/* ============================================================
+   AQI LEGEND — BOTTOM LEFT
+   ============================================================ */
+
+.aqi-legend {
+    width: 135px !important;
+
+    padding: 13px !important;
+}
+
+.aqi-legend h3,
+.aqi-legend strong {
+    font-size: 12px !important;
+}
+
+.aqi-legend div,
+.aqi-legend span,
+.aqi-legend p {
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Make legend circles easier to see */
+
+.aqi-legend i,
+.aqi-legend .dot,
+.aqi-legend .legend-dot {
+    width: 11px !important;
+    height: 11px !important;
+}
+
+
+/* ============================================================
+   LEAFLET POPUPS
+   ============================================================ */
+
+.leaflet-popup-content-wrapper {
+    border-radius: 10px !important;
+}
+
+.leaflet-popup-content {
+    min-width: 290px !important;
+
+    margin: 16px 18px !important;
+
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.leaflet-popup-content h2,
+.leaflet-popup-content h3 {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+}
+
+.leaflet-popup-content h4 {
+    font-size: 13px !important;
+}
+
+.leaflet-popup-content p,
+.leaflet-popup-content span,
+.leaflet-popup-content small,
+.leaflet-popup-content td,
+.leaflet-popup-content th {
+    font-size: 11px !important;
+}
+
+
+/* Popup pollutant values */
+
+.leaflet-popup-content strong {
+    font-size: 12px !important;
+}
+
+
+/* ============================================================
+   LIVE AEROVISION ANALYSIS BOX
+   ============================================================ */
+
+.prediction-pipeline,
+.live-analysis,
+.analysis-progress {
+    font-size: 11px !important;
+}
+
+.prediction-pipeline strong,
+.live-analysis strong,
+.analysis-progress strong {
+    font-size: 12px !important;
+}
+
+
+/* ============================================================
+   DATA SOURCE TEXT
+   ============================================================ */
+
+.sidebar .data-source,
+.sidebar .source-item {
+    font-size: 10px !important;
+    line-height: 1.55 !important;
+}
+
+
+/* ============================================================
+   LEAFLET ZOOM CONTROL
+   ============================================================ */
+
+.leaflet-control-zoom a {
+    width: 34px !important;
+    height: 34px !important;
+
+    line-height: 34px !important;
+
+    font-size: 20px !important;
+}
+
+
+/* ============================================================
+   HIGH RESOLUTION PRESENTATION SCREENS
+
+   Your screenshot is around 1700px wide.
+   Increase readability further on projector/large displays.
+   ============================================================ */
+
+@media (min-width: 1500px) {
+
+    .sidebar {
+        width: 205px !important;
+    }
+
+    .model-panel {
+        width: 260px !important;
+    }
+
+    .event-panel {
+        width: 285px !important;
+    }
+
+
+    .sidebar p,
+    .sidebar span,
+    .sidebar small,
+    .sidebar label,
+    .sidebar li {
+        font-size: 12px !important;
+    }
+
+
+    .sidebar button,
+    .layer-btn,
+    .layer-button {
+        font-size: 12px !important;
+
+        min-height: 40px !important;
+    }
+
+
+    .model-panel p,
+    .model-panel span,
+    .model-panel small,
+    .model-panel td,
+    .model-panel th {
+        font-size: 12px !important;
+    }
+
+
+    .event-panel p,
+    .event-panel span,
+    .event-panel small,
+    .event-panel li {
+        font-size: 12px !important;
+    }
+
+
+    .leaflet-popup-content {
+        min-width: 320px !important;
+
+        font-size: 13px !important;
+    }
+
+
+    .leaflet-popup-content p,
+    .leaflet-popup-content span,
+    .leaflet-popup-content small,
+    .leaflet-popup-content td,
+    .leaflet-popup-content th {
+        font-size: 12px !important;
+    }
+
+}
+
+
+/* ============================================================
+   LAPTOP FALLBACK
+   Prevent enlarged panels from occupying too much map space.
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+    .sidebar {
+        width: 175px !important;
+    }
+
+    .model-panel {
+        width: 225px !important;
+    }
+
+    .event-panel {
+        width: 240px !important;
+    }
+
+}
+/* ============================================================
+   AEROVISION CORE MAP
+   EXTRA LARGE PRESENTATION MODE
+   ADD AT VERY BOTTOM OF style.css
+   ============================================================ */
+
+
+/* =========================
+   LEFT PANEL
+   ========================= */
+
+.sidebar {
+    width: 270px !important;
+    padding: 22px !important;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar-title {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+}
+
+.sidebar h4,
+.sidebar .section-title,
+.sidebar .panel-section-title {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.sidebar p,
+.sidebar span,
+.sidebar small,
+.sidebar label,
+.sidebar li,
+.sidebar div {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+}
+
+
+/* Layer buttons */
+
+.sidebar button,
+.sidebar .layer-btn,
+.sidebar .layer-button {
+    min-height: 52px !important;
+
+    padding: 13px 15px !important;
+
+    font-size: 15px !important;
+    font-weight: 700 !important;
+
+    border-radius: 7px !important;
+}
+
+
+/* Add more spacing between sections */
+
+.sidebar section,
+.sidebar .sidebar-section {
+    margin-bottom: 20px !important;
+}
+
+
+/* =========================
+   RIGHT MODEL PANEL
+   ========================= */
+
+.model-panel {
+    width: 330px !important;
+
+    padding: 22px !important;
+}
+
+
+.model-panel h2,
+.model-panel h3 {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+}
+
+
+.model-panel h4 {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+
+.model-panel p,
+.model-panel span,
+.model-panel small,
+.model-panel label {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+
+.model-panel strong {
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   RIGHT POLLUTANT TABLE
+   ========================= */
+
+.model-panel table {
+    width: 100% !important;
+}
+
+
+.model-panel th {
+    padding: 11px 7px !important;
+
+    font-size: 13px !important;
+    font-weight: 800 !important;
+}
+
+
+.model-panel td {
+    padding: 11px 7px !important;
+
+    font-size: 14px !important;
+}
+
+
+.model-panel td strong {
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   GLOBAL MODEL VALIDATION
+   ========================= */
+
+.model-panel .metric,
+.model-panel .validation-row {
+    min-height: 42px !important;
+
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+}
+
+
+.model-panel .metric span,
+.model-panel .validation-row span {
+    font-size: 14px !important;
+}
+
+
+.model-panel .metric strong,
+.model-panel .validation-row strong {
+    font-size: 16px !important;
+}
+
+
+/* =========================
+   TOP HEADER
+   ========================= */
+
+.top-header {
+    min-height: 85px !important;
+
+    padding: 14px 25px !important;
+}
+
+
+.top-header h1 {
+    font-size: 27px !important;
+}
+
+
+.top-header p,
+.top-header span,
+.top-header small {
+    font-size: 13px !important;
+}
+
+
+/* =========================
+   TOP STAT CARDS
+   ========================= */
+
+.top-stats {
+    gap: 12px !important;
+}
+
+
+.top-stats > div,
+.stat-card {
+    min-width: 185px !important;
+
+    min-height: 64px !important;
+
+    padding: 13px 16px !important;
+}
+
+
+.top-stats span,
+.top-stats small,
+.stat-card span,
+.stat-card small {
+    font-size: 12px !important;
+}
+
+
+.top-stats strong,
+.stat-card strong {
+    font-size: 22px !important;
+}
+
+
+/* =========================
+   CENTER STATION POPUP
+   ========================= */
+
+.leaflet-popup-content {
+    min-width: 390px !important;
+
+    margin: 20px 22px !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.55 !important;
+}
+
+
+.leaflet-popup-content h1 {
+    font-size: 23px !important;
+}
+
+
+.leaflet-popup-content h2,
+.leaflet-popup-content h3 {
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+}
+
+
+.leaflet-popup-content h4 {
+    font-size: 17px !important;
+}
+
+
+.leaflet-popup-content p,
+.leaflet-popup-content span,
+.leaflet-popup-content small,
+.leaflet-popup-content label {
+    font-size: 14px !important;
+
+    line-height: 1.55 !important;
+}
+
+
+.leaflet-popup-content table {
+    width: 100% !important;
+}
+
+
+.leaflet-popup-content th {
+    padding: 10px 8px !important;
+
+    font-size: 13px !important;
+}
+
+
+.leaflet-popup-content td {
+    padding: 10px 8px !important;
+
+    font-size: 14px !important;
+}
+
+
+.leaflet-popup-content strong {
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   EVENT PANEL
+   BOTTOM RIGHT
+   ========================= */
+
+.event-panel {
+    width: 350px !important;
+
+    padding: 22px !important;
+}
+
+
+.event-panel h2,
+.event-panel h3 {
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+}
+
+
+.event-panel h4 {
+    font-size: 16px !important;
+}
+
+
+.event-panel p,
+.event-panel span,
+.event-panel small,
+.event-panel li,
+.event-panel div {
+    font-size: 14px !important;
+
+    line-height: 1.55 !important;
+}
+
+
+.event-panel strong {
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   AQI LEGEND
+   BOTTOM LEFT
+   ========================= */
+
+.aqi-legend {
+    width: 185px !important;
+
+    padding: 18px !important;
+}
+
+
+.aqi-legend h2,
+.aqi-legend h3 {
+    font-size: 17px !important;
+}
+
+
+.aqi-legend p,
+.aqi-legend span,
+.aqi-legend div,
+.aqi-legend small,
+.aqi-legend label {
+    font-size: 13px !important;
+
+    line-height: 1.55 !important;
+}
+
+
+.aqi-legend .dot,
+.aqi-legend .legend-dot {
+    width: 14px !important;
+    height: 14px !important;
+
+    margin-right: 7px !important;
+}
+
+
+/* =========================
+   LIVE ANALYSIS BOX
+   ========================= */
+
+.prediction-pipeline,
+.live-analysis,
+.analysis-progress {
+    padding: 13px !important;
+
+    font-size: 14px !important;
+}
+
+
+.prediction-pipeline span,
+.prediction-pipeline small,
+.live-analysis span,
+.live-analysis small,
+.analysis-progress span,
+.analysis-progress small {
+    font-size: 13px !important;
+}
+
+
+.prediction-pipeline strong,
+.live-analysis strong,
+.analysis-progress strong {
+    font-size: 15px !important;
+}
+
+
+/* =========================
+   RESET BUTTON
+   ========================= */
+
+.reset-btn,
+#resetDemo,
+#reset-demo {
+    min-height: 46px !important;
+
+    padding: 11px 14px !important;
+
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================
+   LEAFLET ZOOM
+   ========================= */
+
+.leaflet-control-zoom a {
+    width: 42px !important;
+    height: 42px !important;
+
+    line-height: 42px !important;
+
+    font-size: 24px !important;
+}
+
+
+/* =========================
+   LEAFLET TOOLTIP
+   ========================= */
+
+.leaflet-tooltip {
+    padding: 9px 12px !important;
+
+    font-size: 14px !important;
+}
+
+
+/* ============================================================
+   LARGE PROJECTOR / 1080P+ PRESENTATION
+   ============================================================ */
+
+@media (min-width: 1500px) {
+
+    .sidebar {
+        width: 290px !important;
+    }
+
+
+    .model-panel {
+        width: 355px !important;
+    }
+
+
+    .event-panel {
+        width: 370px !important;
+    }
+
+
+    .aqi-legend {
+        width: 195px !important;
+    }
+
+
+    .sidebar p,
+    .sidebar span,
+    .sidebar small,
+    .sidebar label,
+    .sidebar li,
+    .sidebar div {
+        font-size: 15px !important;
+    }
+
+
+    .sidebar button,
+    .sidebar .layer-btn,
+    .sidebar .layer-button {
+        font-size: 16px !important;
+
+        min-height: 54px !important;
+    }
+
+
+    .model-panel p,
+    .model-panel span,
+    .model-panel small {
+        font-size: 15px !important;
+    }
+
+
+    .model-panel th {
+        font-size: 14px !important;
+    }
+
+
+    .model-panel td {
+        font-size: 15px !important;
+    }
+
+
+    .event-panel p,
+    .event-panel span,
+    .event-panel small,
+    .event-panel li,
+    .event-panel div {
+        font-size: 15px !important;
+    }
+
+
+    .leaflet-popup-content {
+        min-width: 420px !important;
+
+        font-size: 16px !important;
+    }
+
+
+    .leaflet-popup-content p,
+    .leaflet-popup-content span,
+    .leaflet-popup-content small,
+    .leaflet-popup-content td {
+        font-size: 15px !important;
+    }
+
+}
+
+
+/* ============================================================
+   SMALLER LAPTOP SAFETY
+   ============================================================ */
+
+@media (max-width: 1300px) {
+
+    .sidebar {
+        width: 230px !important;
+    }
+
+
+    .model-panel {
+        width: 290px !important;
+    }
+
+
+    .event-panel {
+        width: 300px !important;
+    }
+
+
+    .aqi-legend {
+        width: 160px !important;
+    }
+
+
+    .leaflet-popup-content {
+        min-width: 330px !important;
+    }
+
+}
+/* ============================================================
+   BACK TO DASHBOARD BUTTON
+   Navigation only
+   ============================================================ */
+
+.dashboard-home-btn {
+
+    position: fixed;
+
+    top: 16px;
+    left: 65px;
+
+    z-index: 99999;
+
+    height: 46px;
+
+    padding: 0 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071923,
+            #0b2731
+        );
+
+    border:
+        1px solid rgba(
+            0,
+            255,
+            213,
+            0.55
+        );
+
+    border-radius: 9px;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 5px 18px
+        rgba(0, 0, 0, 0.28);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.dashboard-home-btn:hover {
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07343c,
+            #075a5a
+        );
+
+    border-color: #00ffd5;
+
+    transform:
+        translateY(-1px);
+}
+
+
+.dashboard-home-btn:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+.dashboard-home-icon {
+
+    color: #00ffd5;
+
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+.dashboard-home-text {
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Large presentation screens */
+
+@media (min-width: 1500px) {
+
+    .dashboard-home-btn {
+
+        top: 18px;
+        left: 72px;
+
+        height: 52px;
+
+        padding: 0 21px;
+
+        gap: 10px;
+
+        font-size: 16px;
+
+    }
+
+
+    .dashboard-home-icon {
+
+        font-size: 24px;
+
+    }
+
+
+    .dashboard-home-text {
+
+        font-size: 16px;
+
+    }
+
+}
+/* ============================================================
+   CORE MAP PANEL OVERLAP FIX
+   Keeps large readable panels without covering AQI legend
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   LEFT SIDEBAR
+   ------------------------------------------------------------ */
+
+.sidebar {
+
+    /* Keep existing width */
+    width: 290px !important;
+
+    /* Prevent panel from extending underneath legend */
+    max-height: calc(100vh - 120px) !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    padding-bottom: 28px !important;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        rgba(0,255,213,.35)
+        rgba(255,255,255,.04);
+}
+
+
+/* Chrome / Edge scrollbar */
+
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+.sidebar::-webkit-scrollbar-track {
+
+    background:
+        rgba(255,255,255,.03);
+
+    border-radius: 20px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(0,255,213,.35);
+
+    border-radius: 20px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+
+    background:
+        rgba(0,255,213,.55);
+}
+
+
+/* ------------------------------------------------------------
+   AQI LEGEND
+   Keep it independently visible
+   ------------------------------------------------------------ */
+
+.aqi-legend {
+
+    position: fixed !important;
+
+    left: 12px !important;
+    bottom: 14px !important;
+
+    width: 190px !important;
+
+    z-index: 9500 !important;
+
+    padding: 15px !important;
+
+    border-radius: 9px !important;
+
+    background:
+        rgba(5,24,34,.96) !important;
+
+    border:
+        1px solid
+        rgba(0,255,213,.25) !important;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.28) !important;
+}
+
+
+/* ------------------------------------------------------------
+   Leave space at bottom of sidebar so scrolling content
+   doesn't visually sit behind the legend
+   ------------------------------------------------------------ */
+
+.sidebar::after {
+
+    content: "";
+
+    display: block;
+
+    height: 110px;
+
+}
+
+
+/* ------------------------------------------------------------
+   Larger presentation screens
+   ------------------------------------------------------------ */
+
+@media (min-width: 1500px) {
+
+    .sidebar {
+
+        max-height:
+            calc(100vh - 135px) !important;
+
+    }
+
+
+    .aqi-legend {
+
+        width: 205px !important;
+
+        bottom: 16px !important;
+
+    }
+
+}
+
+
+/* ------------------------------------------------------------
+   Laptop screens
+   ------------------------------------------------------------ */
+
+@media (max-height: 800px) {
+
+    .sidebar {
+
+        top: 65px !important;
+
+        max-height:
+            calc(100vh - 90px) !important;
+
+    }
+
+
+    .aqi-legend {
+
+        width: 165px !important;
+
+        padding: 11px !important;
+
+    }
+
+}

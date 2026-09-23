@@ -1,0 +1,20 @@
+{
+  "event_date": "2026-06-08",
+  "grid_points": 576,
+  "valid_aqi_cells": 576,
+  "missing_aqi_cells": 0,
+  "minimum_aqi": 86.0,
+  "maximum_aqi": 328.56962025316454,
+  "mean_aqi": 163.73347851182902,
+  "median_aqi": 141.08342976162925,
+  "feature_coverage": {
+    "AOD": 439,
+    "HCHO": 564,
+    "SAT_NO2": 548,
+    "ERA5_TEMP": 576,
+    "ERA5_DEWPOINT": 576,
+    "ERA5_RH": 576,
+    "WIND_SPEED": 576,
+    "FIRE_COUNT_25KM": 576
+  }
+}

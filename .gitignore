@@ -1,0 +1,63 @@
+# ==============================
+# AeroVision SIH 2026
+# ==============================
+
+# Python environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets / credentials
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+service-account*.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / temporary files
+*.log
+*.tmp
+temp/
+tmp/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large raw datasets
+data/raw/
+
+# Earth Engine / downloaded satellite data
+data/aod/
+data/hcho/
+data/no2/
+data/weather/
+data/fire/
+
+# Large intermediate files
+*.tif
+*.tiff
+*.nc
+*.hdf
+*.h5
+
+# ML temporary/checkpoint files
+*.ckpt
+
+# Never commit local databases
+*.db
+*.sqlite
+*.sqlite3
+# Bundled/downloaded archives
+python/insat/mdapi.zip

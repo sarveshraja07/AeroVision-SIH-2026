@@ -1,0 +1,13 @@
+metric,value
+Total validation rows,176.0
+Full CPCB reference rows,145.0
+Partial CPCB reference rows,31.0
+AQI MAE,33.061570383957
+AQI Median Absolute Error,24.22743358228027
+AQI RMSE,51.47386480218563
+AQI Correlation,0.4759822122167512
+Category Agreement (%),77.24137931034483
+Error > 25,71.0
+Error > 50,23.0
+Error > 75,12.0
+Error > 100,8.0
