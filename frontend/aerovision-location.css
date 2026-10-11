@@ -1,0 +1,6 @@
+
+/* Optional location-panel overrides for AeroVision map integration. */
+.avx-location-active {
+  border-color: rgba(37,151,244,.38) !important;
+  box-shadow: 0 20px 55px rgba(37,151,244,.14) !important;
+}

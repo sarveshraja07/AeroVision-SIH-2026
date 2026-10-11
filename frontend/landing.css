@@ -1070,7 +1070,11 @@ a {
 .timeline-severe .day-cpcb {
     color: rgba(255,255,255,.75);
 }
-
+.timeline-na {
+    color: #687589;
+    background: #f1f3f5;
+    border-color: #d5dbe2;
+}
 
 /* ============================================================
    TIMELINE CHART
@@ -2634,6 +2638,76 @@ a {
 
         text-align: left;
 
-    }
 
+    }
+}
+/* ============================================================
+   FINAL AQI TIMELINE OVERRIDE
+   ============================================================ */
+
+body.av-dark #history button.timeline-day.timeline-good {
+    background: #1f7a3d !important;
+    border-color: #4ade80 !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-satisfactory {
+    background: #647f18 !important;
+    border-color: #a3e635 !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-moderate {
+    background: #8a6d08 !important;
+    border-color: #facc15 !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-poor {
+    background: #9a4d13 !important;
+    border-color: #fb923c !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-very-poor {
+    background: #8f2929 !important;
+    border-color: #f87171 !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-severe {
+    background: #7d2345 !important;
+    border-color: #fb7185 !important;
+    color: #ffffff !important;
+}
+
+body.av-dark #history button.timeline-day.timeline-na {
+    background: #182536 !important;
+    border-color: #3a4a5d !important;
+    color: #8798aa !important;
+}
+/* ============================================================
+   SPECIFIC DATA CARDS — DARK MODE
+   ============================================================ */
+
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(1),
+body.av-dark #specificDataPanel > div.specific-value-grid > article.specific-value-card.aero,
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(3),
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(4) {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(1) *,
+body.av-dark #specificDataPanel > div.specific-value-grid > article.specific-value-card.aero *,
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(3) *,
+body.av-dark #specificDataPanel > div.specific-value-grid > article:nth-child(4) * {
+    color: #edf4fb !important;
+}
+
+/* AeroVision card — slightly blue */
+body.av-dark #specificDataPanel > div.specific-value-grid > article.specific-value-card.aero {
+    background: #132a40 !important;
+    border-color: #3b82c4 !important;
 }

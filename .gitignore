@@ -61,3 +61,20 @@ data/fire/
 *.sqlite3
 # Bundled/downloaded archives
 python/insat/mdapi.zip
+
+inspect_lines.ps1
+*.zip
+chunk-*.js
+patch_pilot.py
+ccr_api_config.js
+ccr_main.js
+ccr_station_map.js
+check_yf.py
+cpcb_official_stations.json
+cpcb_station_response.txt
+decode_*.py
+find_*.py
+inspect_*.py
+locate_*.py
+trace_*.py
+test_*.py

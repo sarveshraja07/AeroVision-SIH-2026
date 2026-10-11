@@ -18,10 +18,24 @@
         rel="stylesheet"
         href="/landing.css"
     >
-<!-- <link
-    rel="stylesheet"
-    href="/aerovision-ui.css"
-> -->
+
+    <link
+        rel="stylesheet"
+        href="/aerovision-enhanced.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/aerovision-location.css"
+    >
+
+    <!--
+    <link
+        rel="stylesheet"
+        href="/aerovision-ui.css"
+    >
+    -->
+
 </head>
 
 
@@ -119,6 +133,30 @@
             <span class="real-dot"></span>
 
             REAL DATA · JUNE 2026
+
+        </div>
+
+
+        <div class="av-header-actions">
+
+            <button
+                type="button"
+                id="avx-theme-toggle"
+                class="av-header-btn"
+                aria-label="Toggle light and dark mode"
+            >
+                 Dark
+            </button>
+
+
+            <button
+                type="button"
+                id="avx-locate"
+                class="av-header-btn"
+                aria-label="Locate me"
+            >
+                 Locate Me
+            </button>
 
         </div>
 
@@ -223,6 +261,7 @@
 </section>
 
 
+
 <!-- =========================================================
      DATA VIEW SELECTOR
 ========================================================= -->
@@ -237,6 +276,7 @@
         AQI
     </button>
 
+
     <button
         type="button"
         class="data-view-btn"
@@ -244,6 +284,7 @@
     >
         ↶ History
     </button>
+
 
     <button
         type="button"
@@ -253,6 +294,7 @@
         PM₂.₅
     </button>
 
+
     <button
         type="button"
         class="data-view-btn"
@@ -261,6 +303,7 @@
         PM₁₀
     </button>
 
+
     <button
         type="button"
         class="data-view-btn"
@@ -268,6 +311,7 @@
     >
         NO₂
     </button>
+
 
     <button
         type="button"
@@ -278,6 +322,7 @@
     </button>
 
 </section>
+
 
 
 <!-- =========================================================
@@ -303,6 +348,7 @@
             </h2>
 
         </div>
+
 
         <div>
 
@@ -415,6 +461,7 @@
                     CPCB
                 </span>
 
+
                 <span>
                     <i class="specific-aero-dot"></i>
                     AeroVision
@@ -436,7 +483,11 @@
 </section>
 
 
-<!-- YOUR EXISTING HERO STARTS HERE -->
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
 <section class="hero-grid">
 
 
@@ -723,7 +774,10 @@
             </div>
 
 
-            <span class="chart-station-name" id="chartStationName">
+            <span
+                class="chart-station-name"
+                id="chartStationName"
+            >
                 --
             </span>
 
@@ -820,11 +874,19 @@
     <div class="pollutant-grid">
 
 
-        <article class="pollutant-card">
+        <!-- =================================================
+             PM2.5
+        ================================================== -->
+
+        <article
+            class="pollutant-card"
+            data-pollutant="PM25"
+        >
 
             <div class="pollutant-icon">
                 PM
             </div>
+
 
             <div class="pollutant-info">
 
@@ -842,6 +904,7 @@
 
             </div>
 
+
             <div class="pollutant-values">
 
                 <div>
@@ -855,6 +918,7 @@
                     </strong>
 
                 </div>
+
 
                 <div>
 
@@ -874,11 +938,19 @@
 
 
 
-        <article class="pollutant-card">
+        <!-- =================================================
+             PM10
+        ================================================== -->
+
+        <article
+            class="pollutant-card"
+            data-pollutant="PM10"
+        >
 
             <div class="pollutant-icon">
                 PM
             </div>
+
 
             <div class="pollutant-info">
 
@@ -896,6 +968,7 @@
 
             </div>
 
+
             <div class="pollutant-values">
 
                 <div>
@@ -909,6 +982,7 @@
                     </strong>
 
                 </div>
+
 
                 <div>
 
@@ -928,11 +1002,19 @@
 
 
 
-        <article class="pollutant-card">
+        <!-- =================================================
+             NO2
+        ================================================== -->
+
+        <article
+            class="pollutant-card"
+            data-pollutant="NO2"
+        >
 
             <div class="pollutant-icon">
                 NO₂
             </div>
+
 
             <div class="pollutant-info">
 
@@ -950,6 +1032,7 @@
 
             </div>
 
+
             <div class="pollutant-values">
 
                 <div>
@@ -963,6 +1046,7 @@
                     </strong>
 
                 </div>
+
 
                 <div>
 
@@ -982,11 +1066,19 @@
 
 
 
-        <article class="pollutant-card">
+        <!-- =================================================
+             O3
+        ================================================== -->
+
+        <article
+            class="pollutant-card"
+            data-pollutant="O3"
+        >
 
             <div class="pollutant-icon">
                 O₃
             </div>
+
 
             <div class="pollutant-info">
 
@@ -1004,6 +1096,7 @@
 
             </div>
 
+
             <div class="pollutant-values">
 
                 <div>
@@ -1017,6 +1110,7 @@
                     </strong>
 
                 </div>
+
 
                 <div>
 
@@ -1036,6 +1130,80 @@
 
 
     </div>
+
+
+    <!-- =====================================================
+         SELECTED POLLUTANT DETAIL BOX
+    ====================================================== -->
+
+    <section
+        class="avx-pollutant-detail"
+        id="avxPollutantDetail"
+    >
+
+        <div class="avx-pollutant-detail-header">
+
+            <div>
+
+                <span class="avx-pollutant-detail-label">
+                    SELECTED POLLUTANT
+                </span>
+
+                <h3
+                    class="avx-pollutant-detail-name"
+                    id="avxPollutantName"
+                >
+                    Select a pollutant
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="avx-pollutant-detail-value">
+
+            <span id="avxPollutantValue">
+                --
+            </span>
+
+            <small id="avxPollutantUnit">
+                µg/m³
+            </small>
+
+        </div>
+
+
+        <div class="avx-pollutant-detail-stats">
+
+            <div>
+
+                <span>
+                    CPCB
+                </span>
+
+                <strong id="avxPollutantCpcb">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    AeroVision
+                </span>
+
+                <strong id="avxPollutantAero">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 </section>
@@ -1843,7 +2011,11 @@
 
 
 <script src="/landing.js"></script>
-<!-- <script src="/aerovision-ui.js"></script> -->
+
+<script src="/aerovision-enhanced.js"></script>
+
+<script src="/aerovision-location.js"></script>
+
 
 </body>
 

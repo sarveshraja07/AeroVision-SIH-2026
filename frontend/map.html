@@ -23,6 +23,8 @@
         rel="stylesheet"
         href="/style.css"
     >
+    <link rel="stylesheet" href="/aerovision-enhanced.css">
+<link rel="stylesheet" href="/aerovision-location.css">
 <!-- <link
     rel="stylesheet"
     href="/aerovision-ui.css"
@@ -252,7 +254,7 @@
     <!-- MODEL COVERAGE -->
     <!-- ================================================== -->
 
-    <h3>
+    <!-- <h3>
         PROTOTYPE COVERAGE
     </h3>
 
@@ -278,13 +280,13 @@
     </p>
 
 
-    <div class="divider"></div>
+    <div class="divider"></div> -->
 
 
     <!-- ================================================== -->
     <!-- AQI SURFACE -->
     <!-- ================================================== -->
-
+<!-- 
     <h3>
         AQI SURFACE INTELLIGENCE
     </h3>
@@ -338,49 +340,24 @@
     </div>
 
 
-    <div class="divider"></div>
+    <div class="divider"></div> -->
 
 
     <!-- ================================================== -->
     <!-- SOURCES -->
     <!-- ================================================== -->
 
-    <h3>
-        REAL DATA SOURCES
-    </h3>
+    <!-- <h3>
+    REAL DATA SOURCES
+</h3> -->
 
+<div class="source-list">
 
-    <div class="source-list">
-
-        <div>
-            ✓ CPCB
-        </div>
-
-        <div>
-            ✓ MODIS MAIAC AOD
-        </div>
-
-        <div>
-            ✓ Sentinel-5P HCHO
-        </div>
-
-        <div>
-            ✓ Sentinel-5P NO₂
-        </div>
-
-        <div>
-            ✓ ERA5-Land
-        </div>
-
-        <div>
-            ✓ NASA FIRMS
-        </div>
-
-    </div>
-
+    <div style="height: 1px;"></div>
 
 </div>
 
+</div>
 
 
 <!-- ====================================================== -->
@@ -695,7 +672,7 @@
 <!-- ====================================================== -->
 <!-- EVENT PANEL -->
 <!-- ====================================================== -->
-
+<!-- 
 <div class="event-panel">
 
 
@@ -768,7 +745,7 @@
 
 </div>
 
-
+ -->
 
 <!-- ====================================================== -->
 <!-- AQI LEGEND -->
@@ -1197,7 +1174,8 @@ console.log(
     src="/dashboard.js"
 ></script>
 
-
+<script src="/aerovision-enhanced.js"></script>
+<script src="/aerovision-location.js"></script>
 
 <!-- ====================================================== -->
 <!-- SAFE JUNE 2026 STATION TIMELINE ADD-ON               -->
@@ -1236,6 +1214,24 @@ console.log(
         color: #fff;
         font-weight: 700;
     }
+    /* Calendar — dark mode */
+body.av-dark .av-date-control {
+    background: #0d1929 !important;
+    color: #edf5fb !important;
+    border-color: rgba(0, 234, 255, 0.35) !important;
+}
+
+body.av-dark .av-date-row button,
+body.av-dark .av-date-row select {
+    background: #13243a !important;
+    color: #edf5fb !important;
+    border-color: rgba(255,255,255,.18) !important;
+}
+
+body.av-dark .av-date-row select option {
+    background: #13243a !important;
+    color: #edf5fb !important;
+}
     .av-date-row button {
         width: 31px;
         cursor: pointer;
@@ -1287,10 +1283,52 @@ console.log(
         margin: 8px 0;
     }
     .av-date-popup .box {
-        background: #f3f7f8;
+          background: rgba(20, 35, 50, 0.95);
         border-radius: 7px;
         padding: 7px;
     }
+    body.av-dark .av-date-popup .box {
+    background: #13243a !important;
+    color: #eefcff !important;
+}
+
+body.av-dark .av-date-popup .box span {
+    color: #9fb2c0 !important;
+}
+
+body.av-dark .av-date-popup th,
+body.av-dark .av-date-popup td {
+    border-bottom-color: rgba(255,255,255,.12) !important;
+    color: #dce8ef !important;
+}
+body.av-dark .leaflet-popup-content-wrapper,
+body.av-dark .leaflet-popup-tip {
+    background: #13243a !important;
+    color: #eefcff !important;
+}
+
+body.av-dark .av-date-popup {
+    color: #eefcff !important;
+}
+
+body.av-dark .av-date-popup .meta {
+    color: #9fb2c0 !important;
+}
+
+body.av-dark .av-date-popup .box {
+    background: #1b3048 !important;
+    color: #eefcff !important;
+}
+
+body.av-dark .av-date-popup .box span {
+    color: #9fb2c0 !important;
+}
+
+body.av-dark .av-date-popup th,
+body.av-dark .av-date-popup td {
+    color: #dce8ef !important;
+    border-bottom-color: rgba(255,255,255,.12) !important;
+}
     .av-date-popup .box span {
         display: block;
         font-size: 9px;
@@ -1507,10 +1545,82 @@ console.log(
                 bubblingMouseEvents: false
             });
 
-            marker.bindPopup(popupHtml(row), { maxWidth: 360 });
+            marker.bindPopup(popupHtml(row), {
+                maxWidth: 315,
+                minWidth: 285,
+                closeButton: true,
+                autoPan: false,
+                keepInView: false
+            });
+
+            /* Leaflet normally opens the popup immediately on marker click.
+             * Remove that built-in click handler so our click handler below
+             * controls the full sequence: fly to location -> open popup.
+             */
+            marker.off("click", marker._openPopup, marker);
+
             marker.on("click", function (e) {
-                if (e && e.originalEvent) L.DomEvent.stopPropagation(e.originalEvent);
+                if (e && e.originalEvent) {
+                    L.DomEvent.stopPropagation(e.originalEvent);
+                }
+
                 updateTopPanel(row);
+
+                const latlng = marker.getLatLng();
+                const targetZoom = Math.max(map.getZoom(), 11);
+
+                map.flyTo(latlng, targetZoom, {
+                    animate: true,
+                    duration: 0.8,
+                    easeLinearity: 0.25
+                });
+
+                map.once("moveend", function () {
+                    marker.openPopup();
+                });
+            });
+
+            marker.on("popupopen", function (e) {
+                const popup = e.popup;
+
+                setTimeout(function () {
+                    const popupElement = popup.getElement();
+                    const mapElement = map.getContainer();
+
+                    if (!popupElement || !mapElement) return;
+
+                    popup.update();
+
+                    const popupRect = popupElement.getBoundingClientRect();
+                    const mapRect = mapElement.getBoundingClientRect();
+
+                    const safeLeft = mapRect.left + 270;
+                    const safeTop = mapRect.top + 145;
+                    const safeRight = mapRect.right - 330;
+                    const safeBottom = mapRect.bottom - 35;
+
+                    let dx = 0;
+                    let dy = 0;
+
+                    if (popupRect.left < safeLeft) {
+                        dx = popupRect.left - safeLeft;
+                    } else if (popupRect.right > safeRight) {
+                        dx = popupRect.right - safeRight;
+                    }
+
+                    if (popupRect.top < safeTop) {
+                        dy = popupRect.top - safeTop;
+                    } else if (popupRect.bottom > safeBottom) {
+                        dy = popupRect.bottom - safeBottom;
+                    }
+
+                    if (dx !== 0 || dy !== 0) {
+                        map.panBy([dx, dy], {
+                            animate: true,
+                            duration: 0.4
+                        });
+                    }
+                }, 100);
             });
             marker.addTo(timelineLayer);
         });

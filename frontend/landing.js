@@ -262,8 +262,95 @@ function categoryClass(
     return "";
 
 }
+// ============================================================
+// AQI VALUE COLOR
+// ============================================================
+
+function aqiValueClass(aqi) {
+
+    if (!validNumber(aqi)) {
+        return "timeline-na";
+    }
+
+    const value =
+        Number(aqi);
+
+    if (value <= 50) {
+        return "timeline-good";
+    }
+
+    if (value <= 100) {
+        return "timeline-satisfactory";
+    }
+
+    if (value <= 200) {
+        return "timeline-moderate";
+    }
+
+    if (value <= 300) {
+        return "timeline-poor";
+    }
+
+    if (value <= 400) {
+        return "timeline-very-poor";
+    }
+
+    return "timeline-severe";
+}
+// ============================================================
+// AQI VALUE COLOR
+// ============================================================
+
+function aqiValueClass(aqi) {
+
+    if (!validNumber(aqi)) {
+
+        return "timeline-na";
+
+    }
+
+    const value =
+        Number(aqi);
 
 
+    if (value <= 50) {
+
+        return "timeline-good";
+
+    }
+
+
+    if (value <= 100) {
+
+        return "timeline-satisfactory";
+
+    }
+
+
+    if (value <= 200) {
+
+        return "timeline-moderate";
+
+    }
+
+
+    if (value <= 300) {
+
+        return "timeline-poor";
+
+    }
+
+
+    if (value <= 400) {
+
+        return "timeline-very-poor";
+
+    }
+
+
+    return "timeline-severe";
+
+}
 // ============================================================
 // HERO AQI THEME
 // ============================================================
@@ -1576,19 +1663,15 @@ function renderTimeline() {
         if (row) {
 
             const cssCategory =
-                categoryClass(
-                    row.AEROVISION_CATEGORY
-                );
+    aqiValueClass(
+        row.AEROVISION_AQI
+    );
 
-
-            if (cssCategory) {
-
-                button.classList.add(
-                    cssCategory
-                );
-
-            }
-
+if (cssCategory) {
+    button.classList.add(
+        cssCategory
+    );
+}
 
             const aeroText =
                 validNumber(

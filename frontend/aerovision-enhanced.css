@@ -1,0 +1,4244 @@
+
+/* ============================================================
+   AEROVISION FRONTEND ENHANCEMENT
+   Add-on stylesheet. Does not replace existing CSS.
+   ============================================================ */
+
+:root {
+  --av-bg: #f5f8fc;
+  --av-surface: rgba(255,255,255,.92);
+  --av-surface-2: #f8faff;
+  --av-text: #10233f;
+  --av-muted: #68778d;
+  --av-border: rgba(26,53,86,.10);
+  --av-blue: #2597f4;
+  --av-blue-dark: #0d6fd1;
+  --av-green: #36b84a;
+  --av-yellow: #f4c52b;
+  --av-orange: #f18b2c;
+  --av-red: #ef476f;
+  --av-shadow: 0 18px 55px rgba(32,64,104,.12);
+  --av-radius: 24px;
+}
+
+body.av-enhanced {
+  background: var(--av-bg);
+  color: var(--av-text);
+  transition: background .25s ease, color .25s ease;
+}
+
+body.av-dark {
+  --av-bg: #08111f;
+  --av-surface: rgba(15,27,45,.94);
+  --av-surface-2: #101f34;
+  --av-text: #eef6ff;
+  --av-muted: #aab9ca;
+  --av-border: rgba(220,240,255,.11);
+  --av-blue: #4bb1ff;
+  --av-blue-dark: #2c8ee0;
+  --av-shadow: 0 18px 55px rgba(0,0,0,.35);
+}
+
+#avx-shell {
+  width: min(94vw, 1650px);
+  max-width: 1650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.avx-topbar {
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  margin: 12px 0 18px;
+  padding: 12px 16px;
+  border: 1px solid var(--av-border);
+  border-radius: 18px;
+  background: var(--av-surface);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--av-shadow);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avx-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--av-text);
+  white-space: nowrap;
+}
+
+.avx-brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #2ca9ff, #176fd2);
+  color: white;
+  font-weight: 900;
+  box-shadow: 0 8px 22px rgba(37,151,244,.28);
+}
+
+.avx-nav {
+  display: flex;
+  gap: 7px;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.avx-btn {
+  border: 1px solid var(--av-border);
+  background: var(--av-surface-2);
+  color: var(--av-text);
+  border-radius: 11px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease;
+}
+
+.avx-btn:hover { transform: translateY(-1px); border-color: rgba(37,151,244,.4); }
+.avx-btn-primary { background: var(--av-blue); color: white; border-color: transparent; }
+.avx-btn-icon { width: 40px; padding: 9px; }
+
+.avx-hero {
+  min-height: 390px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  padding: 42px 46px;
+  background:
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.42), transparent 28%),
+    linear-gradient(135deg, #fff7cf 0%, #ffe06b 48%, #f4ca37 100%);
+  box-shadow: var(--av-shadow);
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+}
+
+body.av-dark .avx-hero {
+  background:
+    radial-gradient(circle at 80% 25%, rgba(75,177,255,.16), transparent 30%),
+    linear-gradient(135deg, #14243a, #17314d);
+}
+
+.avx-hero-copy { position: relative; z-index: 2; }
+.avx-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--av-blue-dark);
+}
+
+.avx-title {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 62px);
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.avx-subtitle {
+  margin: 16px 0 24px;
+  max-width: 650px;
+  color: #556477;
+  font-size: 16px;
+}
+body.av-dark .avx-subtitle { color: var(--av-muted); }
+
+.avx-aqi-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.avx-aqi-number {
+  font-size: clamp(58px, 8vw, 92px);
+  font-weight: 900;
+  line-height: .8;
+  color: #eabf19;
+  letter-spacing: -.07em;
+}
+
+.avx-aqi-status {
+  padding: 11px 20px;
+  border-radius: 12px;
+  font-weight: 800;
+  background: rgba(255,255,255,.62);
+  color: #ad8500;
+}
+
+.avx-pollutant-strip {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  gap: 10px;
+  max-width: 720px;
+}
+
+.avx-mini {
+  padding: 13px 15px;
+  border-radius: 13px;
+  background: rgba(255,255,255,.54);
+  border: 1px solid rgba(255,255,255,.5);
+}
+.avx-mini-label { font-size: 11px; color: #657386; }
+.avx-mini-value { font-size: 19px; font-weight: 800; margin-top: 3px; }
+
+.avx-character-zone {
+  min-height: 300px;
+  display: grid;
+  place-items: end center;
+  position: relative;
+}
+
+.avx-character-card {
+  width: min(310px, 100%);
+  height: 300px;
+  border-radius: 28px;
+  background: rgba(255,255,255,.22);
+  border: 1px solid rgba(255,255,255,.4);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avx-character-card::after {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 36px;
+  bottom: 18px;
+  border-radius: 50%;
+  background: rgba(65,77,105,.16);
+  filter: blur(5px);
+}
+
+.avx-boy {
+  position: relative;
+  width: 132px;
+  height: 240px;
+  animation: avFloat 3.8s ease-in-out infinite;
+  z-index: 2;
+}
+
+.avx-head {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  left: 25px;
+  top: 12px;
+  border-radius: 45% 45% 48% 48%;
+  background: #f6c38f;
+  border: 3px solid #26384e;
+  z-index: 3;
+}
+
+.avx-hair {
+  position: absolute;
+  width: 88px;
+  height: 46px;
+  left: 22px;
+  top: 7px;
+  border-radius: 52% 58% 28% 35%;
+  background: #27334a;
+  transform: rotate(-5deg);
+  z-index: 4;
+}
+
+.avx-eye {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 43px;
+  border-radius: 50%;
+  background: #1d2b3c;
+}
+.avx-eye.left { left: 22px; }
+.avx-eye.right { right: 22px; }
+
+.avx-mouth {
+  position: absolute;
+  left: 33px;
+  top: 64px;
+  width: 16px;
+  height: 7px;
+  border-bottom: 2px solid #8b4d48;
+  border-radius: 50%;
+}
+
+.avx-body {
+  position: absolute;
+  top: 92px;
+  left: 29px;
+  width: 74px;
+  height: 102px;
+  border-radius: 20px 20px 15px 15px;
+  background: #f1d52e;
+  border: 3px solid #26384e;
+}
+
+.avx-arm {
+  position: absolute;
+  width: 22px;
+  height: 84px;
+  top: 100px;
+  border-radius: 20px;
+  background: #f1d52e;
+  border: 3px solid #26384e;
+}
+.avx-arm.left { left: 11px; transform: rotate(12deg); }
+.avx-arm.right { right: 11px; transform: rotate(-12deg); }
+
+.avx-leg {
+  position: absolute;
+  width: 22px;
+  height: 70px;
+  top: 183px;
+  border-radius: 0 0 12px 12px;
+  background: #344963;
+  border: 3px solid #26384e;
+}
+.avx-leg.left { left: 37px; }
+.avx-leg.right { right: 37px; }
+
+@keyframes avFloat {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(1deg); }
+}
+
+.avx-section {
+  margin-top: 34px;
+  padding: 30px;
+  border-radius: 26px;
+  background: var(--av-surface);
+  border: 1px solid var(--av-border);
+  box-shadow: var(--av-shadow);
+}
+
+.avx-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+.avx-section-head h2 { margin: 0; font-size: 26px; letter-spacing: -.035em; }
+.avx-section-head p { margin: 6px 0 0; color: var(--av-muted); }
+
+.avx-chart-wrap {
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--av-surface-2);
+  padding: 18px;
+}
+.avx-chart {
+  width: 100%;
+  height: 230px;
+  display: block;
+}
+.avx-chart-empty {
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+  color: var(--av-muted);
+  text-align: center;
+}
+
+.avx-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.avx-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: var(--av-surface-2);
+  border: 1px solid var(--av-border);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.avx-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(32,64,104,.10); }
+.avx-card-title { font-weight: 800; }
+.avx-card-value { font-size: 32px; font-weight: 900; margin-top: 10px; }
+.avx-card-meta { margin-top: 6px; color: var(--av-muted); font-size: 13px; }
+
+.avx-stations {
+  overflow-x: auto;
+}
+.avx-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  min-width: 720px;
+}
+.avx-table th {
+  text-align: left;
+  padding: 10px 14px;
+  color: var(--av-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+.avx-table td {
+  padding: 14px;
+  background: var(--av-surface-2);
+  border-top: 1px solid var(--av-border);
+  border-bottom: 1px solid var(--av-border);
+}
+.avx-table td:first-child {
+  border-left: 1px solid var(--av-border);
+  border-radius: 12px 0 0 12px;
+}
+.avx-table td:last-child {
+  border-right: 1px solid var(--av-border);
+  border-radius: 0 12px 12px 0;
+}
+
+.avx-map-shell {
+  position: relative;
+  margin-top: 34px;
+  min-height: 560px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--av-border);
+  background: var(--av-surface-2);
+  box-shadow: var(--av-shadow);
+}
+
+.avx-map-info {
+  position: absolute;
+  z-index: 800;
+  top: 18px;
+  left: 18px;
+  width: min(350px, calc(100% - 36px));
+  max-height: calc(100% - 36px);
+  overflow: auto;
+  padding: 20px;
+  border-radius: 22px;
+  background: var(--av-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--av-border);
+  box-shadow: var(--av-shadow);
+}
+
+.avx-map-info h3 { margin: 0; }
+.avx-coords { color: var(--av-muted); font-size: 12px; margin-top: 5px; }
+.avx-map-loading { padding: 16px 0; color: var(--av-muted); }
+
+.avx-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-top: 15px;
+}
+.avx-detail {
+  padding: 11px;
+  border-radius: 11px;
+  background: var(--av-surface-2);
+}
+.avx-detail-label { font-size: 11px; color: var(--av-muted); }
+.avx-detail-value { font-weight: 800; margin-top: 3px; }
+
+.avx-map-host {
+  width: 100%;
+  min-height: 560px;
+}
+.avx-map-placeholder {
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--av-muted);
+  padding: 40px;
+}
+
+.avx-aqi-badge {
+  display: inline-flex;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.avx-good { background: #dcf7df; color: #1f8b30; }
+.avx-moderate { background: #fff1bd; color: #987100; }
+.avx-poor { background: #ffe0b8; color: #b95d00; }
+.avx-unhealthy { background: #ffd1dc; color: #c32951; }
+.avx-hazardous { background: #ead2ff; color: #7c2fb4; }
+
+.avx-hidden-existing {
+  /* Used only when the user explicitly asks to hide an old hero.
+     This class is NOT applied automatically. */
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  #avx-shell { width: min(100% - 20px, 720px); }
+  .avx-topbar { flex-wrap: wrap; }
+  .avx-nav { width: 100%; margin-left: 0; justify-content: flex-start; }
+  .avx-hero { grid-template-columns: 1fr; padding: 30px; }
+  .avx-character-zone { min-height: 260px; }
+  .avx-pollutant-strip { grid-template-columns: repeat(2, 1fr); }
+  .avx-grid { grid-template-columns: 1fr; }
+  .avx-section { padding: 20px; }
+}
+
+@media (max-width: 600px) {
+  .avx-title { font-size: 38px; }
+  .avx-hero { border-radius: 22px; }
+  .avx-aqi-number { font-size: 68px; }
+  .avx-map-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    max-height: 48%;
+  }
+  .avx-map-host, .avx-map-placeholder { min-height: 620px; }
+}
+/* =========================================================
+   AEROVISION DARK MODE — EXISTING PAGE OVERRIDES
+   ========================================================= */
+
+body.av-dark .main-header {
+    background: #0b1220;
+    border-color: rgba(255,255,255,.10);
+}
+
+body.av-dark .brand h1,
+body.av-dark .brand span,
+body.av-dark .nav-link {
+    color: #e8f1ff;
+}
+
+body.av-dark .nav-link:hover,
+body.av-dark .nav-link.active {
+    color: #58b7ff;
+}
+
+body.av-dark .real-badge {
+    color: #d7e5f5;
+    background: rgba(255,255,255,.06);
+    border-color: rgba(255,255,255,.10);
+}
+
+/* Main sections */
+body.av-dark .page-container,
+body.av-dark .content-section,
+body.av-dark .intro-section,
+body.av-dark .data-view-navigation,
+body.av-dark .event-intelligence,
+body.av-dark .june-timeline-section,
+body.av-dark .map-cta-section {
+    color: #e8f1ff;
+}
+
+/* Headings */
+body.av-dark h1,
+body.av-dark h2,
+body.av-dark h3,
+body.av-dark h4,
+body.av-dark strong {
+    color: #f3f8ff;
+}
+
+body.av-dark p,
+body.av-dark span,
+body.av-dark small {
+    color: #aebfd2;
+}
+
+/* Cards */
+body.av-dark .source-card,
+body.av-dark .map-preview-card,
+body.av-dark .aqi-hero,
+body.av-dark .content-card,
+body.av-dark .timeline-chart,
+body.av-dark .data-card {
+    background: #111c2d;
+    border-color: rgba(255,255,255,.09);
+    color: #e8f1ff;
+}
+
+/* Map preview */
+body.av-dark .map-preview-background {
+    background: #101b2b;
+}
+
+body.av-dark .map-preview-content {
+    color: #e8f1ff;
+}
+
+/* Timeline / chart */
+body.av-dark .chart-area,
+body.av-dark .timeline-chart {
+    background: #0f1928;
+}
+
+body.av-dark .chart-y-axis,
+body.av-dark .timeline-chart-legend,
+body.av-dark .chart-station-name {
+    color: #aebfd2;
+}
+
+/* Buttons */
+body.av-dark .primary-map-button,
+body.av-dark .map-preview-button,
+body.av-dark .large-map-button {
+    color: #ffffff;
+}
+
+/* Header controls */
+body.av-dark .av-header-btn {
+    background: #17263a;
+    color: #e8f1ff;
+    border-color: rgba(255,255,255,.12);
+}
+
+body.av-dark .av-header-btn:hover {
+    background: #213550;
+}
+
+/* Existing AV icon */
+body.av-dark .brand-icon {
+    background: #17263a;
+    color: #58b7ff;
+    border-color: rgba(88,183,255,.35);
+}
+
+/* Footer */
+body.av-dark .main-footer {
+    background: #080f1a;
+    color: #aebfd2;
+    border-color: rgba(255,255,255,.08);
+}
+/* =========================================================
+   AEROVISION — COMPLETE LIGHT / DARK THEME OVERRIDES
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   THEME VARIABLES
+   --------------------------------------------------------- */
+
+:root {
+    --av-page-bg: #f5f8fc;
+    --av-surface: #ffffff;
+    --av-surface-2: #f8fafc;
+    --av-text-main: #172033;
+    --av-text-secondary: #5d6b7e;
+    --av-text-muted: #7c8898;
+    --av-border-main: #d9e0e8;
+    --av-border-soft: #e8edf3;
+    --av-table-hover: #f3f7fb;
+    --av-input-bg: #ffffff;
+    --av-map-control-bg: #ffffff;
+    --av-map-control-text: #172033;
+}
+
+/* ---------------------------------------------------------
+   DARK THEME VARIABLES
+   --------------------------------------------------------- */
+
+body.av-dark {
+    --av-page-bg: #07111f;
+    --av-surface: #101c2d;
+    --av-surface-2: #142236;
+    --av-text-main: #f1f6fc;
+    --av-text-secondary: #c0ccda;
+    --av-text-muted: #94a5b8;
+    --av-border-main: rgba(255,255,255,.14);
+    --av-border-soft: rgba(255,255,255,.08);
+    --av-table-hover: #18283d;
+    --av-input-bg: #101c2d;
+    --av-map-control-bg: #111e30;
+    --av-map-control-text: #edf4fc;
+}
+
+
+/* =========================================================
+   BODY / MAIN PAGE
+   ========================================================= */
+
+body {
+    background: var(--av-page-bg);
+    color: var(--av-text-main);
+}
+
+body.av-dark {
+    background: #07111f !important;
+    color: #f1f6fc !important;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body.av-dark .main-header {
+    background: #091525 !important;
+    border-bottom-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .brand h1 {
+    color: #ffffff !important;
+}
+
+body.av-dark .brand span {
+    color: #aebfd2 !important;
+}
+
+body.av-dark .nav-link {
+    color: #c6d2df !important;
+}
+
+body.av-dark .nav-link:hover,
+body.av-dark .nav-link.active {
+    color: #62c4ff !important;
+}
+
+body.av-dark .real-badge {
+    color: #dbe7f3 !important;
+    background: rgba(255,255,255,.06) !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .brand-icon {
+    background: #14263d !important;
+    color: #63c5ff !important;
+    border-color: rgba(99,197,255,.35) !important;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+   ========================================================= */
+
+body.av-dark .av-header-btn {
+    background: #14253a !important;
+    color: #edf5ff !important;
+    border: 1px solid rgba(255,255,255,.15) !important;
+}
+
+body.av-dark .av-header-btn:hover {
+    background: #1d3551 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   HEADINGS / TEXT
+   ========================================================= */
+
+body.av-dark h1,
+body.av-dark h2,
+body.av-dark h3,
+body.av-dark h4,
+body.av-dark h5,
+body.av-dark h6 {
+    color: #f4f8fd !important;
+}
+
+body.av-dark p {
+    color: #b8c7d7 !important;
+}
+
+body.av-dark label {
+    color: #c7d4e1 !important;
+}
+
+body.av-dark small {
+    color: #91a4b8 !important;
+}
+
+body.av-dark strong {
+    color: #edf4fb !important;
+}
+
+body.av-dark a {
+    color: #62c4ff;
+}
+
+body.av-dark a:hover {
+    color: #8bd5ff;
+}
+
+
+/* =========================================================
+   SECTION HEADERS / DIVIDERS
+   ========================================================= */
+
+body.av-dark .content-section,
+body.av-dark .intro-section,
+body.av-dark .data-view-navigation,
+body.av-dark .event-intelligence,
+body.av-dark .june-timeline-section,
+body.av-dark .map-cta-section {
+    color: #edf4fb !important;
+}
+
+body.av-dark hr {
+    border-color: rgba(255,255,255,.13) !important;
+}
+
+body.av-dark .section-header,
+body.av-dark .section-title,
+body.av-dark .section-heading {
+    color: #f4f8fd !important;
+}
+
+body.av-dark .section-header::after,
+body.av-dark .section-title::after {
+    background: rgba(255,255,255,.14) !important;
+}
+
+
+/* =========================================================
+   ALL CARDS / PANELS
+   ========================================================= */
+
+body.av-dark .card,
+body.av-dark .content-card,
+body.av-dark .data-card,
+body.av-dark .source-card,
+body.av-dark .map-preview-card,
+body.av-dark .aqi-hero,
+body.av-dark .timeline-chart,
+body.av-dark .validation-card,
+body.av-dark .metric-card,
+body.av-dark .stat-card,
+body.av-dark .info-card,
+body.av-dark .chart-card {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.11) !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,.18) !important;
+}
+
+
+/* =========================================================
+   STATION COMPARISON TABLE
+   ========================================================= */
+
+body.av-dark table {
+    background: #101c2d !important;
+    color: #eaf2fa !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark thead,
+body.av-dark table thead {
+    background: #18283d !important;
+    color: #f5f9fd !important;
+}
+
+body.av-dark th {
+    background: #18283d !important;
+    color: #dce8f4 !important;
+    border-bottom-color: rgba(255,255,255,.13) !important;
+}
+
+body.av-dark td {
+    background: #101c2d !important;
+    color: #bfcddd !important;
+    border-bottom-color: rgba(255,255,255,.07) !important;
+}
+
+body.av-dark tbody tr:hover td {
+    background: #18283d !important;
+    color: #f0f6fc !important;
+}
+
+body.av-dark tbody tr:nth-child(even) td {
+    background: #0f1a2a !important;
+}
+
+body.av-dark tbody tr:nth-child(even):hover td {
+    background: #18283d !important;
+}
+
+
+/* =========================================================
+   STATION NAMES / LOCATION TEXT
+   ========================================================= */
+
+body.av-dark td a,
+body.av-dark .station-name,
+body.av-dark .station-title {
+    color: #d8e9f8 !important;
+}
+
+body.av-dark .station-location,
+body.av-dark .location-text {
+    color: #aebfd1 !important;
+}
+
+
+/* =========================================================
+   VALIDATION / PERFORMANCE CARDS
+   ========================================================= */
+
+body.av-dark .validation-card *,
+body.av-dark .metric-card *,
+body.av-dark .stat-card * {
+    color: inherit;
+}
+
+body.av-dark .validation-card .metric-value,
+body.av-dark .metric-card .metric-value,
+body.av-dark .stat-card .metric-value {
+    color: #f1f7fd !important;
+}
+
+body.av-dark .validation-card .metric-label,
+body.av-dark .metric-card .metric-label,
+body.av-dark .stat-card .metric-label {
+    color: #9fb1c4 !important;
+}
+
+body.av-dark .validation-card .metric-subtitle,
+body.av-dark .metric-card .metric-subtitle {
+    color: #8fa2b6 !important;
+}
+
+
+/* =========================================================
+   AQI COLOUR SYSTEM
+   ========================================================= */
+
+.aqi-good {
+    color: #15803d !important;
+}
+
+.aqi-satisfactory {
+    color: #65a30d !important;
+}
+
+.aqi-moderate {
+    color: #ca8a04 !important;
+}
+
+.aqi-poor {
+    color: #ea580c !important;
+}
+
+.aqi-very-poor {
+    color: #dc2626 !important;
+}
+
+.aqi-severe {
+    color: #991b1b !important;
+}
+
+
+/* Dark mode: brighter versions */
+
+body.av-dark .aqi-good {
+    color: #4ade80 !important;
+}
+
+body.av-dark .aqi-satisfactory {
+    color: #a3e635 !important;
+}
+
+body.av-dark .aqi-moderate {
+    color: #facc15 !important;
+}
+
+body.av-dark .aqi-poor {
+    color: #fb923c !important;
+}
+
+body.av-dark .aqi-very-poor {
+    color: #f87171 !important;
+}
+
+body.av-dark .aqi-severe {
+    color: #fb7185 !important;
+}
+
+
+/* =========================================================
+   POLLUTANT VALUES
+   ========================================================= */
+
+body.av-dark .pm25,
+body.av-dark .pm10,
+body.av-dark .no2,
+body.av-dark .hcho,
+body.av-dark .o3,
+body.av-dark .so2,
+body.av-dark .co {
+    color: #eaf3fb !important;
+}
+
+
+/* =========================================================
+   CHARTS
+   ========================================================= */
+
+body.av-dark canvas {
+    filter: none !important;
+}
+
+body.av-dark .chart-area,
+body.av-dark .chart-container,
+body.av-dark .timeline-chart,
+body.av-dark .graph-container {
+    background: #0d1827 !important;
+    border-color: rgba(255,255,255,.09) !important;
+}
+
+body.av-dark .chart-y-axis,
+body.av-dark .chart-x-axis,
+body.av-dark .chart-label,
+body.av-dark .chart-station-name,
+body.av-dark .timeline-chart-legend {
+    color: #aebfd0 !important;
+}
+
+
+/* =========================================================
+   MAP PREVIEW
+   ========================================================= */
+
+body.av-dark .map-preview-background,
+body.av-dark .map-preview-content {
+    background: #0d1827 !important;
+    color: #edf4fb !important;
+}
+
+body.av-dark .map-preview-card {
+    background: #101c2d !important;
+}
+
+
+/* =========================================================
+   LEAFLET MAP
+   ========================================================= */
+
+/* Keep satellite/map data visible but slightly darker */
+
+body.av-dark .leaflet-tile-pane {
+    filter: brightness(.72) contrast(1.08) saturate(.88);
+}
+
+/* Map controls */
+
+body.av-dark .leaflet-control,
+body.av-dark .leaflet-control-zoom,
+body.av-dark .leaflet-control-layers {
+    background: #111e30 !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.15) !important;
+}
+
+body.av-dark .leaflet-control-zoom a,
+body.av-dark .leaflet-control-layers-toggle {
+    background: #111e30 !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .leaflet-control-zoom a:hover {
+    background: #1d324b !important;
+    color: #ffffff !important;
+}
+
+body.av-dark .leaflet-control-attribution {
+    background: rgba(8,16,28,.88) !important;
+    color: #aebfd0 !important;
+}
+
+body.av-dark .leaflet-control-attribution a {
+    color: #69c6ff !important;
+}
+
+
+/* Map popup */
+
+body.av-dark .leaflet-popup-content-wrapper,
+body.av-dark .leaflet-popup-tip {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .leaflet-popup-content {
+    color: #dce7f1 !important;
+}
+
+body.av-dark .leaflet-popup-content h1,
+body.av-dark .leaflet-popup-content h2,
+body.av-dark .leaflet-popup-content h3,
+body.av-dark .leaflet-popup-content strong {
+    color: #ffffff !important;
+}
+
+body.av-dark .leaflet-popup-close-button {
+    color: #b8c8d8 !important;
+}
+
+body.av-dark .leaflet-popup-close-button:hover {
+    color: #ffffff !important;
+}
+
+
+/* Map selected-location panel */
+
+body.av-dark .selected-location,
+body.av-dark .location-panel,
+body.av-dark .map-side-panel,
+body.av-dark .map-info-panel {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .selected-location *,
+body.av-dark .location-panel *,
+body.av-dark .map-side-panel *,
+body.av-dark .map-info-panel * {
+    border-color: rgba(255,255,255,.09);
+}
+
+body.av-dark .selected-location h1,
+body.av-dark .selected-location h2,
+body.av-dark .selected-location h3,
+body.av-dark .location-panel h1,
+body.av-dark .location-panel h2,
+body.av-dark .location-panel h3 {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   INPUTS / SELECTS
+   ========================================================= */
+
+body.av-dark input,
+body.av-dark select,
+body.av-dark textarea {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.14) !important;
+}
+
+body.av-dark input::placeholder,
+body.av-dark textarea::placeholder {
+    color: #7f93a8 !important;
+}
+
+body.av-dark option {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+body.av-dark button {
+    color: #edf4fb;
+}
+
+body.av-dark .primary-map-button,
+body.av-dark .map-preview-button,
+body.av-dark .large-map-button {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.av-dark .main-footer {
+    background: #050c16 !important;
+    color: #9fb1c3 !important;
+    border-top-color: rgba(255,255,255,.09) !important;
+}
+
+body.av-dark .main-footer * {
+    color: #9fb1c3 !important;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+body.av-dark ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body.av-dark ::-webkit-scrollbar-track {
+    background: #091321;
+}
+
+body.av-dark ::-webkit-scrollbar-thumb {
+    background: #31445b;
+    border-radius: 10px;
+}
+
+body.av-dark ::-webkit-scrollbar-thumb:hover {
+    background: #4a617c;
+}
+
+
+/* =========================================================
+   LIGHT MODE — FORCE CLEAN VALUES
+   ========================================================= */
+
+body:not(.av-dark) {
+    background: #f5f8fc;
+    color: #172033;
+}
+
+body:not(.av-dark) table {
+    background: #ffffff;
+    color: #172033;
+}
+
+body:not(.av-dark) th {
+    background: #f1f5f9;
+    color: #344154;
+}
+
+body:not(.av-dark) td {
+    background: #ffffff;
+    color: #526174;
+}
+
+body:not(.av-dark) tbody tr:hover td {
+    background: #f4f8fc;
+    color: #172033;
+}
+
+body:not(.av-dark) .leaflet-control,
+body:not(.av-dark) .leaflet-control-zoom,
+body:not(.av-dark) .leaflet-control-layers {
+    background: #ffffff;
+    color: #172033;
+}
+
+body:not(.av-dark) .leaflet-control-zoom a {
+    background: #ffffff;
+    color: #172033;
+}
+
+body:not(.av-dark) .leaflet-popup-content-wrapper,
+body:not(.av-dark) .leaflet-popup-tip {
+    background: #ffffff;
+    color: #172033;
+}
+
+body:not(.av-dark) .leaflet-popup-content {
+    color: #435166;
+}
+
+body:not(.av-dark) .leaflet-control-attribution {
+    background: rgba(255,255,255,.9);
+    color: #526174;
+}
+/* =========================================================
+   FINAL AEROVISION VISIBILITY + POLLUTANT SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   1. FORCE READABLE TEXT IN DARK MODE
+   ========================================================= */
+
+body.av-dark .intro-section *,
+body.av-dark .content-section *,
+body.av-dark .event-intelligence *,
+body.av-dark .june-timeline-section *,
+body.av-dark .map-cta-section *,
+body.av-dark .sources-section * {
+    text-shadow: none;
+}
+
+body.av-dark .intro-section p,
+body.av-dark .content-section p,
+body.av-dark .event-intelligence p,
+body.av-dark .june-timeline-section p,
+body.av-dark .map-cta-section p,
+body.av-dark .sources-section p {
+    color: #b9c8d8 !important;
+}
+
+body.av-dark .intro-section span,
+body.av-dark .content-section span,
+body.av-dark .event-intelligence span,
+body.av-dark .june-timeline-section span,
+body.av-dark .map-cta-section span,
+body.av-dark .sources-section span {
+    color: #aebed0 !important;
+}
+
+
+/* Small labels */
+
+body.av-dark .eyebrow,
+body.av-dark .section-eyebrow,
+body.av-dark .section-kicker,
+body.av-dark .card-label,
+body.av-dark .metric-label,
+body.av-dark .pollutant-label,
+body.av-dark .unit,
+body.av-dark .caption {
+    color: #9fb1c4 !important;
+}
+
+
+/* Values */
+
+body.av-dark .metric-value,
+body.av-dark .data-value,
+body.av-dark .pollutant-value,
+body.av-dark .stat-value {
+    color: #f1f6fc !important;
+}
+
+
+/* =========================================================
+   2. DARK MODE — TIMELINE
+   ========================================================= */
+
+body.av-dark .timeline-chart,
+body.av-dark .timeline-chart *,
+body.av-dark .chart-area,
+body.av-dark .chart-area * {
+    color: #d9e5f0;
+}
+
+body.av-dark .timeline-chart h1,
+body.av-dark .timeline-chart h2,
+body.av-dark .timeline-chart h3 {
+    color: #f5f9fd !important;
+}
+
+
+/* =========================================================
+   3. DARK MODE — DATE BUTTONS
+   ========================================================= */
+
+body.av-dark .date-card,
+body.av-dark .date-button,
+body.av-dark .timeline-date,
+body.av-dark .day-card {
+    background: #132238 !important;
+    color: #dbe7f2 !important;
+    border-color: rgba(255,255,255,.13) !important;
+}
+
+body.av-dark .date-card *,
+body.av-dark .date-button *,
+body.av-dark .timeline-date *,
+body.av-dark .day-card * {
+    color: inherit !important;
+}
+
+body.av-dark .date-card:hover,
+body.av-dark .date-button:hover,
+body.av-dark .timeline-date:hover,
+body.av-dark .day-card:hover {
+    background: #1c3450 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   4. POLLUTANT CARD BASE
+   ========================================================= */
+
+.pollutant-card,
+.pollutant-item,
+.air-pollutant-card,
+.pollutant-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease,
+        transform .2s ease;
+}
+
+
+/* Dark base */
+
+body.av-dark .pollutant-card,
+body.av-dark .pollutant-item,
+body.av-dark .air-pollutant-card,
+body.av-dark .pollutant-box {
+    background: #101c2d !important;
+    border-color: rgba(255,255,255,.12) !important;
+    color: #edf4fb !important;
+}
+
+
+/* =========================================================
+   5. PM2.5
+   ========================================================= */
+
+.pollutant-pm25,
+.pm25-card,
+[data-pollutant="PM2.5"] {
+    --pollutant-color: #f59e0b;
+}
+
+body.av-dark .pollutant-pm25,
+body.av-dark .pm25-card,
+body.av-dark [data-pollutant="PM2.5"] {
+    border-left: 4px solid #fbbf24 !important;
+}
+
+
+/* =========================================================
+   6. PM10
+   ========================================================= */
+
+.pollutant-pm10,
+.pm10-card,
+[data-pollutant="PM10"] {
+    --pollutant-color: #f97316;
+}
+
+body.av-dark .pollutant-pm10,
+body.av-dark .pm10-card,
+body.av-dark [data-pollutant="PM10"] {
+    border-left: 4px solid #fb923c !important;
+}
+
+
+/* =========================================================
+   7. NO2
+   ========================================================= */
+
+.pollutant-no2,
+.no2-card,
+[data-pollutant="NO2"] {
+    --pollutant-color: #ef4444;
+}
+
+body.av-dark .pollutant-no2,
+body.av-dark .no2-card,
+body.av-dark [data-pollutant="NO2"] {
+    border-left: 4px solid #f87171 !important;
+}
+
+
+/* =========================================================
+   8. O3
+   ========================================================= */
+
+.pollutant-o3,
+.o3-card,
+[data-pollutant="O3"],
+[data-pollutant="O₃"] {
+    --pollutant-color: #8b5cf6;
+}
+
+body.av-dark .pollutant-o3,
+body.av-dark .o3-card,
+body.av-dark [data-pollutant="O3"],
+body.av-dark [data-pollutant="O₃"] {
+    border-left: 4px solid #a78bfa !important;
+}
+
+
+/* =========================================================
+   9. SO2
+   ========================================================= */
+
+.pollutant-so2,
+.so2-card,
+[data-pollutant="SO2"],
+[data-pollutant="SO₂"] {
+    --pollutant-color: #06b6d4;
+}
+
+body.av-dark .pollutant-so2,
+body.av-dark .so2-card,
+body.av-dark [data-pollutant="SO2"],
+body.av-dark [data-pollutant="SO₂"] {
+    border-left: 4px solid #22d3ee !important;
+}
+
+
+/* =========================================================
+   10. CO
+   ========================================================= */
+
+.pollutant-co,
+.co-card,
+[data-pollutant="CO"] {
+    --pollutant-color: #64748b;
+}
+
+body.av-dark .pollutant-co,
+body.av-dark .co-card,
+body.av-dark [data-pollutant="CO"] {
+    border-left: 4px solid #94a3b8 !important;
+}
+
+
+/* =========================================================
+   11. HCHO
+   ========================================================= */
+
+.pollutant-hcho,
+.hcho-card,
+[data-pollutant="HCHO"] {
+    --pollutant-color: #ec4899;
+}
+
+body.av-dark .pollutant-hcho,
+body.av-dark .hcho-card,
+body.av-dark [data-pollutant="HCHO"] {
+    border-left: 4px solid #f472b6 !important;
+}
+
+
+/* =========================================================
+   12. POLLUTANT CARD TEXT
+   ========================================================= */
+
+.pollutant-card .pollutant-name,
+.pollutant-card .pollutant-title,
+.pollutant-item .pollutant-name,
+.pollutant-item .pollutant-title,
+.air-pollutant-card .pollutant-name,
+.air-pollutant-card .pollutant-title {
+    color: var(--pollutant-color, #2563eb) !important;
+    font-weight: 700;
+}
+
+body.av-dark .pollutant-card .pollutant-name,
+body.av-dark .pollutant-card .pollutant-title,
+body.av-dark .pollutant-item .pollutant-name,
+body.av-dark .pollutant-item .pollutant-title,
+body.av-dark .air-pollutant-card .pollutant-name,
+body.av-dark .air-pollutant-card .pollutant-title {
+    color: var(--pollutant-color, #60a5fa) !important;
+}
+
+body.av-dark .pollutant-card .pollutant-value,
+body.av-dark .pollutant-item .pollutant-value,
+body.av-dark .air-pollutant-card .pollutant-value {
+    color: #f5f9fd !important;
+}
+
+body.av-dark .pollutant-card .pollutant-unit,
+body.av-dark .pollutant-item .pollutant-unit,
+body.av-dark .air-pollutant-card .pollutant-unit {
+    color: #94a7bb !important;
+}
+
+
+/* =========================================================
+   13. AQI SEVERITY CARD COLOURS
+   ========================================================= */
+
+/* Good */
+
+.aqi-good-card {
+    background: #ecfdf3 !important;
+    border-color: #86efac !important;
+}
+
+body.av-dark .aqi-good-card {
+    background: #0d2a1b !important;
+    border-color: #22c55e !important;
+}
+
+.aqi-good-card .aqi-value,
+body.av-dark .aqi-good-card .aqi-value {
+    color: #22c55e !important;
+}
+
+
+/* Satisfactory */
+
+.aqi-satisfactory-card {
+    background: #f7fee7 !important;
+    border-color: #bef264 !important;
+}
+
+body.av-dark .aqi-satisfactory-card {
+    background: #202d0d !important;
+    border-color: #84cc16 !important;
+}
+
+.aqi-satisfactory-card .aqi-value,
+body.av-dark .aqi-satisfactory-card .aqi-value {
+    color: #84cc16 !important;
+}
+
+
+/* Moderate */
+
+.aqi-moderate-card {
+    background: #fffbeb !important;
+    border-color: #fcd34d !important;
+}
+
+body.av-dark .aqi-moderate-card {
+    background: #30270a !important;
+    border-color: #facc15 !important;
+}
+
+.aqi-moderate-card .aqi-value,
+body.av-dark .aqi-moderate-card .aqi-value {
+    color: #facc15 !important;
+}
+
+
+/* Poor */
+
+.aqi-poor-card {
+    background: #fff7ed !important;
+    border-color: #fdba74 !important;
+}
+
+body.av-dark .aqi-poor-card {
+    background: #32190b !important;
+    border-color: #fb923c !important;
+}
+
+.aqi-poor-card .aqi-value,
+body.av-dark .aqi-poor-card .aqi-value {
+    color: #fb923c !important;
+}
+
+
+/* Very Poor */
+
+.aqi-very-poor-card {
+    background: #fef2f2 !important;
+    border-color: #fca5a5 !important;
+}
+
+body.av-dark .aqi-very-poor-card {
+    background: #350f14 !important;
+    border-color: #f87171 !important;
+}
+
+.aqi-very-poor-card .aqi-value,
+body.av-dark .aqi-very-poor-card .aqi-value {
+    color: #f87171 !important;
+}
+
+
+/* Severe */
+
+.aqi-severe-card {
+    background: #fce7f3 !important;
+    border-color: #f9a8d4 !important;
+}
+
+body.av-dark .aqi-severe-card {
+    background: #360d22 !important;
+    border-color: #fb7185 !important;
+}
+
+.aqi-severe-card .aqi-value,
+body.av-dark .aqi-severe-card .aqi-value {
+    color: #fb7185 !important;
+}
+
+
+/* =========================================================
+   14. MAP PAGE — DARK MODE
+   ========================================================= */
+
+body.av-dark.map-page,
+body.av-dark .map-page {
+    background: #07111f !important;
+}
+
+
+/* Side panels */
+
+body.av-dark .map-panel,
+body.av-dark .map-sidebar,
+body.av-dark .map-side-panel,
+body.av-dark .map-control-panel,
+body.av-dark .map-info-panel,
+body.av-dark .selected-location-panel {
+    background: #0c1827 !important;
+    color: #eaf3fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+
+/* Panel headings */
+
+body.av-dark .map-panel h1,
+body.av-dark .map-panel h2,
+body.av-dark .map-panel h3,
+body.av-dark .map-sidebar h1,
+body.av-dark .map-sidebar h2,
+body.av-dark .map-sidebar h3,
+body.av-dark .selected-location-panel h1,
+body.av-dark .selected-location-panel h2,
+body.av-dark .selected-location-panel h3 {
+    color: #f5f9fd !important;
+}
+
+
+/* Panel normal text */
+
+body.av-dark .map-panel p,
+body.av-dark .map-panel span,
+body.av-dark .map-sidebar p,
+body.av-dark .map-sidebar span,
+body.av-dark .selected-location-panel p,
+body.av-dark .selected-location-panel span {
+    color: #aebfd0 !important;
+}
+
+
+/* Map layer buttons */
+
+body.av-dark .map-panel button,
+body.av-dark .map-sidebar button {
+    background: #122238 !important;
+    color: #dce9f4 !important;
+    border-color: rgba(255,255,255,.13) !important;
+}
+
+body.av-dark .map-panel button:hover,
+body.av-dark .map-sidebar button:hover {
+    background: #1c3652 !important;
+    color: #ffffff !important;
+}
+
+
+/* Active layer */
+
+body.av-dark .map-panel button.active,
+body.av-dark .map-sidebar button.active {
+    background: #00bfa5 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   15. MAP AQI LEGEND
+   ========================================================= */
+
+body.av-dark .legend,
+body.av-dark .map-legend,
+body.av-dark .aqi-legend {
+    background: #0d1929 !important;
+    color: #eaf3fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .legend *,
+body.av-dark .map-legend *,
+body.av-dark .aqi-legend * {
+    color: #c2d0dd !important;
+}
+
+
+/* =========================================================
+   16. MAP HEADER
+   ========================================================= */
+
+body.av-dark .map-header,
+body.av-dark .map-topbar,
+body.av-dark .map-brand {
+    background: #091525 !important;
+    color: #edf5fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .map-header *,
+body.av-dark .map-topbar *,
+body.av-dark .map-brand * {
+    color: inherit !important;
+}
+
+
+/* =========================================================
+   17. MAP DATA TABLE
+   ========================================================= */
+
+body.av-dark .map-table,
+body.av-dark .map-table table {
+    background: #101c2d !important;
+    color: #dce8f2 !important;
+}
+
+body.av-dark .map-table th {
+    background: #18283d !important;
+    color: #eaf3fb !important;
+}
+
+body.av-dark .map-table td {
+    background: #101c2d !important;
+    color: #b9c9d8 !important;
+    border-color: rgba(255,255,255,.07) !important;
+}
+
+
+/* =========================================================
+   18. MAP TILE — KEEP GEOGRAPHY VISIBLE
+   ========================================================= */
+
+body.av-dark .leaflet-tile-pane {
+    filter: brightness(.68) contrast(1.12) saturate(.90);
+}
+
+body:not(.av-dark) .leaflet-tile-pane {
+    filter: none;
+}
+
+
+/* =========================================================
+   19. LEAFLET CONTROLS
+   ========================================================= */
+
+body.av-dark .leaflet-bar,
+body.av-dark .leaflet-control-zoom {
+    border-color: rgba(255,255,255,.16) !important;
+}
+
+body.av-dark .leaflet-bar a {
+    background: #101e30 !important;
+    color: #eaf4fc !important;
+    border-bottom-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .leaflet-bar a:hover {
+    background: #1d3550 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   20. MAP POPUPS
+   ========================================================= */
+
+body.av-dark .leaflet-popup-content-wrapper,
+body.av-dark .leaflet-popup-tip {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,.35) !important;
+}
+
+body.av-dark .leaflet-popup-content,
+body.av-dark .leaflet-popup-content * {
+    color: #d8e5ef !important;
+}
+
+body.av-dark .leaflet-popup-content strong,
+body.av-dark .leaflet-popup-content h1,
+body.av-dark .leaflet-popup-content h2,
+body.av-dark .leaflet-popup-content h3 {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   21. DARK MODE — NEVER ALLOW PURE WHITE TEXT ON WHITE
+   ========================================================= */
+
+body.av-dark .white-text,
+body.av-dark .text-white,
+body.av-dark [style*="color: white"],
+body.av-dark [style*="color:#fff"],
+body.av-dark [style*="color: #fff"] {
+    color: #f3f7fb !important;
+}
+
+
+/* =========================================================
+   22. DARK MODE — WHITE CARD TEXT FIX
+   ========================================================= */
+
+body.av-dark .content-card *,
+body.av-dark .data-card *,
+body.av-dark .source-card *,
+body.av-dark .metric-card *,
+body.av-dark .validation-card * {
+    border-color: rgba(255,255,255,.09);
+}
+
+body.av-dark .content-card p,
+body.av-dark .data-card p,
+body.av-dark .source-card p,
+body.av-dark .metric-card p,
+body.av-dark .validation-card p {
+    color: #b7c7d6 !important;
+}
+/* =========================================================
+   AEROVISION — UNIVERSAL COMPONENT THEME
+   ========================================================= */
+
+/* ---------- DARK SURFACES ---------- */
+
+body.av-dark .av-theme-surface {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+
+/* ---------- ALL TEXT INSIDE DARK COMPONENTS ---------- */
+
+body.av-dark .av-theme-surface h1,
+body.av-dark .av-theme-surface h2,
+body.av-dark .av-theme-surface h3,
+body.av-dark .av-theme-surface h4,
+body.av-dark .av-theme-surface h5,
+body.av-dark .av-theme-surface h6 {
+    color: #f5f9fd !important;
+}
+
+body.av-dark .av-theme-surface p {
+    color: #bdcad7 !important;
+}
+
+body.av-dark .av-theme-surface span,
+body.av-dark .av-theme-surface label {
+    color: #aebdcd !important;
+}
+
+body.av-dark .av-theme-surface small {
+    color: #91a4b8 !important;
+}
+
+body.av-dark .av-theme-surface strong {
+    color: #edf4fb !important;
+}
+
+
+/* ---------- VALUES ---------- */
+
+body.av-dark .av-theme-surface .value,
+body.av-dark .av-theme-surface .metric-value,
+body.av-dark .av-theme-surface .data-value,
+body.av-dark .av-theme-surface .stat-value {
+    color: #f5f9fd !important;
+}
+
+
+/* =========================================================
+   AQI CARD — PRESERVE AQI COLOUR
+   ========================================================= */
+
+body.av-dark .aqi-hero {
+    color: #ffffff !important;
+}
+
+/* AQI number remains coloured */
+
+body.av-dark .aqi-value,
+body.av-dark .hero-aqi,
+body.av-dark [class*="aqi-value"] {
+    color: #facc15 !important;
+}
+
+
+/* =========================================================
+   WEATHER CARD
+   ========================================================= */
+
+body.av-dark .weather-card,
+body.av-dark .weather-panel,
+body.av-dark .weather-box {
+    background: #111f31 !important;
+    border-color: rgba(255,255,255,.14) !important;
+}
+
+body.av-dark .weather-card *,
+body.av-dark .weather-panel *,
+body.av-dark .weather-box * {
+    color: #edf4fb !important;
+}
+
+
+/* Weather secondary labels */
+
+body.av-dark .weather-card small,
+body.av-dark .weather-card .label,
+body.av-dark .weather-panel small,
+body.av-dark .weather-panel .label {
+    color: #9fb1c3 !important;
+}
+
+
+/* =========================================================
+   CITY RANK / RANK BOX
+   ========================================================= */
+
+body.av-dark .city-rank,
+body.av-dark .city-ranking,
+body.av-dark .rank-card,
+body.av-dark .ranking-card,
+body.av-dark .rank-box {
+    background: #111d2d !important;
+    border-color: rgba(255,255,255,.10) !important;
+}
+
+body.av-dark .city-rank *,
+body.av-dark .city-ranking *,
+body.av-dark .rank-card *,
+body.av-dark .ranking-card *,
+body.av-dark .rank-box * {
+    color: #dce7f1 !important;
+}
+
+body.av-dark .rank-card .rank-number,
+body.av-dark .ranking-card .rank-number,
+body.av-dark .rank-number {
+    color: #ff4757 !important;
+}
+
+
+/* =========================================================
+   POLLUTANT CARDS
+   ========================================================= */
+
+body.av-dark .pollutant-card,
+body.av-dark .pollutant-item,
+body.av-dark .pollutant-box {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark .pollutant-card p,
+body.av-dark .pollutant-item p,
+body.av-dark .pollutant-box p {
+    color: #aebfd0 !important;
+}
+
+
+/* =========================================================
+   ENVIRONMENT CARDS
+   ========================================================= */
+
+body.av-dark .environment-card,
+body.av-dark .environment-item,
+body.av-dark .environment-intelligence {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.11) !important;
+}
+
+body.av-dark .environment-card *,
+body.av-dark .environment-item * {
+    color: #d4e0eb !important;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+body.av-dark .timeline-chart,
+body.av-dark .chart-card,
+body.av-dark .chart-container {
+    background: #0d1827 !important;
+    color: #eaf2f9 !important;
+    border-color: rgba(255,255,255,.10) !important;
+}
+
+
+/* =========================================================
+   DATE / FILTER BOXES
+   ========================================================= */
+
+body.av-dark .date-card,
+body.av-dark .date-button,
+body.av-dark .day-card,
+body.av-dark .timeline-date,
+body.av-dark .filter-card,
+body.av-dark .filter-button {
+    background: #15253a !important;
+    color: #dce8f2 !important;
+    border-color: rgba(255,255,255,.13) !important;
+}
+
+body.av-dark .date-card *,
+body.av-dark .date-button *,
+body.av-dark .day-card *,
+body.av-dark .timeline-date * {
+    color: inherit !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+body.av-dark button:not(.aqi-button):not(.severity-button) {
+    background: #14263b !important;
+    color: #eaf3fb !important;
+    border-color: rgba(255,255,255,.14) !important;
+}
+
+body.av-dark button:not(.aqi-button):not(.severity-button):hover {
+    background: #1d3651 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   WHITE BOX / HARD-CODED WHITE ELEMENT FIX
+   ========================================================= */
+
+/*
+ * These classes catch common white containers that were not
+ * covered by the original theme.
+ */
+
+body.av-dark .white-box,
+body.av-dark .light-box,
+body.av-dark .surface,
+body.av-dark .box,
+body.av-dark .container-card,
+body.av-dark .dashboard-card,
+body.av-dark .dashboard-panel {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.11) !important;
+}
+
+
+/* =========================================================
+   INLINE WHITE TEXT / DARK TEXT
+   ========================================================= */
+
+body.av-dark .av-theme-surface [style*="color: black"],
+body.av-dark .av-theme-surface [style*="color:black"],
+body.av-dark .av-theme-surface [style*="color: #000"],
+body.av-dark .av-theme-surface [style*="color:#000"] {
+    color: #dce8f2 !important;
+}
+
+
+/* =========================================================
+   INLINE WHITE BACKGROUNDS
+   ========================================================= */
+
+body.av-dark .av-theme-surface[style*="background: white"],
+body.av-dark .av-theme-surface[style*="background:white"],
+body.av-dark .av-theme-surface[style*="background-color: white"],
+body.av-dark .av-theme-surface[style*="background-color:white"],
+body.av-dark .av-theme-surface[style*="#fff"],
+body.av-dark .av-theme-surface[style*="#ffffff"] {
+    background: #101c2d !important;
+}
+
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+body:not(.av-dark) .av-theme-surface {
+    background: #ffffff;
+    color: #172033;
+    border-color: #dce3eb;
+}
+
+body:not(.av-dark) .av-theme-surface p {
+    color: #526174;
+}
+
+body:not(.av-dark) .av-theme-surface span,
+body:not(.av-dark) .av-theme-surface label {
+    color: #657386;
+}
+/* =========================================================
+   MAP OVERLAY — FORCE DARK THEME
+   ========================================================= */
+
+body.av-dark #map .map-panel,
+body.av-dark #map .map-info,
+body.av-dark #map .map-card,
+body.av-dark #map .info-panel,
+body.av-dark #map .selected-location,
+body.av-dark #map .selected-location-panel,
+body.av-dark #map .location-panel,
+body.av-dark #map .location-card,
+body.av-dark #map .station-panel,
+body.av-dark #map .station-card,
+body.av-dark #map .popup-panel,
+body.av-dark #map .data-panel,
+body.av-dark #map .overlay,
+body.av-dark #map .map-overlay,
+body.av-dark #map .leaflet-popup-content-wrapper {
+    background: #0d1b2b !important;
+    color: #e8f1f8 !important;
+    border-color: rgba(255,255,255,.14) !important;
+}
+
+
+/* Every child inside the map information box */
+
+body.av-dark #map .map-panel *,
+body.av-dark #map .map-info *,
+body.av-dark #map .map-card *,
+body.av-dark #map .info-panel *,
+body.av-dark #map .selected-location *,
+body.av-dark #map .selected-location-panel *,
+body.av-dark #map .location-panel *,
+body.av-dark #map .location-card *,
+body.av-dark #map .station-panel *,
+body.av-dark #map .station-card *,
+body.av-dark #map .popup-panel *,
+body.av-dark #map .data-panel *,
+body.av-dark #map .overlay *,
+body.av-dark #map .map-overlay * {
+    color: #dbe7f0 !important;
+}
+
+
+/* Map table */
+
+body.av-dark #map table {
+    background: #0d1b2b !important;
+    color: #dbe7f0 !important;
+}
+
+body.av-dark #map th {
+    background: #172b42 !important;
+    color: #f2f7fb !important;
+}
+
+body.av-dark #map td {
+    background: #0d1b2b !important;
+    color: #d4e1eb !important;
+    border-color: rgba(255,255,255,.08) !important;
+}
+
+
+/* Map input / white rectangles */
+
+body.av-dark #map input,
+body.av-dark #map select,
+body.av-dark #map textarea {
+    background: #13243a !important;
+    color: #edf5fb !important;
+    border-color: rgba(255,255,255,.15) !important;
+}
+
+
+/* Explicit white surfaces inside map */
+
+body.av-dark #map [style*="background: white"],
+body.av-dark #map [style*="background:white"],
+body.av-dark #map [style*="background-color: white"],
+body.av-dark #map [style*="background-color:white"],
+body.av-dark #map [style*="background:#fff"],
+body.av-dark #map [style*="background: #fff"],
+body.av-dark #map [style*="background:#ffffff"],
+body.av-dark #map [style*="background: #ffffff"] {
+    background: #0d1b2b !important;
+    color: #e8f1f8 !important;
+}
+
+
+/* White text on dark */
+
+body.av-dark #map .text-dark,
+body.av-dark #map .text-black {
+    color: #e8f1f8 !important;
+}
+
+
+/* Keep the actual map tiles untouched */
+
+body.av-dark #map .leaflet-tile,
+body.av-dark #map .leaflet-tile-container {
+    background: transparent !important;
+}
+/* =========================================================
+   SELECTED POLLUTANT COLOURS
+   ========================================================= */
+
+/* PM2.5 — amber */
+
+.av-pollutant-pm25 {
+    border-top: 4px solid #f59e0b !important;
+}
+
+.av-pollutant-pm25 .pollutant-name,
+.av-pollutant-pm25 .parameter-name {
+    color: #f59e0b !important;
+}
+
+body.av-dark .av-pollutant-pm25 {
+    background: #251d0a !important;
+    border-color: #f59e0b !important;
+}
+
+
+/* PM10 — orange */
+
+.av-pollutant-pm10 {
+    border-top: 4px solid #f97316 !important;
+}
+
+.av-pollutant-pm10 .pollutant-name,
+.av-pollutant-pm10 .parameter-name {
+    color: #f97316 !important;
+}
+
+body.av-dark .av-pollutant-pm10 {
+    background: #28170b !important;
+    border-color: #f97316 !important;
+}
+
+
+/* NO2 — red */
+
+.av-pollutant-no2 {
+    border-top: 4px solid #ef4444 !important;
+}
+
+.av-pollutant-no2 .pollutant-name,
+.av-pollutant-no2 .parameter-name {
+    color: #ef4444 !important;
+}
+
+body.av-dark .av-pollutant-no2 {
+    background: #2b1013 !important;
+    border-color: #ef4444 !important;
+}
+
+
+/* O3 — purple */
+
+.av-pollutant-o3 {
+    border-top: 4px solid #8b5cf6 !important;
+}
+
+.av-pollutant-o3 .pollutant-name,
+.av-pollutant-o3 .parameter-name {
+    color: #8b5cf6 !important;
+}
+
+body.av-dark .av-pollutant-o3 {
+    background: #1d1530 !important;
+    border-color: #8b5cf6 !important;
+}
+
+
+/* SO2 — cyan */
+
+.av-pollutant-so2 {
+    border-top: 4px solid #06b6d4 !important;
+}
+
+.av-pollutant-so2 .pollutant-name,
+.av-pollutant-so2 .parameter-name {
+    color: #06b6d4 !important;
+}
+
+body.av-dark .av-pollutant-so2 {
+    background: #09262d !important;
+    border-color: #06b6d4 !important;
+}
+
+
+/* CO — slate */
+
+.av-pollutant-co {
+    border-top: 4px solid #64748b !important;
+}
+
+.av-pollutant-co .pollutant-name,
+.av-pollutant-co .parameter-name {
+    color: #64748b !important;
+}
+
+body.av-dark .av-pollutant-co {
+    background: #17202b !important;
+    border-color: #94a3b8 !important;
+}
+
+
+/* HCHO — pink */
+
+.av-pollutant-hcho {
+    border-top: 4px solid #ec4899 !important;
+}
+
+.av-pollutant-hcho .pollutant-name,
+.av-pollutant-hcho .parameter-name {
+    color: #ec4899 !important;
+}
+
+body.av-dark .av-pollutant-hcho {
+    background: #2b1022 !important;
+    border-color: #ec4899 !important;
+}
+/* =========================================================
+   SPECIFIC DATA PANEL — EXACT DARK MODE FIX
+   ========================================================= */
+
+/* LIGHT MODE */
+#specificDataPanel {
+    background: #ffffff;
+    color: #172033;
+    border-color: #dce3eb;
+}
+
+#specificDataPanel h1,
+#specificDataPanel h2,
+#specificDataPanel h3,
+#specificDataPanel h4,
+#specificDataPanel h5,
+#specificDataPanel h6 {
+    color: #172033;
+}
+
+#specificDataPanel p,
+#specificDataPanel span,
+#specificDataPanel label {
+    color: #526174;
+}
+
+
+/* DARK MODE */
+body.av-dark #specificDataPanel {
+    background: #0f1b2b !important;
+    color: #eaf2f8 !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+
+/* All normal text inside it */
+body.av-dark #specificDataPanel h1,
+body.av-dark #specificDataPanel h2,
+body.av-dark #specificDataPanel h3,
+body.av-dark #specificDataPanel h4,
+body.av-dark #specificDataPanel h5,
+body.av-dark #specificDataPanel h6 {
+    color: #f4f8fc !important;
+}
+
+body.av-dark #specificDataPanel p,
+body.av-dark #specificDataPanel span,
+body.av-dark #specificDataPanel label {
+    color: #b9c8d6 !important;
+}
+
+
+/* Small statistic cards */
+body.av-dark #specificDataPanel > div,
+body.av-dark #specificDataPanel .data-card,
+body.av-dark #specificDataPanel .metric-card,
+body.av-dark #specificDataPanel .stat-card {
+    border-color: rgba(255,255,255,.12);
+}
+
+
+/* Values */
+body.av-dark #specificDataPanel .value,
+body.av-dark #specificDataPanel .metric-value,
+body.av-dark #specificDataPanel .data-value {
+    color: #edf5fb !important;
+}
+
+
+/* Chart area inside this panel */
+body.av-dark #specificDataPanel canvas {
+    background: transparent !important;
+}
+
+
+/* Chart labels */
+body.av-dark #specificDataPanel .chart-label,
+body.av-dark #specificDataPanel .chart-title,
+body.av-dark #specificDataPanel .legend,
+body.av-dark #specificDataPanel .legend-label {
+    color: #c5d2de !important;
+}
+/* =========================================================
+   AEROVISION AQI BOX — STRONG AQI CATEGORY COLOURS
+   ========================================================= */
+/* =========================================================
+   AEROVISION AQI — GLASS + GLOW
+   ========================================================= */
+/* =========================================================
+   AEROVISION AQI — FULL GLASS NEON GLOW
+   ========================================================= */
+/* =========================================================
+   AQI BOX — GLASS + EDGE GLOW
+   ========================================================= */
+/* =========================================================
+   AQI GLASS CARD — FULL COLOUR + GLOW
+   ========================================================= */
+/* =========================================================
+   AQI GLASS CARD — SOFT COLOURED GLASS
+   ========================================================= */
+/* =========================================================
+   AEROVISION — PREMIUM AQI LIQUID GLASS
+   ========================================================= */
+/* =========================================================
+   AEROVISION
+   PREMIUM DYNAMIC AQI GLASS BOX
+   ========================================================= */
+
+
+/* =========================================================
+   AQI CATEGORY COLOURS
+   ========================================================= */
+
+/* =========================================================
+   AEROVISION — PREMIUM LIQUID GLASS AQI CARD
+   ========================================================= */
+
+/* ---------- AQI COLOURS ---------- */
+
+.aqi-good {
+    --aqi-glow: #22c55e;
+    --aqi-dark: #15803d;
+}
+
+.aqi-satisfactory {
+    --aqi-glow: #a3e635;
+    --aqi-dark: #4d7c0f;
+}
+
+.aqi-moderate {
+    --aqi-glow: #facc15;
+    --aqi-dark: #a16207;
+}
+
+.aqi-poor {
+    --aqi-glow: #fb923c;
+    --aqi-dark: #c2410c;
+}
+
+.aqi-very-poor {
+    --aqi-glow: #f43f5e;
+    --aqi-dark: #be123c;
+}
+
+.aqi-severe {
+    --aqi-glow: #e11d48;
+    --aqi-dark: #9f1239;
+}
+
+
+/* =========================================================
+   MAIN GLASS
+   ========================================================= */
+
+.aqi-severity-box {
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden !important;
+
+    border-radius: 26px;
+
+    /* translucent coloured glass */
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                white 58%
+            ) 0%,
+
+            rgba(255,255,255,0.52) 38%,
+
+            rgba(255,255,255,0.34) 62%,
+
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                white 70%
+            ) 100%
+        ) !important;
+
+    /*
+       Stronger glass blur
+    */
+    backdrop-filter:
+        blur(28px)
+        saturate(175%);
+
+    -webkit-backdrop-filter:
+        blur(28px)
+        saturate(175%);
+
+    /*
+       Bright glass rim
+    */
+    border: 1px solid rgba(255,255,255,0.90) !important;
+
+    /*
+       Real depth
+    */
+    box-shadow:
+
+        /* external shadow */
+        0 20px 45px
+        rgba(15,23,42,0.14),
+
+        /* AQI ambient colour */
+        0 8px 28px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 72%
+        ),
+
+        /* upper glass edge */
+        inset 0 2px 3px
+        rgba(255,255,255,0.95),
+
+        /* lower glass edge */
+        inset 0 -2px 4px
+        rgba(15,23,42,0.08),
+
+        /* internal glass */
+        inset 0 0 45px
+        rgba(255,255,255,0.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* =========================================================
+   LARGE GLASS REFLECTION
+   ========================================================= */
+
+.aqi-severity-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -75%;
+    left: -35%;
+
+    width: 170%;
+    height: 145%;
+
+    /*
+       Large diagonal glossy reflection
+    */
+    background:
+
+        linear-gradient(
+            115deg,
+
+            transparent 20%,
+
+            rgba(255,255,255,0.10) 28%,
+
+            rgba(255,255,255,0.72) 36%,
+
+            rgba(255,255,255,0.30) 43%,
+
+            rgba(255,255,255,0.06) 51%,
+
+            transparent 60%
+        );
+
+    transform:
+        rotate(-7deg);
+
+    opacity: .85;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   INNER LIQUID LIGHT
+   ========================================================= */
+
+.aqi-severity-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        /* top-left white reflection */
+        radial-gradient(
+            ellipse at 15% 8%,
+            rgba(255,255,255,0.72),
+            transparent 30%
+        ),
+
+        /* AQI colour floating inside glass */
+        radial-gradient(
+            ellipse at 85% 85%,
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                transparent 62%
+            ),
+            transparent 58%
+        ),
+
+        /* center glass light */
+        radial-gradient(
+            ellipse at 50% 35%,
+            rgba(255,255,255,0.18),
+            transparent 60%
+        );
+
+    opacity: .9;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   CONTENT ABOVE GLASS
+   ========================================================= */
+
+.aqi-severity-box > * {
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+/* =========================================================
+   LIGHT MODE TEXT
+   ========================================================= */
+
+.aqi-severity-box h1,
+.aqi-severity-box h2,
+.aqi-severity-box h3,
+.aqi-severity-box h4,
+.aqi-severity-box p,
+.aqi-severity-box span,
+.aqi-severity-box label {
+
+    color: #172033 !important;
+
+    text-shadow:
+        0 1px 1px
+        rgba(255,255,255,0.75) !important;
+}
+
+
+/* =========================================================
+   AQI NUMBER
+   ========================================================= */
+
+.aqi-severity-box .aqi-value,
+.aqi-severity-box .hero-aqi,
+.aqi-severity-box [class*="aqi-value"] {
+
+    color:
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            #111827 25%
+        ) !important;
+
+    font-weight: 900;
+
+    letter-spacing: -0.04em;
+
+    text-shadow:
+
+        0 1px 0 rgba(255,255,255,0.9),
+
+        0 2px 4px
+        rgba(15,23,42,0.10) !important;
+}
+
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.aqi-severity-box .aqi-category,
+.aqi-severity-box [class*="category"] {
+
+    color:
+        var(--aqi-dark) !important;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 1px 1px
+        rgba(255,255,255,0.7) !important;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+.aqi-severity-box .label,
+.aqi-severity-box .metric-label,
+.aqi-severity-box .hero-label {
+
+    color: #475569 !important;
+
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   HOVER — GLASS COMES ALIVE
+   ========================================================= */
+
+.aqi-severity-box:hover {
+
+    transform: translateY(-4px) scale(1.008);
+
+    box-shadow:
+
+        0 26px 55px
+        rgba(15,23,42,0.16),
+
+        0 10px 35px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 65%
+        ),
+
+        inset 0 2px 3px
+        rgba(255,255,255,1),
+
+        inset 0 -2px 4px
+        rgba(15,23,42,0.08),
+
+        inset 0 0 50px
+        rgba(255,255,255,0.30);
+}
+
+
+/* =========================================================
+   =========================================================
+   DARK MODE
+   =========================================================
+   ========================================================= */
+
+body.av-dark .aqi-severity-box {
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                #172536 48%
+            ) 0%,
+
+            rgba(18,30,45,0.62) 40%,
+
+            rgba(11,20,32,0.58) 65%,
+
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                #0b1420 58%
+            ) 100%
+        ) !important;
+
+    backdrop-filter:
+        blur(30px)
+        saturate(180%);
+
+    -webkit-backdrop-filter:
+        blur(30px)
+        saturate(180%);
+
+    border:
+        1px solid rgba(255,255,255,0.24) !important;
+
+    box-shadow:
+
+        0 22px 50px
+        rgba(0,0,0,0.38),
+
+        0 8px 32px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 63%
+        ),
+
+        inset 0 2px 3px
+        rgba(255,255,255,0.16),
+
+        inset 0 -2px 5px
+        rgba(0,0,0,0.38),
+
+        inset 0 0 45px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 87%
+        );
+}
+
+
+/* =========================================================
+   DARK MODE — STRONG GLOSS
+   ========================================================= */
+
+body.av-dark .aqi-severity-box::before {
+
+    background:
+
+        linear-gradient(
+            115deg,
+
+            transparent 18%,
+
+            rgba(255,255,255,0.05) 27%,
+
+            rgba(255,255,255,0.32) 36%,
+
+            rgba(255,255,255,0.14) 42%,
+
+            rgba(255,255,255,0.03) 50%,
+
+            transparent 60%
+        );
+
+    opacity: .95;
+}
+
+
+/* =========================================================
+   DARK MODE — LIQUID LIGHT
+   ========================================================= */
+
+body.av-dark .aqi-severity-box::after {
+
+    background:
+
+        radial-gradient(
+            ellipse at 15% 8%,
+            rgba(255,255,255,0.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            ellipse at 85% 85%,
+            color-mix(
+                in srgb,
+                var(--aqi-glow),
+                transparent 48%
+            ),
+            transparent 60%
+        ),
+
+        radial-gradient(
+            ellipse at 50% 30%,
+            rgba(255,255,255,0.06),
+            transparent 60%
+        );
+
+    opacity: .95;
+}
+
+
+/* =========================================================
+   DARK MODE TEXT
+   ========================================================= */
+
+body.av-dark .aqi-severity-box h1,
+body.av-dark .aqi-severity-box h2,
+body.av-dark .aqi-severity-box h3,
+body.av-dark .aqi-severity-box h4,
+body.av-dark .aqi-severity-box p,
+body.av-dark .aqi-severity-box span,
+body.av-dark .aqi-severity-box label {
+
+    color: #f5f7fb !important;
+
+    text-shadow:
+        0 1px 2px
+        rgba(0,0,0,0.45) !important;
+}
+
+
+/* =========================================================
+   DARK MODE AQI NUMBER
+   ========================================================= */
+
+body.av-dark .aqi-severity-box .aqi-value,
+body.av-dark .aqi-severity-box .hero-aqi,
+body.av-dark .aqi-severity-box [class*="aqi-value"] {
+
+    color:
+        var(--aqi-glow) !important;
+
+    font-weight: 900;
+
+    text-shadow:
+
+        0 0 5px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 40%
+        ),
+
+        0 0 14px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 70%
+        ) !important;
+}
+
+
+/* =========================================================
+   DARK MODE CATEGORY
+   ========================================================= */
+
+body.av-dark .aqi-severity-box .aqi-category,
+body.av-dark .aqi-severity-box [class*="category"] {
+
+    color:
+        var(--aqi-glow) !important;
+
+    font-weight: 800;
+
+    text-shadow:
+        0 0 8px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 72%
+        ) !important;
+}
+
+
+/* =========================================================
+   DARK MODE LABELS
+   ========================================================= */
+
+body.av-dark .aqi-severity-box .label,
+body.av-dark .aqi-severity-box .metric-label,
+body.av-dark .aqi-severity-box .hero-label {
+
+    color: #b9c5d5 !important;
+}
+
+
+/* =========================================================
+   DARK MODE HOVER
+   ========================================================= */
+
+body.av-dark .aqi-severity-box:hover {
+
+    transform: translateY(-4px) scale(1.008);
+
+    box-shadow:
+
+        0 28px 60px
+        rgba(0,0,0,0.48),
+
+        0 10px 40px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 54%
+        ),
+
+        inset 0 2px 3px
+        rgba(255,255,255,0.20),
+
+        inset 0 -2px 5px
+        rgba(0,0,0,0.40),
+
+        inset 0 0 55px
+        color-mix(
+            in srgb,
+            var(--aqi-glow),
+            transparent 82%
+        );
+}
+
+
+/* =========================================================
+   FALLBACK
+   ========================================================= */
+
+.aqi-severity-box:not(
+    .aqi-good,
+    .aqi-satisfactory,
+    .aqi-moderate,
+    .aqi-poor,
+    .aqi-very-poor,
+    .aqi-severe
+) {
+
+    --aqi-glow: #64748b;
+    --aqi-dark: #334155;
+}
+/* =========================================================
+   AEROVISION — POLLUTANT COLOUR SYSTEM
+   ========================================================= */
+
+/* PM2.5 */
+.pollutant-pm25,
+.pm25,
+[data-pollutant="PM2.5"] {
+    --pollutant-color: #ef4444;
+    --pollutant-dark: #b91c1c;
+}
+
+/* PM10 */
+.pollutant-pm10,
+.pm10,
+[data-pollutant="PM10"] {
+    --pollutant-color: #f97316;
+    --pollutant-dark: #c2410c;
+}
+
+/* NO2 */
+.pollutant-no2,
+.no2,
+[data-pollutant="NO2"] {
+    --pollutant-color: #8b5cf6;
+    --pollutant-dark: #6d28d9;
+}
+
+/* SO2 */
+.pollutant-so2,
+.so2,
+[data-pollutant="SO2"] {
+    --pollutant-color: #eab308;
+    --pollutant-dark: #a16207;
+}
+
+/* CO */
+.pollutant-co,
+.co,
+[data-pollutant="CO"] {
+    --pollutant-color: #3b82f6;
+    --pollutant-dark: #1d4ed8;
+}
+
+/* O3 */
+.pollutant-o3,
+.o3,
+[data-pollutant="O3"] {
+    --pollutant-color: #10b981;
+    --pollutant-dark: #047857;
+}
+
+/* HCHO */
+.pollutant-hcho,
+.hcho,
+[data-pollutant="HCHO"] {
+    --pollutant-color: #ec4899;
+    --pollutant-dark: #be185d;
+}
+
+/* AOD */
+.pollutant-aod,
+.aod,
+[data-pollutant="AOD"] {
+    --pollutant-color: #06b6d4;
+    --pollutant-dark: #0e7490;
+}
+
+
+/* =========================================================
+   POLLUTANT GLASS CARD
+   ========================================================= */
+
+.pollutant-glass {
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                white 68%
+            ),
+
+            rgba(255,255,255,0.52) 48%,
+
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                white 82%
+            )
+        );
+
+    backdrop-filter:
+        blur(24px)
+        saturate(165%);
+
+    -webkit-backdrop-filter:
+        blur(24px)
+        saturate(165%);
+
+    border:
+        1px solid rgba(255,255,255,0.85);
+
+    box-shadow:
+
+        0 14px 32px
+        rgba(15,23,42,0.10),
+
+        0 6px 20px
+        color-mix(
+            in srgb,
+            var(--pollutant-color),
+            transparent 82%
+        ),
+
+        inset 0 1px 2px
+        rgba(255,255,255,0.95),
+
+        inset 0 -1px 3px
+        rgba(15,23,42,0.05);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* =========================================================
+   POLLUTANT GLASS REFLECTION
+   ========================================================= */
+
+.pollutant-glass::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -65%;
+    left: -30%;
+
+    width: 160%;
+    height: 130%;
+
+    background:
+        linear-gradient(
+            115deg,
+
+            transparent 20%,
+
+            rgba(255,255,255,0.08) 30%,
+
+            rgba(255,255,255,0.65) 38%,
+
+            rgba(255,255,255,0.20) 45%,
+
+            transparent 58%
+        );
+
+    transform: rotate(-6deg);
+
+    opacity: .75;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   POLLUTANT INNER COLOUR
+   ========================================================= */
+
+.pollutant-glass::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            ellipse at 12% 10%,
+            rgba(255,255,255,0.60),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            ellipse at 88% 88%,
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                transparent 68%
+            ),
+            transparent 60%
+        );
+
+    opacity: .85;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+/* Content above glass */
+
+.pollutant-glass > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   POLLUTANT VALUE
+   ========================================================= */
+
+.pollutant-glass .pollutant-value {
+
+    color:
+        var(--pollutant-dark);
+
+    font-weight: 850;
+
+    text-shadow:
+        0 1px 1px
+        rgba(255,255,255,0.75);
+}
+
+
+/* Pollutant name */
+
+.pollutant-glass .pollutant-name {
+
+    color: #172033;
+
+    font-weight: 750;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.av-dark .pollutant-glass {
+
+    background:
+        linear-gradient(
+            135deg,
+
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                #172536 48%
+            ),
+
+            rgba(15,27,42,0.64) 50%,
+
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                #0b1420 58%
+            )
+        );
+
+    border-color:
+        rgba(255,255,255,0.20);
+
+    box-shadow:
+
+        0 18px 40px
+        rgba(0,0,0,0.35),
+
+        0 7px 28px
+        color-mix(
+            in srgb,
+            var(--pollutant-color),
+            transparent 65%
+        ),
+
+        inset 0 1px 2px
+        rgba(255,255,255,0.13),
+
+        inset 0 -2px 4px
+        rgba(0,0,0,0.30);
+}
+
+
+/* Dark glass reflection */
+
+body.av-dark .pollutant-glass::before {
+
+    background:
+        linear-gradient(
+            115deg,
+
+            transparent 20%,
+
+            rgba(255,255,255,0.04) 30%,
+
+            rgba(255,255,255,0.28) 38%,
+
+            rgba(255,255,255,0.10) 45%,
+
+            transparent 58%
+        );
+
+    opacity: .9;
+}
+
+
+/* Dark inner colour */
+
+body.av-dark .pollutant-glass::after {
+
+    background:
+
+        radial-gradient(
+            ellipse at 12% 10%,
+            rgba(255,255,255,0.14),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            ellipse at 88% 88%,
+            color-mix(
+                in srgb,
+                var(--pollutant-color),
+                transparent 48%
+            ),
+            transparent 62%
+        );
+}
+
+
+/* Dark text */
+
+body.av-dark .pollutant-glass .pollutant-name {
+
+    color: #f4f7fb;
+}
+
+body.av-dark .pollutant-glass .pollutant-value {
+
+    color: var(--pollutant-color);
+
+    text-shadow:
+        0 0 8px
+        color-mix(
+            in srgb,
+            var(--pollutant-color),
+            transparent 55%
+        );
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.pollutant-glass:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 20px 42px
+        rgba(15,23,42,0.14),
+
+        0 8px 28px
+        color-mix(
+            in srgb,
+            var(--pollutant-color),
+            transparent 70%
+        ),
+
+        inset 0 1px 2px
+        rgba(255,255,255,1);
+}
+/* =========================================================
+   SELECTED POLLUTANT DETAIL BOX
+========================================================= */
+
+.avx-pollutant-detail {
+    --pollutant-color: #38bdf8;
+
+    margin-top: 28px;
+    padding: 28px 30px;
+
+    border: 1px solid var(--pollutant-color);
+    border-left: 6px solid var(--pollutant-color);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            color-mix(
+                in srgb,
+                var(--pollutant-color) 14%,
+                transparent
+            ),
+            transparent 65%
+        );
+
+    box-shadow:
+        0 0 25px
+        color-mix(
+            in srgb,
+            var(--pollutant-color) 18%,
+            transparent
+        );
+
+    transition:
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        background 0.35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Top glow */
+/* Animated atmospheric background */
+
+.avx-pollutant-detail::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 180px;
+
+    top: -70px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        ellipse,
+        color-mix(
+            in srgb,
+            var(--pollutant-color) 25%,
+            transparent
+        ) 0%,
+        transparent 70%
+    );
+
+    filter: blur(20px);
+
+    opacity: 0.8;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    animation:
+        avxAtmosphereMove
+        9s ease-in-out infinite alternate;
+}
+
+
+/* Second moving atmospheric layer */
+
+.avx-pollutant-detail::after {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 160px;
+
+    right: -120px;
+    bottom: -70px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        ellipse,
+        color-mix(
+            in srgb,
+            var(--pollutant-color) 20%,
+            transparent
+        ) 0%,
+        transparent 70%
+    );
+
+    filter: blur(22px);
+
+    opacity: 0.75;
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    animation:
+        avxAtmosphereMoveReverse
+        11s ease-in-out infinite alternate;
+}
+
+
+/* Header */
+
+.avx-pollutant-detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.avx-pollutant-detail-header h3 {
+    margin: 6px 0 0;
+
+    font-size: 28px;
+
+    color: var(--pollutant-color);
+
+    transition: color 0.35s ease;
+}
+
+
+.avx-pollutant-detail-unit {
+    padding: 8px 14px;
+
+    border: 1px solid var(--pollutant-color);
+
+    border-radius: 999px;
+
+    color: var(--pollutant-color);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Main content */
+
+.avx-pollutant-detail-main {
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    margin-top: 25px;
+}
+
+
+/* Main value */
+
+.avx-pollutant-detail-value {
+    min-width: 180px;
+}
+
+
+.avx-pollutant-detail-value strong {
+    display: block;
+
+    font-size: 46px;
+    line-height: 1;
+
+    color: var(--pollutant-color);
+
+    transition: color 0.35s ease;
+}
+
+
+.avx-pollutant-detail-value span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    opacity: 0.65;
+}
+
+
+/* Statistics */
+
+.avx-pollutant-detail-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(180px, 1fr));
+
+    gap: 18px;
+
+    flex: 1;
+}
+
+
+.avx-pollutant-detail-stats > div {
+    padding: 16px 18px;
+
+    border: 1px solid color-mix(
+        in srgb,
+        var(--pollutant-color) 30%,
+        transparent
+    );
+
+    border-radius: 12px;
+
+    background: color-mix(
+        in srgb,
+        var(--pollutant-color) 6%,
+        transparent
+    );
+
+    transition:
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+
+.avx-pollutant-detail-stats span {
+    display: block;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    opacity: 0.6;
+}
+
+
+.avx-pollutant-detail-stats strong {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 22px;
+
+    color: var(--pollutant-color);
+
+    transition: color 0.35s ease;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .avx-pollutant-detail {
+        padding: 22px;
+    }
+
+    .avx-pollutant-detail-main {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 24px;
+    }
+
+    .avx-pollutant-detail-stats {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .avx-pollutant-detail-value strong {
+        font-size: 38px;
+    }
+
+}
+/* =========================================================
+   AEROVISION HEADER ACTION BUTTONS
+========================================================= */
+
+#avx-theme-toggle,
+#avx-locate {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+
+    border: 1px solid rgba(148, 163, 184, 0.25);
+
+    border-radius: 12px;
+
+    background: rgba(15, 23, 42, 0.55);
+
+    color: inherit;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   DARK / LIGHT MODE TOGGLE
+========================================================= */
+
+#avx-theme-toggle {
+    width: 76px;
+
+    gap: 8px;
+
+    font-size: 16px;
+
+    overflow: hidden;
+}
+
+
+/* Toggle sliding background */
+
+#avx-theme-toggle::before {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    left: 5px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* Hover */
+
+#avx-theme-toggle:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(56, 189, 248, 0.6);
+
+    box-shadow:
+        0 8px 25px rgba(56, 189, 248, 0.12);
+}
+
+
+/* Click */
+
+#avx-theme-toggle:active {
+    transform: translateY(0) scale(0.96);
+}
+
+
+/* =========================================================
+   LOCATE ME
+========================================================= */
+
+#avx-locate {
+    min-width: 125px;
+
+    padding: 0 17px;
+
+    gap: 9px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Location icon */
+
+#avx-locate::before {
+    content: "⌖";
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    color: #38bdf8;
+
+    background:
+        rgba(56, 189, 248, 0.10);
+
+    border:
+        1px solid rgba(56, 189, 248, 0.25);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Locate hover */
+
+#avx-locate:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(56, 189, 248, 0.65);
+
+    background:
+        rgba(56, 189, 248, 0.08);
+
+    box-shadow:
+        0 8px 25px
+        rgba(56, 189, 248, 0.14);
+}
+
+
+#avx-locate:hover::before {
+    transform: rotate(20deg) scale(1.12);
+
+    background:
+        rgba(56, 189, 248, 0.18);
+
+    box-shadow:
+        0 0 15px
+        rgba(56, 189, 248, 0.35);
+}
+
+
+/* Click */
+
+#avx-locate:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+body.light #avx-theme-toggle,
+body.light #avx-locate {
+    background:
+        rgba(255, 255, 255, 0.75);
+
+    border-color:
+        rgba(15, 23, 42, 0.12);
+
+    box-shadow:
+        0 4px 15px rgba(15, 23, 42, 0.06);
+}
+
+
+body.light #avx-theme-toggle:hover,
+body.light #avx-locate:hover {
+    border-color:
+        rgba(14, 165, 233, 0.45);
+
+    box-shadow:
+        0 8px 25px
+        rgba(14, 165, 233, 0.12);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    #avx-locate {
+        min-width: 42px;
+
+        width: 42px;
+
+        padding: 0;
+    }
+
+    #avx-locate::after {
+        display: none;
+    }
+
+    #avx-theme-toggle {
+        width: 48px;
+    }
+
+}
+/* =========================================================
+   AEROVISION — FULL WIDTH DASHBOARD LAYOUT
+========================================================= */
+
+.page-container {
+    width: min(94vw, 1500px) !important;
+    max-width: 1500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* Main sections use available width */
+
+.content-section,
+.intro-section,
+.data-view-navigation,
+.june-timeline-section,
+.event-intelligence,
+.map-cta-section {
+    width: 100% !important;
+}
+
+
+/* Give the main content more breathing room */
+
+.content-section {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+
+/* Larger map */
+
+.avx-map-shell {
+    width: 100% !important;
+    min-height: 620px !important;
+}
+
+.avx-map-host,
+.avx-map-placeholder {
+    min-height: 620px !important;
+}
+
+
+/* Pollutant cards use the available width */
+
+.pollutant-grid {
+    width: 100% !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+
+/* Better spacing between major sections */
+
+.content-section + .content-section,
+.content-section + .event-intelligence,
+.event-intelligence + .content-section {
+    margin-top: 28px;
+}
+
+
+/* Keep text readable on wide screens */
+
+.content-section p,
+.intro-section p {
+    max-width: 900px;
+}
+
+
+/* =========================================================
+   WIDE SCREEN
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .page-container {
+        width: min(92vw, 1650px) !important;
+        max-width: 1650px !important;
+    }
+
+    .content-section {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .page-container {
+        width: calc(100% - 32px) !important;
+    }
+
+    .pollutant-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .page-container {
+        width: calc(100% - 20px) !important;
+    }
+
+    .content-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .pollutant-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+}
+/* =========================================================
+   AEROVISION — WIDE DESKTOP LAYOUT
+========================================================= */
+
+@media (min-width: 901px) {
+
+    #avx-shell {
+        width: calc(100% - 48px) !important;
+        max-width: 1700px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .avx-section,
+    .avx-hero,
+    .avx-topbar {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .avx-section {
+        padding-left: 36px !important;
+        padding-right: 36px !important;
+    }
+
+    .avx-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+
+    .avx-map-shell {
+        width: 100% !important;
+    }
+
+    .avx-map-host,
+    .avx-map-placeholder {
+        width: 100% !important;
+        min-height: 620px !important;
+    }
+}
+/* DARK MODE — EXACT WHITE ELEMENTS */
+
+body.av-dark #timelineSelectedDate {
+    background: #16283d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark > main > section.map-cta-section > a {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+
+body.av-dark #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-popup-pane > div > div.leaflet-popup-content-wrapper > div > div > div.aqi-difference {
+    background: #16283d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+body.av-dark #history > div.timeline-notes {
+    background: #101c2d !important;
+    color: #aebfd0 !important;
+    border-color: rgba(255,255,255,.10) !important;
+}
+
+body.av-dark #history > div.timeline-heading {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+}
+
+body.av-dark #history > div.timeline-heading > div.timeline-current-date {
+    background: #16283d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.12) !important;
+}
+body.av-dark #history {
+    background: #101c2d !important;
+    color: #edf4fb !important;
+    border-color: rgba(255,255,255,.10) !important;
+}
